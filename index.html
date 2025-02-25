@@ -355,12 +355,12 @@
         streak++;
         localStorage.setItem("streak", streak);
         resultTitle.textContent = "🎉 You Won!";
-        finalMessage.textContent = `Your current streak is ${streak}. Come back tomorrow at 5 AM EST for a new game!`;
+        finalMessage.textContent = `Your current streak is ${streak}.`;
       } else {
         streak = 0;
         localStorage.setItem("streak", streak);
         resultTitle.textContent = "😢 Game Over";
-        finalMessage.textContent = "Better luck tomorrow. Streak reset. New game at 5 AM EST!";
+        finalMessage.textContent = "Better luck tomorrow. Streak reset.";
       }
 
       correctAnswers.innerHTML = "<h3>Answers:</h3>";
