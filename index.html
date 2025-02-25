@@ -113,7 +113,6 @@
       const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
       const estDate = new Date(utc + (estOffset * 60000));
       
-      // Adjust for 5 AM reset: if before 5 AM, use previous day
       if (estDate.getHours() < 5) {
         estDate.setDate(estDate.getDate() - 1);
       }
@@ -123,8 +122,8 @@
 
     function getDailySeed() {
       const estDate = getESTDate();
-      const epoch = new Date(Date.UTC(2020, 0, 1, 10, 0, 0)); // Reference point
-      return Math.floor((estDate - epoch) / 86400000); // Days since epoch
+      const epoch = new Date(Date.UTC(2020, 0, 1, 10, 0, 0));
+      return Math.floor((estDate - epoch) / 86400000);
     }
 
     function getDailyFile(files) {
@@ -159,7 +158,7 @@
           mistakes = savedState.mistakes;
           gameOver = savedState.gameOver;
           document.getElementById("game-title").textContent = currentGame.title;
-          restoreGameState();
+          restoreGameState(savedState.win);
         } else {
           await loadDailyGame();
         }
@@ -236,7 +235,7 @@
       saveGameState();
     }
 
-    function restoreGameState() {
+    function restoreGameState(win) {
       console.log("Restoring game state");
       const grid = document.getElementById("grid");
       grid.innerHTML = "";
@@ -260,21 +259,22 @@
 
         if (savedState.correctCells.includes(obj.text)) {
           cell.classList.add("correct");
-        } else if (savedState.selectedCells.includes(obj.text)) {
+        } else if (!gameOver && savedState.selectedCells.includes(obj.text)) {
           cell.classList.add("selected");
           selectedCells.push(cell);
         }
         if (gameOver) {
           cell.classList.add("disabled");
+        } else {
+          cell.addEventListener("click", () => handleSelection(cell));
         }
-        cell.addEventListener("click", () => handleSelection(cell));
         grid.appendChild(cell);
       });
 
       if (gameOver) {
-        endGame(savedState.win);
+        endGame(win);
       }
-      console.log("Game state restored");
+      console.log("Game state restored, gameOver:", gameOver);
     }
 
     function saveGameState() {
@@ -339,7 +339,10 @@
     function endGame(win) {
       gameOver = true;
       const gridCells = document.querySelectorAll(".cell");
-      gridCells.forEach(cell => cell.classList.add("disabled"));
+      gridCells.forEach(cell => {
+        cell.classList.add("disabled");
+        cell.removeEventListener("click", handleSelection); // Remove listeners
+      });
 
       const finalOverlay = document.getElementById("final-overlay");
       const resultTitle = document.getElementById("result-title");
@@ -352,12 +355,12 @@
         streak++;
         localStorage.setItem("streak", streak);
         resultTitle.textContent = "🎉 You Won!";
-        finalMessage.textContent = `Your current streak is ${streak}.`;
+        finalMessage.textContent = `Your current streak is ${streak}. Come back tomorrow at 5 AM EST for a new game!`;
       } else {
         streak = 0;
         localStorage.setItem("streak", streak);
         resultTitle.textContent = "😢 Game Over";
-        finalMessage.textContent = "Better luck next time. Streak reset.";
+        finalMessage.textContent = "Better luck tomorrow. Streak reset. New game at 5 AM EST!";
       }
 
       correctAnswers.innerHTML = "<h3>Answers:</h3>";
