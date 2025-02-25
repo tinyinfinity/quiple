@@ -76,7 +76,9 @@
       },
       "amazonLinks": [
         { "name": "Architectural Wonders Book", "url": "https://www.amazon.com/dp/EXAMPLE_ARCHITECTURE" }
-      {
+      ]
+    },
+    {
       "title": "Group World Currencies by Continent",
       "groups": {
         "North America": ["USD", "CAD", "MXN"],
