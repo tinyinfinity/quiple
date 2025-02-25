@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiple - Daily Trivia Game</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+  <title>Daily Match Game</title>
   <style>
-    /* [Your existing CSS remains unchanged - it's great as is!] */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -19,12 +17,6 @@
       line-height: 1.6;
       text-align: center;
       padding-bottom: 80px;
-    }
-    #quiple-title {
-      font-family: "Bungee Shade", cursive;
-      font-size: 2.5rem;
-      margin: 20px 0;
-      color: #ff4500;
     }
     .game-container {
       background: #fff;
@@ -246,18 +238,19 @@
   </style>
 </head>
 <body>
-  <h1 id="quiple-title">Quiple</h1>
   <div class="game-container">
-    <h2 id="game-title">Daily Match Game</h2>
+    <h1 id="game-title">Daily Match Game</h1>
     <p id="score-info">
       Streak: <span id="streak">0</span> | Incorrect Tries: <span id="mistakes">0</span>/3
     </p>
     <div id="grid" class="grid"></div>
   </div>
+
   <div id="coffee-container">
     <p>Enjoying the game? Consider supporting me!</p>
     <a href="https://www.buymeacoffee.com/yourusername" target="_blank">Buy Me a Coffee</a>
   </div>
+
   <div id="final-overlay">
     <div id="final-screen">
       <h2 id="result-title"></h2>
@@ -269,6 +262,7 @@
       </div>
     </div>
   </div>
+
   <div id="adsense-fixed">[AdSense fixed bottom]</div>
 
   <script>
@@ -284,21 +278,6 @@
     let currentGame = {};
     let gameOver = false;
 
-    // Fallback game data if fetch fails
-    const fallbackGame = {
-      title: "Sample Daily Match Game",
-      groups: {
-        "Fruits": ["Apple", "Banana", "Orange"],
-        "Colors": ["Red", "Blue", "Green"],
-        "Animals": ["Dog", "Cat", "Bird"],
-        "Cities": ["Paris", "Tokyo", "New York"],
-        "Planets": ["Earth", "Mars", "Venus"]
-      },
-      amazonLinks: [
-        { name: "Sample Product", url: "https://amazon.com" }
-      ]
-    };
-
     document.addEventListener("DOMContentLoaded", async () => {
       document.getElementById("streak").textContent = streak;
       await loadDailyGame();
@@ -308,59 +287,44 @@
       try {
         const files = ["data.json", "data2.json", "data3.json"];
         const dailyFile = getDailyFile(files);
-        console.log("Attempting to fetch file:", dailyFile);
-
+        
         const response = await fetch(dailyFile);
-        console.log("Fetch response status:", response.status);
-        if (!response.ok) {
-          throw new Error(`Failed to fetch ${dailyFile} (Status: ${response.status})`);
-        }
-
+        if (!response.ok) throw new Error(Failed to fetch ${dailyFile});
         const data = await response.json();
-        console.log("Fetched data:", data);
-
-        if (!data.games || !Array.isArray(data.games)) {
-          throw new Error("Invalid game data format: 'games' array not found.");
-        }
-
+    
         let totalGames = data.games.length;
         let todayIndex = getDailyIndex(totalGames);
         currentGame = data.games[todayIndex];
-
+    
         if (!currentGame.groups || Object.keys(currentGame.groups).length !== 5) {
           throw new Error("Game data must have exactly 5 groups.");
         }
-
-        document.getElementById("game-title").textContent = currentGame.title || "Daily Match Game";
+    
+        document.getElementById("game-title").textContent = currentGame.title;
         setupGame();
       } catch (error) {
         console.error("Error loading game data:", error);
-        // Use fallback data if fetch fails
-        currentGame = fallbackGame;
-        document.getElementById("game-title").textContent = currentGame.title;
-        document.getElementById("grid").innerHTML = "";
-        setupGame();
-        console.log("Using fallback game data due to error.");
+        document.getElementById("game-title").textContent = "Error loading game.";
+        document.getElementById("grid").innerHTML = "<p>Unable to load game data.</p>";
       }
     }
-
+    
+    // Function to select a file based on the day
     function getDailyFile(files) {
       const now = new Date();
-      const epoch = new Date(Date.UTC(2020, 0, 1, 10, 0, 0));
+      const epoch = new Date(Date.UTC(2020, 0, 1, 10, 0, 0)); // 10:00 UTC = 5 AM EST
       const diffDays = Math.floor((now - epoch) / 86400000);
-      const index = diffDays % files.length;
-      console.log("getDailyFile index:", index);
-      return files[index];
+      return files[diffDays % files.length]; // Rotate through the files
     }
-
+    
+    // Function to select the quiz index deterministically
     function getDailyIndex(totalGames) {
       const now = new Date();
-      const epoch = new Date(Date.UTC(2020, 0, 1, 10, 0, 0));
+      const epoch = new Date(Date.UTC(2020, 0, 1, 10, 0, 0)); // 10:00 UTC = 5 AM EST
       const diffDays = Math.floor((now - epoch) / 86400000);
-      const index = diffDays % totalGames;
-      console.log("getDailyIndex:", index);
-      return index;
+      return diffDays % totalGames;
     }
+
 
     function setupGame() {
       const grid = document.getElementById("grid");
@@ -370,7 +334,7 @@
       gameOver = false;
       updateMistakes();
       selectedCells = [];
-
+      
       let groups = currentGame.groups;
       let items = [];
       for (let group in groups) {
@@ -408,7 +372,7 @@
       const allSame = groups.every(g => g === groups[0]);
       const cellsToReset = [...selectedCells];
       selectedCells = [];
-
+      
       if (allSame) {
         cellsToReset.forEach(cell => cell.classList.add("correct"));
         matchedGroups++;
@@ -420,7 +384,7 @@
           cellsToReset.forEach(cell => cell.classList.remove("incorrect", "selected"));
         }, 1000);
       }
-
+      
       const totalGroups = Object.keys(currentGame.groups).length;
       if (matchedGroups === totalGroups || mistakes >= 3) {
         endGame(matchedGroups === totalGroups);
@@ -435,43 +399,43 @@
       gameOver = true;
       const gridCells = document.querySelectorAll(".cell");
       gridCells.forEach(cell => cell.classList.add("disabled"));
-
+      
       const finalOverlay = document.getElementById("final-overlay");
       const resultTitle = document.getElementById("result-title");
       const finalMessage = document.getElementById("final-message");
       const correctAnswers = document.getElementById("correct-answers");
       const amazonLink = document.getElementById("amazon-link");
       const exitBtn = document.getElementById("exit-btn");
-
+      
       if (win) {
         streak++;
         localStorage.setItem("streak", streak);
         resultTitle.textContent = "🎉 You Won!";
-        finalMessage.textContent = `Your current streak is ${streak}.`;
+        finalMessage.textContent = Your current streak is ${streak}.;
       } else {
         streak = 0;
         localStorage.setItem("streak", streak);
         resultTitle.textContent = "😢 Game Over";
-        finalMessage.textContent = "Better luck next time. Streak reset.";
+        finalMessage.textContent = Better luck next time. Streak reset.;
       }
-
+      
       correctAnswers.innerHTML = "<h3>Answers:</h3>";
       for (let group in currentGame.groups) {
         const groupItems = currentGame.groups[group].join(", ");
-        correctAnswers.innerHTML += `
+        correctAnswers.innerHTML += 
           <div class="answer-group">
             <span class="answer-group-name">${group}</span>
             <span class="answer-group-items">${groupItems}</span>
           </div>
-        `;
+        ;
       }
-
+      
       let randomItem = currentGame.amazonLinks[Math.floor(Math.random() * currentGame.amazonLinks.length)];
       amazonLink.href = randomItem.url;
-      amazonLink.textContent = `Check out: ${randomItem.name}`;
-
+      amazonLink.textContent = Check out: ${randomItem.name};
+      
       finalOverlay.style.display = "flex";
-
+      
       exitBtn.onclick = () => {
         finalOverlay.style.display = "none";
       };
