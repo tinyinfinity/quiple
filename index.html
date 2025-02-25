@@ -144,8 +144,12 @@
       const lastReset = localStorage.getItem("lastReset");
       const todaySeed = getDailySeed();
 
+      // Initialize streak from storage
+      streak = parseInt(localStorage.getItem("streak")) || 0;
+      document.getElementById("streak").textContent = streak;
+
       if (!lastReset || parseInt(lastReset) !== todaySeed) {
-        // New day, reset and fetch new game
+        // New day, reset game state but preserve streak
         localStorage.setItem("lastReset", todaySeed);
         localStorage.removeItem("gameState");
         await loadDailyGame();
@@ -341,7 +345,7 @@
       const gridCells = document.querySelectorAll(".cell");
       gridCells.forEach(cell => {
         cell.classList.add("disabled");
-        cell.removeEventListener("click", handleSelection); // Remove listeners
+        cell.removeEventListener("click", handleSelection);
       });
 
       const finalOverlay = document.getElementById("final-overlay");
@@ -351,17 +355,30 @@
       const amazonLink = document.getElementById("amazon-link");
       const exitBtn = document.getElementById("exit-btn");
 
+      const todaySeed = getDailySeed();
+      const lastStreakDay = localStorage.getItem("lastStreakDay");
+
       if (win) {
-        streak++;
-        localStorage.setItem("streak", streak);
-        resultTitle.textContent = "🎉 You Won!";
-        finalMessage.textContent = `Your current streak is ${streak}.`;
+        // Only increment streak if not already incremented today
+        if (!lastStreakDay || parseInt(lastStreakDay) !== todaySeed) {
+          streak++;
+          localStorage.setItem("streak", streak);
+          localStorage.setItem("lastStreakDay", todaySeed);
+          resultTitle.textContent = "🎉 You Won!";
+          finalMessage.textContent = `Your current streak is ${streak}.`;
+        } else {
+          resultTitle.textContent = "🎉 You Won!";
+          finalMessage.textContent = `Your current streak is ${streak} (already counted today).`;
+        }
       } else {
         streak = 0;
         localStorage.setItem("streak", streak);
+        localStorage.setItem("lastStreakDay", todaySeed); // Reset tracking
         resultTitle.textContent = "😢 Game Over";
         finalMessage.textContent = "Better luck tomorrow. Streak reset.";
       }
+
+      document.getElementById("streak").textContent = streak;
 
       correctAnswers.innerHTML = "<h3>Answers:</h3>";
       for (let group in currentGame.groups) {
