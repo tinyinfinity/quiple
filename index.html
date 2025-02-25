@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiple - Daily Puzzle</title>
+  <title>Quiple - Daily Match Game</title>
   <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
   <style>
     * {
@@ -15,14 +13,16 @@
       font-family: "Arial", sans-serif;
       background-color: #f5f5f5;
       color: #333;
+      line-height: 1.6;
       text-align: center;
       padding-bottom: 80px;
     }
-    #game-title {
+    /* Added title styling */
+    #quiple-title {
       font-family: "Bungee Shade", cursive;
       font-size: 2rem;
       margin: 20px 0;
-      color: #1a1a1a;
+      color: #ff4500;
     }
     .game-container {
       background: #fff;
@@ -33,62 +33,64 @@
       max-width: 480px;
       width: 90%;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-      padding: 10px;
-    }
-    .cell {
-      background-color: #e8ecef;
-      border-radius: 8px;
-      min-height: 70px;
-      padding: 10px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: 0.2s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .cell.selected { background-color: #a3c1e6; }
-    .cell.correct { background-color: #6bb33e; color: #fff; }
-    .cell.incorrect { background-color: #e63946; color: #fff; }
-    .cell.disabled { cursor: not-allowed; opacity: 0.6; }
   </style>
 </head>
 <body>
-  <h1 id="game-title">Quiple</h1>
+  <!-- Added the Quiple title above the game -->
+  <h1 id="quiple-title">Quiple</h1>
+
   <div class="game-container">
-    <p id="score-info">Streak: <span id="streak">0</span> | Incorrect: <span id="mistakes">0</span>/3</p>
+    <h2 id="game-title">Daily Match Game</h2>
+    <p id="score-info">
+      Streak: <span id="streak">0</span> | Incorrect Tries: <span id="mistakes">0</span>/3
+    </p>
     <div id="grid" class="grid"></div>
   </div>
+
   <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      document.getElementById("streak").textContent = localStorage.getItem("streak") || 0;
+      await loadDailyGame();
+    });
+
     async function loadDailyGame() {
       try {
         const files = ["data.json", "data2.json", "data3.json"];
-        const dailyFile = files[new Date().getDate() % files.length];
-        console.log("Fetching file:", dailyFile);
-        
+        const dailyFile = getDailyFile(files);
+        console.log("Fetching:", dailyFile);
+
         const response = await fetch(dailyFile);
-        console.log("Response:", response);
-        
-        if (!response.ok) throw new Error(`Failed to fetch ${dailyFile}`);
-        
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
         const data = await response.json();
-        console.log("Loaded game data:", data);
-        
-        setupGame(data);
+        if (!data.games || !Array.isArray(data.games)) {
+          throw new Error("Invalid game data format.");
+        }
+
+        const todayIndex = getDailyIndex(data.games.length);
+        const currentGame = data.games[todayIndex];
+
+        if (!currentGame.groups || Object.keys(currentGame.groups).length !== 5) {
+          throw new Error("Game data must have exactly 5 groups.");
+        }
+
+        document.getElementById("game-title").textContent = currentGame.title || "Daily Match Game";
+        setupGame(currentGame);
       } catch (error) {
-        console.error("Error loading game data:", error);
-        document.getElementById("grid").innerHTML = "<p>Error loading game. Try again later.</p>";
+        console.error("Error loading game:", error);
+        document.getElementById("game-title").textContent = "Error loading game.";
+        document.getElementById("grid").innerHTML = "<p>Unable to load game data.</p>";
       }
     }
-    function setupGame(data) {
-      // Setup game logic here
-      console.log("Setting up game:", data);
+
+    function getDailyFile(files) {
+      const now = new Date();
+      return files[now.getDay() % files.length]; // Rotate through files
     }
-    document.addEventListener("DOMContentLoaded", loadDailyGame);
+
+    function getDailyIndex(totalGames) {
+      return new Date().getDate() % totalGames; // Rotate through available games
+    }
   </script>
 </body>
 </html>
