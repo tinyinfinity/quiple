@@ -1,0 +1,220 @@
+{
+  "games": [
+    {
+      "title": "Group Songs by Iconic Rock Artists",
+      "groups": {
+        "U2": [
+          "With or Without You",
+          "One",
+          "Beautiful Day"
+        ],
+        "Coldplay": [
+          "Yellow",
+          "Clocks",
+          "Viva la Vida"
+        ],
+        "The Beatles": [
+          "Hey Jude",
+          "Come Together",
+          "Let It Be"
+        ],
+        "Wilco": [
+          "Jesus, Etc.",
+          "Impossible Germany",
+          "Heavy Metal Drummer"
+        ],
+        "R.E.M.": [
+          "Losing My Religion",
+          "Everybody Hurts",
+          "Man on the Moon"
+        ]
+      },
+      "amazonLinks": [
+        {
+          "name": "Ultimate Rock Collection",
+          "url": "https://www.amazon.com/dp/EXAMPLE_ROCK"
+        }
+      ]
+    },
+    {
+      "title": "Group Songs by Hip Hop Legends",
+      "groups": {
+        "Drake": [
+          "God's Plan",
+          "Hotline Bling",
+          "In My Feelings"
+        ],
+        "Kendrick Lamar": [
+          "HUMBLE.",
+          "Alright",
+          "DNA"
+        ],
+        "Tupac Shakur": [
+          "California Love",
+          "Changes",
+          "Keep Ya Head Up"
+        ],
+        "The Notorious B.I.G.": [
+          "Juicy",
+          "Big Poppa",
+          "Hypnotize"
+        ],
+        "Nas": [
+          "It Ain't Hard to Tell",
+          "N.Y. State of Mind",
+          "If I Ruled the World"
+        ]
+      },
+      "amazonLinks": [
+        {
+          "name": "Hip Hop Anthology",
+          "url": "https://www.amazon.com/dp/EXAMPLE_HIPHOP"
+        }
+      ]
+    },
+    {
+      "title": "Group Songs by Modern Alternative Artists",
+      "groups": {
+        "Maroon 5": [
+          "She Will Be Loved",
+          "Sugar",
+          "Moves Like Jagger"
+        ],
+        "John Mayer": [
+          "Gravity",
+          "Stop This Train",
+          "New Light"
+        ],
+        "Lorde": [
+          "Royals",
+          "Team",
+          "Green Light"
+        ],
+        "Vampire Weekend": [
+          "A-Punk",
+          "Oxford Comma",
+          "Diane Young"
+        ],
+        "Arctic Monkeys": [
+          "Do I Wanna Know?",
+          "505",
+          "R U Mine?"
+        ]
+      },
+      "amazonLinks": [
+        {
+          "name": "Alternative Hits Collection",
+          "url": "https://www.amazon.com/dp/EXAMPLE_ALT"
+        }
+      ]
+    },
+    {
+      "title": "Group U.S. Cities by State",
+      "groups": {
+        "California": [
+          "Fresno",
+          "San Francisco",
+          "San Diego"
+        ],
+        "New York": [
+          "New York City",
+          "Buffalo",
+          "Rochester"
+        ],
+        "Louisiana": [
+          "Lafayette",
+          "Shreveport",
+          "Baton Rouge"
+        ],
+        "South Dakota": [
+          "Pierre",
+          "Rapid City",
+          "Sioux Falls"
+        ],
+        "Florida": [
+          "Miami",
+          "Clearwater",
+          "Tallahassee"
+        ]
+      },
+      "amazonLinks": [
+        {
+          "name": "U.S. Urban Geography Guide",
+          "url": "https://www.amazon.com/dp/EXAMPLE_USCITIES"
+        }
+      ]
+    },
+    {
+      "title": "Group Rivers by Country",
+      "groups": {
+        "USA": [
+          "Mississippi",
+          "Colorado",
+          "Rio Grande"
+        ],
+        "China": [
+          "Yangtze",
+          "Yellow River",
+          "Pearl River"
+        ],
+        "Russia": [
+          "Volga",
+          "Ob",
+          "Yenisei"
+        ],
+        "Brazil": [
+          "Amazon",
+          "Tocantins",
+          "Paraná"
+        ],
+        "India": [
+          "Ganges",
+          "Brahmaputra",
+          "Godavari"
+        ]
+      },
+      "amazonLinks": [
+        {
+          "name": "Rivers of the World: A Geography Primer",
+          "url": "https://www.amazon.com/dp/EXAMPLE_RIVERS"
+        }
+      ]
+    },
+    {
+      "title": "Group Mountain Peaks by Continent",
+      "groups": {
+        "Asia": [
+          "Everest",
+          "K2",
+          "Kangchenjunga"
+        ],
+        "Africa": [
+          "Kilimanjaro",
+          "Mount Kenya",
+          "Ras Dashen"
+        ],
+        "North America": [
+          "Denali",
+          "Mount Logan",
+          "Pico de Orizaba"
+        ],
+        "South America": [
+          "Aconcagua",
+          "Huascarán",
+          "Illimani"
+        ],
+        "Europe": [
+          "Elbrus",
+          "Mont Blanc",
+          "Matterhorn"
+        ]
+      },
+      "amazonLinks": [
+        {
+          "name": "Summit Encyclopedia",
+          "url": "https://www.amazon.com/dp/EXAMPLE_PEAKS"
+        }
+      ]
+    }
+  ]
+}

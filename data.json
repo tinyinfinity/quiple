@@ -1,0 +1,187 @@
+{
+  "games": [
+    {
+      "title": "Group Movies by Director",
+      "groups": {
+        "Steven Spielberg": ["Jurassic Park", "E.T.", "Schindler's List"],
+        "Christopher Nolan": ["Inception", "Dunkirk", "Interstellar"],
+        "Quentin Tarantino": ["Pulp Fiction", "Kill Bill", "Reservoir Dogs"],
+        "James Cameron": ["Titanic", "Avatar", "Terminator 2"],
+        "Martin Scorsese": ["Goodfellas", "Taxi Driver", "The Departed"]
+      },
+      "amazonLinks": [
+        { "name": "Director Movie Collection", "url": "https://www.amazon.com/dp/EXAMPLE_MOVIE" },
+        { "name": "Great Movies Set", "url": "https://www.amazon.com/dp/EXAMPLE_MOVIE2" }
+      ]
+    },
+    {
+      "title": "Group Songs by Artist",
+      "groups": {
+        "Beyoncé": ["Halo", "Single Ladies", "Crazy in Love"],
+        "Adele": ["Hello", "Rolling in the Deep", "Someone Like You"],
+        "Drake": ["God's Plan", "Hotline Bling", "In My Feelings"],
+        "Taylor Swift": ["Love Story", "Shake It Off", "Blank Space"],
+        "Ed Sheeran": ["Shape of You", "Perfect", "Thinking Out Loud"]
+      },
+      "amazonLinks": [
+        { "name": "Bestselling Music Collection", "url": "https://www.amazon.com/dp/EXAMPLE_MUSIC" }
+      ]
+    },
+    {
+      "title": "Group Albums by Artist",
+      "groups": {
+        "The Beatles": ["Abbey Road", "Sgt. Pepper's", "Revolver"],
+        "Led Zeppelin": ["IV", "Physical Graffiti", "Houses of the Holy"],
+        "Pink Floyd": ["Dark Side of the Moon", "The Wall", "Wish You Were Here"],
+        "Nirvana": ["Nevermind", "In Utero", "MTV Unplugged"],
+        "Radiohead": ["OK Computer", "Kid A", "In Rainbows"]
+      },
+      "amazonLinks": [
+        { "name": "Classic Albums Box Set", "url": "https://www.amazon.com/dp/EXAMPLE_ALBUMS" }
+      ]
+    },
+    {
+      "title": "Group Historical Events by Decade",
+      "groups": {
+        "1960s": ["Moon Landing", "Cuban Missile Crisis", "MLK's Speech"],
+        "1970s": ["Watergate Scandal", "Vietnam War Ends", "Oil Crisis"],
+        "1980s": ["Berlin Wall Falls", "Chernobyl Disaster", "Live Aid"],
+        "1990s": ["Gulf War", "Dot-Com Bubble", "Clinton Impeachment"],
+        "2000s": ["9/11 Attacks", "iPhone Launch", "Hurricane Katrina"]
+      },
+      "amazonLinks": [
+        { "name": "History Book Collection", "url": "https://www.amazon.com/dp/EXAMPLE_HISTORY" }
+      ]
+    },
+    {
+      "title": "Group Paintings by Artist",
+      "groups": {
+        "Leonardo da Vinci": ["Mona Lisa", "The Last Supper", "Vitruvian Man"],
+        "Vincent van Gogh": ["Starry Night", "Sunflowers", "Café Terrace"],
+        "Pablo Picasso": ["Guernica", "Les Demoiselles", "The Old Guitarist"],
+        "Claude Monet": ["Water Lilies", "Impression, Sunrise", "Haystacks"],
+        "Michelangelo": ["Sistine Chapel", "David", "The Last Judgment"]
+      },
+      "amazonLinks": [
+        { "name": "Art History Book", "url": "https://www.amazon.com/dp/EXAMPLE_ART" }
+      ]
+    },
+    {
+      "title": "Group Books by Author",
+      "groups": {
+        "J.K. Rowling": ["Harry Potter 1", "Harry Potter 7", "Casual Vacancy"],
+        "George Orwell": ["1984", "Animal Farm", "Homage to Catalonia"],
+        "Jane Austen": ["Pride and Prejudice", "Sense and Sensibility", "Emma"],
+        "Stephen King": ["The Shining", "It", "Misery"],
+        "J.R.R. Tolkien": ["The Hobbit", "LOTR: Fellowship", "Silmarillion"]
+      },
+      "amazonLinks": [
+        { "name": "Classic Literature Set", "url": "https://www.amazon.com/dp/EXAMPLE_BOOKS" }
+      ]
+    },
+    {
+      "title": "Group Cities by Country",
+      "groups": {
+        "USA": ["New York", "Los Angeles", "Chicago"],
+        "Japan": ["Tokyo", "Osaka", "Kyoto"],
+        "France": ["Paris", "Lyon", "Marseille"],
+        "Brazil": ["Rio de Janeiro", "São Paulo", "Brasília"],
+        "Australia": ["Sydney", "Melbourne", "Brisbane"]
+      },
+      "amazonLinks": [
+        { "name": "World Travel Guide", "url": "https://www.amazon.com/dp/EXAMPLE_TRAVEL" }
+      ]
+    },
+    {
+      "title": "Group Sports Teams to Their City",
+      "groups": {
+        "New York": ["Yankees", "Knicks", "Giants"],
+        "Los Angeles": ["Dodgers", "Lakers", "Rams"],
+        "Chicago": ["Cubs", "Bulls", "Bears"],
+        "Boston": ["Red Sox", "Celtics", "Patriots"],
+        "Miami": ["Marlins", "Heat", "Dolphins"]
+      },
+      "amazonLinks": [
+        { "name": "Sports Fan Gear", "url": "https://www.amazon.com/dp/EXAMPLE_SPORTS" }
+      ]
+    },
+    {
+      "title": "Group Elements by Group",
+      "groups": {
+        "Noble Gases": ["Helium", "Neon", "Argon"],
+        "Alkali Metals": ["Lithium", "Sodium", "Potassium"],
+        "Halogens": ["Fluorine", "Chlorine", "Bromine"],
+        "Transition Metals": ["Iron", "Copper", "Gold"],
+        "Alkaline Earth": ["Beryllium", "Magnesium", "Calcium"]
+      },
+      "amazonLinks": [
+        { "name": "Periodic Table Poster", "url": "https://www.amazon.com/dp/EXAMPLE_SCIENCE" }
+      ]
+    },
+    {
+      "title": "Group TV Shows by Network",
+      "groups": {
+        "NBC": ["Friends", "The Office", "SNL"],
+        "HBO": ["Game of Thrones", "The Sopranos", "Westworld"],
+        "Netflix": ["Stranger Things", "The Crown", "Mindhunter"],
+        "ABC": ["Lost", "Grey's Anatomy", "Modern Family"],
+        "CBS": ["Big Bang Theory", "NCIS", "Survivor"]
+      },
+      "amazonLinks": [
+        { "name": "TV Show DVD Set", "url": "https://www.amazon.com/dp/EXAMPLE_TV" }
+      ]
+    },
+    {
+      "title": "Group Animals by Habitat",
+      "groups": {
+        "Desert": ["Camel", "Scorpion", "Lizard"],
+        "Ocean": ["Dolphin", "Shark", "Coral"],
+        "Forest": ["Bear", "Deer", "Owl"],
+        "Arctic": ["Polar Bear", "Seal", "Penguin"],
+        "Savanna": ["Lion", "Elephant", "Giraffe"]
+      },
+      "amazonLinks": [
+        { "name": "Wildlife Encyclopedia", "url": "https://www.amazon.com/dp/EXAMPLE_ANIMALS" }
+      ]
+    },
+    {
+      "title": "Group Inventions to Their Inventor",
+      "groups": {
+        "Thomas Edison": ["Light Bulb", "Phonograph", "Motion Picture"],
+        "Alexander Bell": ["Telephone", "Hydrofoil", "Photophone"],
+        "Nikola Tesla": ["AC Motor", "Tesla Coil", "Radio"],
+        "Wright Brothers": ["Airplane", "Wind Tunnel", "Control System"],
+        "Gutenberg": ["Printing Press", "Movable Type", "Ink"]
+      },
+      "amazonLinks": [
+        { "name": "Inventions History Book", "url": "https://www.amazon.com/dp/EXAMPLE_INVENTIONS" }
+      ]
+    },
+    {
+      "title": "Group Characters by Game",
+      "groups": {
+        "Mario": ["Mario", "Luigi", "Peach"],
+        "Zelda": ["Link", "Zelda", "Ganon"],
+        "Pokémon": ["Pikachu", "Charizard", "Mewtwo"],
+        "Halo": ["Master Chief", "Cortana", "Arbiter"],
+        "Street Fighter": ["Ryu", "Chun-Li", "Bison"]
+      },
+      "amazonLinks": [
+        { "name": "Video Game Classics", "url": "https://www.amazon.com/dp/EXAMPLE_GAMES" }
+      ]
+    },
+    {
+      "title": "Group Foods by Cuisine",
+      "groups": {
+        "Italian": ["Pizza", "Pasta", "Tiramisu"],
+        "Mexican": ["Taco", "Enchilada", "Guacamole"],
+        "Chinese": ["Dumpling", "Fried Rice", "Spring Roll"],
+        "Indian": ["Curry", "Naan", "Samosa"],
+        "French": ["Croissant", "Ratatouille", "Crème Brûlée"]
+      },
+      "amazonLinks": [
+        { "name": "World Cuisine Cookbook", "url": "https://www.amazon.com/dp/EXAMPLE_FOOD" }
+      ]
+    }
+  ]
+}

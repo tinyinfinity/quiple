@@ -1,0 +1,132 @@
+{
+  "games": [
+    {
+      "title": "Group Countries by Continent",
+      "groups": {
+        "Africa": ["Chad", "Angola", "Benin"],
+        "Asia": ["Laos", "India", "Japan"],
+        "Europe": ["Norway", "Estonia", "Italy"],
+        "North America": ["USA", "Canada", "Mexico"],
+        "South America": ["Suriname", "Argentina", "Colombia"]
+      },
+      "amazonLinks": [
+        { "name": "World Atlas Collection", "url": "https://www.amazon.com/dp/EXAMPLE_ATLAS" }
+      ]
+    },
+    {
+      "title": "Group Cars by Manufacturer",
+      "groups": {
+        "Toyota": ["Camry", "Corolla", "Prius"],
+        "Ford": ["Mustang", "F-150", "Focus"],
+        "BMW": ["3 Series", "5 Series", "X5"],
+        "Honda": ["Accord", "Civic", "CR-V"],
+        "Tesla": ["Model S", "Model 3", "Model X"]
+      },
+      "amazonLinks": [
+        { "name": "Car Enthusiast Book Collection", "url": "https://www.amazon.com/dp/EXAMPLE_CARS" }
+      ]
+    },
+    {
+      "title": "Group Programming Languages by Paradigm",
+      "groups": {
+        "Object-Oriented": ["Java", "C++", "Python"],
+        "Functional": ["Haskell", "Erlang", "Scala"],
+        "Procedural": ["C", "Pascal", "BASIC"],
+        "Scripting": ["JavaScript", "Ruby", "PHP"],
+        "Logical": ["Prolog", "Datalog", "Mercury"]
+      },
+      "amazonLinks": [
+        { "name": "Programming Languages Book", "url": "https://www.amazon.com/dp/EXAMPLE_PROGRAMMING" }
+      ]
+    },
+    {
+      "title": "Group Landmarks by Continent",
+      "groups": {
+        "North America": ["Statue of Liberty", "Grand Canyon", "Golden Gate Bridge"],
+        "Europe": ["Eiffel Tower", "Colosseum", "Big Ben"],
+        "Asia": ["Great Wall", "Taj Mahal", "Mount Fuji"],
+        "Africa": ["Pyramids", "Table Mountain", "Victoria Falls"],
+        "Oceania": ["Sydney Opera House", "Uluru", "Great Barrier Reef"]
+      },
+      "amazonLinks": [
+        { "name": "World Landmarks Guide", "url": "https://www.amazon.com/dp/EXAMPLE_LANDMARKS" }
+      ]
+    },
+    {
+      "title": "Group Animals by Classification",
+      "groups": {
+        "Mammals": ["Lion", "Elephant", "Whale"],
+        "Birds": ["Eagle", "Penguin", "Parrot"],
+        "Reptiles": ["Snake", "Lizard", "Turtle"],
+        "Amphibians": ["Frog", "Salamander", "Toad"],
+        "Fish": ["Shark", "Salmon", "Clownfish"]
+      },
+      "amazonLinks": [
+        { "name": "Wildlife Encyclopedia", "url": "https://www.amazon.com/dp/EXAMPLE_WILDLIFE" }
+      ]
+    },
+    {
+      "title": "Group Architectural Wonders",
+      "groups": {
+        "Ancient": ["Pyramids", "Parthenon", "Colosseum"],
+        "Medieval": ["Notre Dame", "Alhambra", "Tower of London"],
+        "Renaissance": ["St. Peter's Basilica", "Florence Cathedral", "Sistine Chapel"],
+        "Modern": ["Burj Khalifa", "Sydney Opera House", "Shanghai Tower"],
+        "Contemporary": ["The Shard", "Walt Disney Concert Hall", "Guggenheim Bilbao"]
+      },
+      "amazonLinks": [
+        { "name": "Architectural Wonders Book", "url": "https://www.amazon.com/dp/EXAMPLE_ARCHITECTURE" }
+      {
+      "title": "Group World Currencies by Continent",
+      "groups": {
+        "North America": ["USD", "CAD", "MXN"],
+        "Europe": ["EUR", "GBP", "CHF"],
+        "Asia": ["JPY", "CNY", "INR"],
+        "Africa": ["ZAR", "EGP", "NGN"],
+        "Oceania": ["AUD", "NZD", "FJD"]
+      },
+      "amazonLinks": [
+        { "name": "Currency Trading Guide", "url": "https://www.amazon.com/dp/EXAMPLE_CURRENCIES" }
+      ]
+    },
+    {
+      "title": "Group Musical Eras by Composers",
+      "groups": {
+        "Baroque": ["Bach", "Handel", "Vivaldi"],
+        "Classical": ["Mozart", "Beethoven", "Haydn"],
+        "Romantic": ["Chopin", "Tchaikovsky", "Liszt"],
+        "Modern": ["Stravinsky", "Shostakovich", "Prokofiev"],
+        "Contemporary": ["Glass", "Adams", "Reich"]
+      },
+      "amazonLinks": [
+        { "name": "Music History Books", "url": "https://www.amazon.com/dp/EXAMPLE_MUSIC_HISTORY" }
+      ]
+    },
+    {
+      "title": "Group Superheroes by Universe",
+      "groups": {
+        "Marvel": ["Spider-Man", "Iron Man", "Captain America"],
+        "DC": ["Batman", "Superman", "Wonder Woman"],
+        "Image": ["Spawn", "Witchblade", "The Darkness"],
+        "Dark Horse": ["Hellboy", "The Mask", "Concrete"],
+        "Milestone": ["Static Shock", "Icon", "Hardware"]
+      },
+      "amazonLinks": [
+        { "name": "Comic Book Collection", "url": "https://www.amazon.com/dp/EXAMPLE_COMICS" }
+      ]
+    },
+    {
+      "title": "Group Desserts by Region",
+      "groups": {
+        "North America": ["Apple Pie", "Cheesecake", "Brownie"],
+        "Europe": ["Tiramisu", "Macarons", "Eclair"],
+        "Asia": ["Mochi", "Baklava", "Mooncake"],
+        "South America": ["Brigadeiro", "Churros", "Dulce de Leche"],
+        "Africa": ["Basbousa", "Koeksisters", "Malva Pudding"]
+      },
+      "amazonLinks": [
+        { "name": "Dessert Recipe Book", "url": "https://www.amazon.com/dp/EXAMPLE_DESSERTS" }
+      ]
+    }
+  ]
+}
