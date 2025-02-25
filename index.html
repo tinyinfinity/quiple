@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiple - Daily Match Game</title>
+  <title>Quiple - Daily Trivia Game</title>
   <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -98,23 +98,79 @@
         "Cities": ["Paris", "Tokyo", "New York"],
         "Planets": ["Earth", "Mars", "Venus"]
       },
-      amazonLinks: [
-        { name: "Sample Product", url: "https://amazon.com" }
-      ]
+      amazonLinks: [{ name: "Sample Product", url: "https://amazon.com" }]
     };
 
     document.addEventListener("DOMContentLoaded", async () => {
       console.log("DOM loaded, starting game initialization");
       document.getElementById("streak").textContent = streak;
-      await loadDailyGame();
+      await initializeGame();
     });
+
+    function getESTDate() {
+      const now = new Date();
+      const estOffset = -5 * 60; // EST is UTC-5 in minutes
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+      const estDate = new Date(utc + (estOffset * 60000));
+      
+      // Adjust for 5 AM reset: if before 5 AM, use previous day
+      if (estDate.getHours() < 5) {
+        estDate.setDate(estDate.getDate() - 1);
+      }
+      estDate.setHours(5, 0, 0, 0); // Set to 5 AM EST
+      return estDate;
+    }
+
+    function getDailySeed() {
+      const estDate = getESTDate();
+      const epoch = new Date(Date.UTC(2020, 0, 1, 10, 0, 0)); // Reference point
+      return Math.floor((estDate - epoch) / 86400000); // Days since epoch
+    }
+
+    function getDailyFile(files) {
+      const seed = getDailySeed();
+      const index = seed % files.length;
+      console.log("Daily file index:", index, "File:", files[index]);
+      return files[index];
+    }
+
+    function getDailyIndex(totalGames) {
+      const seed = getDailySeed();
+      const index = seed % totalGames;
+      console.log("Daily game index:", index);
+      return index;
+    }
+
+    async function initializeGame() {
+      const lastReset = localStorage.getItem("lastReset");
+      const todaySeed = getDailySeed();
+
+      if (!lastReset || parseInt(lastReset) !== todaySeed) {
+        // New day, reset and fetch new game
+        localStorage.setItem("lastReset", todaySeed);
+        localStorage.removeItem("gameState");
+        await loadDailyGame();
+      } else {
+        // Same day, restore state
+        const savedState = JSON.parse(localStorage.getItem("gameState"));
+        if (savedState) {
+          currentGame = savedState.currentGame;
+          matchedGroups = savedState.matchedGroups;
+          mistakes = savedState.mistakes;
+          gameOver = savedState.gameOver;
+          document.getElementById("game-title").textContent = currentGame.title;
+          restoreGameState();
+        } else {
+          await loadDailyGame();
+        }
+      }
+    }
 
     async function loadDailyGame() {
       console.log("Entering loadDailyGame");
       try {
         const files = ["data.json", "data2.json", "data3.json"];
         const dailyFile = getDailyFile(files);
-        console.log("Attempting to fetch file:", dailyFile);
 
         const response = await fetch(dailyFile);
         console.log("Fetch response status:", response.status);
@@ -150,24 +206,6 @@
       }
     }
 
-    function getDailyFile(files) {
-      const now = new Date();
-      const epoch = new Date(Date.UTC(2020, 0, 1, 10, 0, 0));
-      const diffDays = Math.floor((now - epoch) / 86400000);
-      const index = diffDays % files.length;
-      console.log("getDailyFile index:", index);
-      return files[index];
-    }
-
-    function getDailyIndex(totalGames) {
-      const now = new Date();
-      const epoch = new Date(Date.UTC(2020, 0, 1, 10, 0, 0));
-      const diffDays = Math.floor((now - epoch) / 86400000);
-      const index = diffDays % totalGames;
-      console.log("getDailyIndex:", index);
-      return index;
-    }
-
     function setupGame() {
       console.log("Entering setupGame with currentGame:", currentGame);
       const grid = document.getElementById("grid");
@@ -195,6 +233,61 @@
         grid.appendChild(cell);
       });
       console.log("Grid setup complete with", items.length, "items");
+      saveGameState();
+    }
+
+    function restoreGameState() {
+      console.log("Restoring game state");
+      const grid = document.getElementById("grid");
+      grid.innerHTML = "";
+      updateMistakes();
+
+      let groups = currentGame.groups;
+      let items = [];
+      for (let group in groups) {
+        groups[group].forEach(item => {
+          items.push({ text: item, group: group });
+        });
+      }
+      items = shuffle(items);
+
+      const savedState = JSON.parse(localStorage.getItem("gameState"));
+      items.forEach(obj => {
+        const cell = document.createElement("div");
+        cell.classList.add("cell");
+        cell.textContent = obj.text;
+        cell.dataset.group = obj.group;
+
+        if (savedState.correctCells.includes(obj.text)) {
+          cell.classList.add("correct");
+        } else if (savedState.selectedCells.includes(obj.text)) {
+          cell.classList.add("selected");
+          selectedCells.push(cell);
+        }
+        if (gameOver) {
+          cell.classList.add("disabled");
+        }
+        cell.addEventListener("click", () => handleSelection(cell));
+        grid.appendChild(cell);
+      });
+
+      if (gameOver) {
+        endGame(savedState.win);
+      }
+      console.log("Game state restored");
+    }
+
+    function saveGameState() {
+      const state = {
+        currentGame,
+        matchedGroups,
+        mistakes,
+        gameOver,
+        selectedCells: selectedCells.map(cell => cell.textContent),
+        correctCells: Array.from(document.querySelectorAll(".cell.correct")).map(cell => cell.textContent),
+        win: matchedGroups === Object.keys(currentGame.groups).length
+      };
+      localStorage.setItem("gameState", JSON.stringify(state));
     }
 
     function handleSelection(cell) {
@@ -202,6 +295,7 @@
       if (cell.classList.contains("selected")) {
         cell.classList.remove("selected");
         selectedCells = selectedCells.filter(c => c !== cell);
+        saveGameState();
         return;
       }
       cell.classList.add("selected");
@@ -209,6 +303,7 @@
       if (selectedCells.length === 3) {
         checkMatch();
       }
+      saveGameState();
     }
 
     function checkMatch() {
@@ -226,6 +321,7 @@
         updateMistakes();
         setTimeout(() => {
           cellsToReset.forEach(cell => cell.classList.remove("incorrect", "selected"));
+          saveGameState();
         }, 1000);
       }
 
@@ -233,6 +329,7 @@
       if (matchedGroups === totalGroups || mistakes >= 3) {
         endGame(matchedGroups === totalGroups);
       }
+      saveGameState();
     }
 
     function updateMistakes() {
@@ -283,6 +380,7 @@
       exitBtn.onclick = () => {
         finalOverlay.style.display = "none";
       };
+      saveGameState();
     }
 
     function shuffle(array) {
