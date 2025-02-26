@@ -33,7 +33,22 @@
     .amazon-btn:hover { background-color: #e07b00; }
     #exit-btn { background-color: #ddd; border: none; padding: 10px 20px; border-radius: 8px; font-size: 1rem; cursor: pointer; transition: background-color 0.2s ease; width: 100%; max-width: 200px; }
     #exit-btn:hover { background-color: #ccc; }
-    #adsense-fixed { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; border-top: 1px solid #ddd; padding: 10px; text-align: center; font-size: 0.85rem; color: #666; z-index: 1500; }
+    /* Adjusted Adsense container styling */
+    #adsense-fixed {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      border-top: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #666;
+      z-index: 1500;
+      max-width: 320px; /* Limit the width */
+      width: 100%;
+    }
     #coffee-container { margin: 20px auto; font-size: 0.95rem; color: #666; max-width: 480px; width: 90%; }
     #coffee-container a { color: #ff8c00; text-decoration: none; }
     #coffee-container a:hover { text-decoration: underline; }
@@ -75,16 +90,16 @@
       </div>
     </div>
   </div>
+  <!-- Adjusted Adsense block -->
   <div id="adsense-fixed">
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9326506216780694"
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9326506216780694"
          crossorigin="anonymous"></script>
     <!-- quiple -->
     <ins class="adsbygoogle"
-         style="display:block"
+         style="display:inline-block; width:320px; height:100px;" 
          data-ad-client="ca-pub-9326506216780694"
          data-ad-slot="6031934186"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
+         data-ad-format="auto"></ins>
     <script>
          (adsbygoogle = window.adsbygoogle || []).push({});
     </script>  
@@ -372,7 +387,6 @@
       const lastStreakDay = localStorage.getItem("lastStreakDay");
 
       if (win) {
-        // Only increment streak if not already incremented today
         if (!lastStreakDay || parseInt(lastStreakDay) !== todaySeed) {
           streak++;
           localStorage.setItem("streak", streak);
@@ -386,7 +400,7 @@
       } else {
         streak = 0;
         localStorage.setItem("streak", streak);
-        localStorage.setItem("lastStreakDay", todaySeed); // Reset tracking
+        localStorage.setItem("lastStreakDay", todaySeed);
         resultTitle.textContent = "😢 Game Over";
         finalMessage.textContent = "Better luck tomorrow. Streak reset.";
       }
