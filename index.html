@@ -49,6 +49,27 @@
       .amazon-btn { font-size: 0.9rem; padding: 10px; }
       #exit-btn { font-size: 0.9rem; padding: 8px 15px; }
     }
+    #site-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #666;
+      z-index: 1500;
+    }
+    
+    #site-footer a {
+      color: #ff8c00;
+      text-decoration: none;
+    }
+    #site-footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -75,7 +96,9 @@
       </div>
     </div>
   </div>
-  <div id="adsense-fixed">[AdSense fixed bottom]</div>
+  <footer id="site-footer">
+    <p>&copy; 2025 Quiple. All rights reserved. | <a href="mailto:contact@quiple.com">Contact Us</a></p>
+  </footer>
 
   <script>
     document.addEventListener('contextmenu', function(e) {
