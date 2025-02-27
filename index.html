@@ -46,6 +46,81 @@
     #info-container p { font-size: 1rem; color: #333; margin-bottom: 15px; text-align: left; }
     #info-close-btn { background-color: #ddd; border: none; padding: 10px 20px; border-radius: 8px; font-size: 1rem; cursor: pointer; transition: background-color 0.2s ease; width: 100%; max-width: 200px; }
     #info-close-btn:hover { background-color: #ccc; }
+
+    /* Contact Form Modal Styles */
+    #contact-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 3000;
+      align-items: center;
+      justify-content: center;
+    }
+    #contact-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      text-align: left;
+    }
+    #contact-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #1a1a1a;
+      text-align: center;
+    }
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    #contact-form textarea {
+      resize: vertical;
+      height: 100px;
+    }
+    #contact-form button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #ff8c00;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      margin: 10px auto;
+    }
+    #contact-form button:hover {
+      background-color: #e07b00;
+    }
+    #contact-close-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #ddd;
+      color: #333;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      margin: 10px auto;
+    }
+    #contact-close-btn:hover {
+      background-color: #ccc;
+    }
     @media (max-width: 480px) {
       .game-container { margin: 10px auto; padding: 15px; }
       #game-title { font-size: 1.25rem; }
@@ -97,8 +172,23 @@
       <button id="info-close-btn">Close</button>
     </div>
   </div>
+  
+  <!-- Contact Form Modal -->
+  <div id="contact-overlay">
+    <div id="contact-container">
+      <h2>Contact Us</h2>
+      <form id="contact-form" action="https://formspree.io/f/your_form_id" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="_replyto" placeholder="E-mail" required>
+        <textarea name="message" placeholder="Message (max 500 characters)" maxlength="500" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <button id="contact-close-btn">Close</button>
+    </div>
+  </div>
+  
   <footer id="site-footer">
-    <p>© 2025 Quiple. All rights reserved. | <a href="mailto:contact@quiple.com">Contact Us</a></p>
+    <p>© 2025 Quiple. All rights reserved. | <a href="#" id="contact-link">Contact Us</a></p>
   </footer>
 
   <script>
@@ -145,6 +235,26 @@
       infoOverlay.addEventListener("click", (e) => {
         if (e.target === infoOverlay) {
           infoOverlay.style.display = "none";
+        }
+      });
+
+      // Contact form handling
+      const contactLink = document.getElementById("contact-link");
+      const contactOverlay = document.getElementById("contact-overlay");
+      const contactCloseBtn = document.getElementById("contact-close-btn");
+
+      contactLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        contactOverlay.style.display = "flex";
+      });
+
+      contactCloseBtn.addEventListener("click", () => {
+        contactOverlay.style.display = "none";
+      });
+
+      contactOverlay.addEventListener("click", (e) => {
+        if (e.target === contactOverlay) {
+          contactOverlay.style.display = "none";
         }
       });
     });
