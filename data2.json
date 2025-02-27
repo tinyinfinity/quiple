@@ -10,7 +10,10 @@
         "South America": ["Suriname", "Argentina", "Colombia"]
       },
       "amazonLinks": [
-        { "name": "World Atlas Collection", "url": "https://www.amazon.com/dp/EXAMPLE_ATLAS" }
+        {
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -23,7 +26,10 @@
         "Tesla": ["Model S", "Model 3", "Model X"]
       },
       "amazonLinks": [
-        { "name": "Car Enthusiast Book Collection", "url": "https://www.amazon.com/dp/EXAMPLE_CARS" }
+        {
+          "name": "Best Selling Car Books",
+          "url": "https://www.amazon.com/Best-Sellers-Books-Auto/zgbs/books/171570?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -36,7 +42,10 @@
         "Logical": ["Prolog", "Datalog", "Mercury"]
       },
       "amazonLinks": [
-        { "name": "Programming Languages Book", "url": "https://www.amazon.com/dp/EXAMPLE_PROGRAMMING" }
+        {
+          "name": "Best Selling Programming Books",
+          "url": "https://www.amazon.com/Best-Sellers-Computers-Programming/zgbs/books/4736?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -49,7 +58,10 @@
         "Oceania": ["Sydney Opera House", "Uluru", "Great Barrier Reef"]
       },
       "amazonLinks": [
-        { "name": "World Landmarks Guide", "url": "https://www.amazon.com/dp/EXAMPLE_LANDMARKS" }
+        {
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -62,7 +74,10 @@
         "Fish": ["Shark", "Salmon", "Clownfish"]
       },
       "amazonLinks": [
-        { "name": "Wildlife Encyclopedia", "url": "https://www.amazon.com/dp/EXAMPLE_WILDLIFE" }
+        {
+          "name": "Best Selling Animal Books",
+          "url": "https://www.amazon.com/Best-Sellers-Animal-Books/zgbs/books/13474?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -75,7 +90,10 @@
         "Contemporary": ["The Shard", "Walt Disney Concert Hall", "Guggenheim Bilbao"]
       },
       "amazonLinks": [
-        { "name": "Architectural Wonders Book", "url": "https://www.amazon.com/dp/EXAMPLE_ARCHITECTURE" }
+        {
+          "name": "Best Selling Architecture Books",
+          "url": "https://www.amazon.com/Best-Sellers-Architecture-Books/zgbs/books/4716?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -88,7 +106,10 @@
         "Oceania": ["AUD", "NZD", "FJD"]
       },
       "amazonLinks": [
-        { "name": "Currency Trading Guide", "url": "https://www.amazon.com/dp/EXAMPLE_CURRENCIES" }
+        {
+          "name": "Best Selling Economics Books",
+          "url": "https://www.amazon.com/Best-Sellers-Economics-Books/zgbs/books/2679?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -101,7 +122,10 @@
         "Contemporary": ["Glass", "Adams", "Reich"]
       },
       "amazonLinks": [
-        { "name": "Music History Books", "url": "https://www.amazon.com/dp/EXAMPLE_MUSIC_HISTORY" }
+        {
+          "name": "Best Selling Music History Books",
+          "url": "https://www.amazon.com/Best-Sellers-Music-History-Books/zgbs/books/142?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -114,7 +138,10 @@
         "Milestone": ["Static Shock", "Icon", "Hardware"]
       },
       "amazonLinks": [
-        { "name": "Comic Book Collection", "url": "https://www.amazon.com/dp/EXAMPLE_COMICS" }
+        {
+          "name": "Best Selling Comic Books",
+          "url": "https://www.amazon.com/Best-Sellers-Comics-Graphic-Novels/zgbs/books/4366?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -127,7 +154,122 @@
         "Africa": ["Basbousa", "Koeksisters", "Malva Pudding"]
       },
       "amazonLinks": [
-        { "name": "Dessert Recipe Book", "url": "https://www.amazon.com/dp/EXAMPLE_DESSERTS" }
+        {
+          "name": "Best Selling Cookbooks",
+          "url": "https://www.amazon.com/Best-Sellers-Cookbooks-Food-Wine/zgbs/books/6?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Actors by Movie",
+      "groups": {
+        "Titanic": ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane"],
+        "The Godfather": ["Marlon Brando", "Al Pacino", "James Caan"],
+        "The Dark Knight": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+        "Forrest Gump": ["Tom Hanks", "Robin Wright", "Gary Sinise"],
+        "Pulp Fiction": ["John Travolta", "Samuel L. Jackson", "Uma Thurman"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Lakes by Country",
+      "groups": {
+        "USA": ["Lake Superior", "Lake Michigan", "Lake Tahoe"],
+        "Canada": ["Great Bear Lake", "Lake Winnipeg", "Lake Ontario"],
+        "Switzerland": ["Lake Geneva", "Lake Lucerne", "Lake Zurich"],
+        "Australia": ["Lake Eyre", "Lake Frome", "Lake Torrens"],
+        "Russia": ["Lake Baikal", "Lake Ladoga", "Lake Onega"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Songs by Artist",
+      "groups": {
+        "Adele": ["Hello", "Rolling in the Deep", "Someone Like You"],
+        "Ed Sheeran": ["Shape of You", "Perfect", "Thinking Out Loud"],
+        "Taylor Swift": ["Love Story", "Shake It Off", "Blank Space"],
+        "Bruno Mars": ["Uptown Funk", "Just the Way You Are", "24K Magic"],
+        "Beyoncé": ["Halo", "Single Ladies", "Crazy in Love"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Music",
+          "url": "https://www.amazon.com/Best-Sellers-Music/zgbs/music?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Cities by Canadian Province",
+      "groups": {
+        "Ontario": ["Toronto", "Ottawa", "Mississauga"],
+        "Quebec": ["Montreal", "Quebec City", "Laval"],
+        "British Columbia": ["Vancouver", "Victoria", "Bella Coola"],
+        "Alberta": ["Calgary", "Edmonton", "Red Deer"],
+        "Manitoba": ["Winnipeg", "Brandon", "Steinbach"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "National Parks by State",
+      "groups": {
+        "Alaska": ["Denali", "Katmai", "Glacier Bay"],
+        "Arizona": ["Grand Canyon", "Petrified Forest", "Saguaro"],
+        "California": ["Death Valley", "Joshua Tree", "Yosemite"],
+        "Utah": ["Arches", "Bryce Canyon", "Zion"],
+        "Washington": ["Mount Rainier", "North Cascades", "Olympic"],
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Men's Hiking & Trekking Shoes",
+          "url": "https://www.amazon.com/Best-Sellers-Clothing-Shoes-Jewelry-Mens-Hiking-Trekking-Shoes/zgbs/fashion/3420955011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Stars by Constellation",
+      "groups": {
+        "Orion": ["Betelgeuse", "Rigel", "Bellatrix"],
+        "Ursa Major": ["Dubhe", "Merak", "Phecda"],
+        "Scorpius": ["Antares", "Shaula", "Sargas"],
+        "Cygnus": ["Deneb", "Sadr", "Albireo"],
+        "Lyra": ["Vega", "Sheliak", "Sulafat"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Astronomy Books",
+          "url": "https://www.amazon.com/Best-Sellers-Astronomy-Books/zgbs/books/212897?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Cities by European Country",
+      "groups": {
+        "United Kingdom": ["London", "Manchester", "Edinburgh"],
+        "France": ["Paris", "Lyon", "Marseille"],
+        "Germany": ["Berlin", "Munich", "Frankfurt"],
+        "Italy": ["Rome", "Milan", "Florence"],
+        "Spain": ["Madrid", "Barcelona", "Valencia"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
       ]
     }
   ]
