@@ -410,7 +410,7 @@
       }
       let randomItem = currentGame.amazonLinks[Math.floor(Math.random() * currentGame.amazonLinks.length)];
       amazonLink.href = randomItem.url;
-      amazonLink.textContent = `${randomItem.name}`;
+      amazonLink.textContent = `Find ${randomItem.name}`;
       finalOverlay.style.display = "flex";
       exitBtn.onclick = () => {
         finalOverlay.style.display = "none";
