@@ -378,18 +378,31 @@
       ]
     },
     {
-      "title": "Group Action Movies by Franchise",
+      "title": "Sci-Fi Movies by Director",
       "groups": {
-        "Bond": ["Skyfall", "Goldfinger", "Casino Royale"],
-        "Mission": ["Fallout", "Ghost Protocol", "Rogue Nation"],
-        "Fast": ["Furious 7", "Fast Five", "Tokyo Drift"],
-        "Die Hard": ["Die Hard", "Die Hard 2", "Live Free"],
-        "Wick": ["Wick", "Wick 2", "Wick 3"]
+        "Christopher Nolan": ["Inception", "Interstellar", "Tenet"],
+        "James Cameron": ["Avatar", "Aliens", "Terminator 2"],
+        "Ridley Scott": ["Blade Runner", "Alien", "The Martian"],
+        "Steven Spielberg": ["Jurassic Park", "Minority Report", "E.T."],
+        "Denis Villeneuve": ["Dune", "Arrival", "Blade Runner 2049"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Movies", "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20" }
+        { "name": "Best Sci-Fi Movies", "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Science-Fiction/zgbs/movies-tv/2959103011?tag=tinyinfinity-20" }
       ]
     },
+    {
+      "title": "Fantasy Movies by Franchise",
+      "groups": {
+        "Lord of the Rings": ["Fellowship", "Two Towers", "Return of the King"],
+        "Harry Potter": ["Sorcerer’s Stone", "Prisoner of Azkaban", "Goblet of Fire"],
+        "Star Wars": ["Empire Strikes Back", "Revenge of the Sith", "The Last Jedi"],
+        "Marvel": ["Doctor Strange", "Thor: Ragnarok", "Guardians of the Galaxy"],
+        "DC": ["Wonder Woman", "The Dark Knight", "Man of Steel"]
+      },
+      "amazonLinks": [
+        { "name": "Best Fantasy Movies", "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Fantasy/zgbs/movies-tv/2959119011?tag=tinyinfinity-20" }
+      ]
+    },    
     {
       "title": "Group Horror Movies by Director",
       "groups": {
@@ -403,6 +416,22 @@
         { "name": "Best Selling Movies", "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20" }
       ]
     },
+    {
+      "title": "Animated Movies by Studio",
+      "groups": {
+        "Pixar": ["Toy Story", "Finding Nemo", "Inside Out"],
+        "Disney": ["Aladdin", "The Lion King", "Frozen"],
+        "DreamWorks": ["Shrek", "Kung Fu Panda", "How to Train Your Dragon"],
+        "Studio Ghibli": ["Spirited Away", "My Neighbor Totoro", "Princess Mononoke"],
+        "Sony Animation": ["Spider-Verse", "Cloudy with a Chance of Meatballs", "Mitchells vs. The Machines"]
+      },
+      "amazonLinks": [
+        { "name": "Best Animated Movies", "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Animation/zgbs/movies-tv/2958933011?tag=tinyinfinity-20" }
+      ]
+    }
+
+
+    
     {
       "title": "Group Comedies by Actor",
       "groups": {
