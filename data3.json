@@ -3,216 +3,175 @@
     {
       "title": "Group Songs by Iconic Rock Artists",
       "groups": {
-        "U2": [
-          "With or Without You",
-          "One",
-          "Beautiful Day"
-        ],
-        "Coldplay": [
-          "Yellow",
-          "Clocks",
-          "Viva la Vida"
-        ],
-        "The Beatles": [
-          "Hey Jude",
-          "Come Together",
-          "Let It Be"
-        ],
-        "Wilco": [
-          "Jesus, Etc.",
-          "Impossible Germany",
-          "Heavy Metal Drummer"
-        ],
-        "R.E.M.": [
-          "Losing My Religion",
-          "Everybody Hurts",
-          "Man on the Moon"
-        ]
+        "U2": ["With or Without You", "One", "Beautiful Day"],
+        "Coldplay": ["Yellow", "Clocks", "Viva la Vida"],
+        "The Beatles": ["Hey Jude", "Come Together", "Let It Be"],
+        "Wilco": ["Jesus, Etc.", "Impossible Germany", "Heavy Metal Drummer"],
+        "R.E.M.": ["Losing My Religion", "Everybody Hurts", "Man on the Moon"]
       },
       "amazonLinks": [
         {
-          "name": "Ultimate Rock Collection",
-          "url": "https://www.amazon.com/dp/EXAMPLE_ROCK"
+          "name": "Best Selling Rock Albums",
+          "url": "https://www.amazon.com/Best-Sellers-Music-Rock/zgbs/music/172541?tag=tinyinfinity-20"
         }
       ]
     },
     {
       "title": "Group Songs by Hip Hop Legends",
       "groups": {
-        "Drake": [
-          "God's Plan",
-          "Hotline Bling",
-          "In My Feelings"
-        ],
-        "Kendrick Lamar": [
-          "HUMBLE.",
-          "Alright",
-          "DNA"
-        ],
-        "Tupac Shakur": [
-          "California Love",
-          "Changes",
-          "Keep Ya Head Up"
-        ],
-        "The Notorious B.I.G.": [
-          "Juicy",
-          "Big Poppa",
-          "Hypnotize"
-        ],
-        "Nas": [
-          "It Ain't Hard to Tell",
-          "N.Y. State of Mind",
-          "If I Ruled the World"
-        ]
+        "Drake": ["God's Plan", "Hotline Bling", "In My Feelings"],
+        "Kendrick Lamar": ["HUMBLE.", "Alright", "DNA"],
+        "Tupac Shakur": ["California Love", "Changes", "Keep Ya Head Up"],
+        "The Notorious B.I.G.": ["Juicy", "Big Poppa", "Hypnotize"],
+        "Nas": ["It Ain't Hard to Tell", "N.Y. State of Mind", "If I Ruled the World"]
       },
       "amazonLinks": [
         {
-          "name": "Hip Hop Anthology",
-          "url": "https://www.amazon.com/dp/EXAMPLE_HIPHOP"
+          "name": "Best Selling Hip-Hop Albums",
+          "url": "https://www.amazon.com/Best-Sellers-Music-Hip-Hop/zgbs/music/172542?tag=tinyinfinity-20"
         }
       ]
     },
     {
       "title": "Group Songs by Modern Alternative Artists",
       "groups": {
-        "Maroon 5": [
-          "She Will Be Loved",
-          "Sugar",
-          "Moves Like Jagger"
-        ],
-        "John Mayer": [
-          "Gravity",
-          "Stop This Train",
-          "New Light"
-        ],
-        "Lorde": [
-          "Royals",
-          "Team",
-          "Green Light"
-        ],
-        "Vampire Weekend": [
-          "A-Punk",
-          "Oxford Comma",
-          "Diane Young"
-        ],
-        "Arctic Monkeys": [
-          "Do I Wanna Know?",
-          "505",
-          "R U Mine?"
-        ]
+        "Maroon 5": ["She Will Be Loved", "Sugar", "Moves Like Jagger"],
+        "John Mayer": ["Gravity", "Stop This Train", "New Light"],
+        "Lorde": ["Royals", "Team", "Green Light"],
+        "Vampire Weekend": ["A-Punk", "Oxford Comma", "Diane Young"],
+        "Arctic Monkeys": ["Do I Wanna Know?", "505", "R U Mine?"]
       },
       "amazonLinks": [
         {
-          "name": "Alternative Hits Collection",
-          "url": "https://www.amazon.com/dp/EXAMPLE_ALT"
+          "name": "Best Selling Music",
+          "url": "https://www.amazon.com/Best-Sellers-Music/zgbs/music?tag=tinyinfinity-20"
         }
       ]
     },
     {
       "title": "Group U.S. Cities by State",
       "groups": {
-        "California": [
-          "Fresno",
-          "San Francisco",
-          "San Diego"
-        ],
-        "New York": [
-          "New York City",
-          "Buffalo",
-          "Rochester"
-        ],
-        "Louisiana": [
-          "Lafayette",
-          "Shreveport",
-          "Baton Rouge"
-        ],
-        "South Dakota": [
-          "Pierre",
-          "Rapid City",
-          "Sioux Falls"
-        ],
-        "Florida": [
-          "Miami",
-          "Clearwater",
-          "Tallahassee"
-        ]
+        "California": ["Fresno", "San Francisco", "San Diego"],
+        "New York": ["New York City", "Buffalo", "Rochester"],
+        "Louisiana": ["Lafayette", "Shreveport", "Baton Rouge"],
+        "South Dakota": ["Pierre", "Rapid City", "Sioux Falls"],
+        "Florida": ["Miami", "Clearwater", "Tallahassee"]
       },
       "amazonLinks": [
         {
-          "name": "U.S. Urban Geography Guide",
-          "url": "https://www.amazon.com/dp/EXAMPLE_USCITIES"
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
         }
       ]
     },
     {
       "title": "Group Rivers by Country",
       "groups": {
-        "USA": [
-          "Mississippi",
-          "Colorado",
-          "Rio Grande"
-        ],
-        "China": [
-          "Yangtze",
-          "Yellow River",
-          "Pearl River"
-        ],
-        "Russia": [
-          "Volga",
-          "Ob",
-          "Yenisei"
-        ],
-        "Brazil": [
-          "Amazon",
-          "Tocantins",
-          "Paraná"
-        ],
-        "India": [
-          "Ganges",
-          "Brahmaputra",
-          "Godavari"
-        ]
+        "USA": ["Mississippi", "Colorado", "Rio Grande"],
+        "China": ["Yangtze", "Yellow River", "Pearl River"],
+        "Russia": ["Volga", "Ob", "Yenisei"],
+        "Brazil": ["Amazon", "Tocantins", "Paraná"],
+        "India": ["Ganges", "Brahmaputra", "Godavari"]
       },
       "amazonLinks": [
         {
-          "name": "Rivers of the World: A Geography Primer",
-          "url": "https://www.amazon.com/dp/EXAMPLE_RIVERS"
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
         }
       ]
     },
     {
       "title": "Group Mountain Peaks by Continent",
       "groups": {
-        "Asia": [
-          "Everest",
-          "K2",
-          "Kangchenjunga"
-        ],
-        "Africa": [
-          "Kilimanjaro",
-          "Mount Kenya",
-          "Ras Dashen"
-        ],
-        "North America": [
-          "Denali",
-          "Mount Logan",
-          "Pico de Orizaba"
-        ],
-        "South America": [
-          "Aconcagua",
-          "Huascarán",
-          "Illimani"
-        ],
-        "Europe": [
-          "Elbrus",
-          "Mont Blanc",
-          "Matterhorn"
-        ]
+        "Asia": ["Everest", "K2", "Kangchenjunga"],
+        "Africa": ["Kilimanjaro", "Mount Kenya", "Ras Dashen"],
+        "North America": ["Denali", "Mount Logan", "Pico de Orizaba"],
+        "South America": ["Aconcagua", "Huascarán", "Illimani"],
+        "Europe": ["Elbrus", "Mont Blanc", "Matterhorn"]
       },
       "amazonLinks": [
         {
-          "name": "Summit Encyclopedia",
-          "url": "https://www.amazon.com/dp/EXAMPLE_PEAKS"
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Classical Composers by Era",
+      "groups": {
+        "Baroque": ["Bach", "Handel", "Vivaldi"],
+        "Classical": ["Mozart", "Haydn", "Beethoven"],
+        "Romantic": ["Chopin", "Tchaikovsky", "Liszt"],
+        "Modern": ["Stravinsky", "Shostakovich", "Prokofiev"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Classical Music",
+          "url": "https://www.amazon.com/Best-Sellers-Music-Classical/zgbs/music/172543?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Famous Landmarks by Country",
+      "groups": {
+        "USA": ["Statue of Liberty", "Golden Gate Bridge", "Mount Rushmore"],
+        "France": ["Eiffel Tower", "Louvre", "Notre Dame"],
+        "Italy": ["Colosseum", "Leaning Tower of Pisa", "Venice Canals"],
+        "UK": ["Big Ben", "Tower Bridge", "Stonehenge"],
+        "India": ["Taj Mahal", "Red Fort", "Qutub Minar"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Movies by Genre",
+      "groups": {
+        "Action": ["Die Hard", "Mad Max: Fury Road", "John Wick"],
+        "Drama": ["The Shawshank Redemption", "Forrest Gump", "The Godfather"],
+        "Comedy": ["Superbad", "Anchorman", "Step Brothers"],
+        "Horror": ["The Exorcist", "Get Out", "A Quiet Place"],
+        "Sci-Fi": ["Blade Runner", "The Matrix", "Inception"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Video Games by Genre",
+      "groups": {
+        "Action": ["Call of Duty", "Fortnite", "DOOM"],
+        "RPG": ["The Witcher 3", "Skyrim", "Final Fantasy XV"],
+        "Sports": ["FIFA", "NBA 2K", "Madden NFL"],
+        "Strategy": ["Civilization VI", "StarCraft II", "Age of Empires II"],
+        "Adventure": ["The Legend of Zelda", "Uncharted", "Tomb Raider"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Video Games",
+          "url": "https://www.amazon.com/Best-Sellers-Video-Games/zgbs/videogames?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Books by Genre",
+      "groups": {
+        "Fiction": ["The Great Gatsby", "1984", "To Kill a Mockingbird"],
+        "Non-Fiction": ["Sapiens", "Educated", "The Wright Brothers"],
+        "Mystery": ["Gone Girl", "The Girl with the Dragon Tattoo", "Big Little Lies"],
+        "Romance": ["Pride and Prejudice", "Outlander", "Me Before You"],
+        "Science Fiction": ["Dune", "Neuromancer", "Foundation"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Literature",
+          "url": "https://www.amazon.com/Best-Sellers-Literature-Fiction-Books/zgbs/books/17?tag=tinyinfinity-20"
         }
       ]
     }
