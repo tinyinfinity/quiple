@@ -1,0 +1,460 @@
+{
+  "games": [
+    {
+      "title": "Group Movies by Director",
+      "groups": {
+        "Steven Spielberg": ["Jurassic Park", "E.T.", "Schindler's List"],
+        "Christopher Nolan": ["Inception", "Dunkirk", "Interstellar"],
+        "Quentin Tarantino": ["Pulp Fiction", "Kill Bill", "Reservoir Dogs"],
+        "James Cameron": ["Titanic", "Avatar", "Terminator 2"],
+        "Martin Scorsese": ["Goodfellas", "Taxi Driver", "The Departed"]
+      },
+      "amazonLinks": [
+        { "name": "Steven Spielberg Collection Blu-ray", "url": "https://www.amazon.com/dp/B00K2CHWIY?tag=tinyinfinity-20" },
+        { "name": "Christopher Nolan Collection 4K", "url": "https://www.amazon.com/dp/B077ZJJS5P?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Songs by Artist",
+      "groups": {
+        "Beyoncé": ["Halo", "Single Ladies", "Crazy in Love"],
+        "Adele": ["Hello", "Rolling in the Deep", "Someone Like You"],
+        "Drake": ["God's Plan", "Hotline Bling", "In My Feelings"],
+        "Taylor Swift": ["Love Story", "Shake It Off", "Blank Space"],
+        "Ed Sheeran": ["Shape of You", "Perfect", "Thinking Out Loud"]
+      },
+      "amazonLinks": [
+        { "name": "Beyoncé - Lemonade CD", "url": "https://www.amazon.com/dp/B01D94X7GG?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Albums by Artist",
+      "groups": {
+        "The Beatles": ["Abbey Road", "Sgt. Pepper's", "Revolver"],
+        "Led Zeppelin": ["IV", "Physical Graffiti", "Houses of the Holy"],
+        "Pink Floyd": ["Dark Side of the Moon", "The Wall", "Wish You Were Here"],
+        "Nirvana": ["Nevermind", "In Utero", "MTV Unplugged"],
+        "Radiohead": ["OK Computer", "Kid A", "In Rainbows"]
+      },
+      "amazonLinks": [
+        { "name": "The Beatles - Abbey Road Vinyl", "url": "https://www.amazon.com/dp/B07VXL4BXG?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Historical Events by Decade",
+      "groups": {
+        "1960s": ["Moon Landing", "Cuban Missile Crisis", "MLK's Speech"],
+        "1970s": ["Watergate Scandal", "Vietnam War Ends", "Oil Crisis"],
+        "1980s": ["Berlin Wall Falls", "Chernobyl Disaster", "Live Aid"],
+        "1990s": ["Gulf War", "Dot-Com Bubble", "Clinton Impeachment"],
+        "2000s": ["9/11 Attacks", "iPhone Launch", "Hurricane Katrina"]
+      },
+      "amazonLinks": [
+        { "name": "The History Channel: Decades DVD", "url": "https://www.amazon.com/dp/B004SH6Z5S?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Paintings by Artist",
+      "groups": {
+        "Leonardo da Vinci": ["Mona Lisa", "The Last Supper", "Vitruvian Man"],
+        "Vincent van Gogh": ["Starry Night", "Sunflowers", "Café Terrace"],
+        "Pablo Picasso": ["Guernica", "Les Demoiselles", "The Old Guitarist"],
+        "Claude Monet": ["Water Lilies", "Impression, Sunrise", "Haystacks"],
+        "Michelangelo": ["Sistine Chapel", "David", "The Last Judgment"]
+      },
+      "amazonLinks": [
+        { "name": "Art History Book by Gardner", "url": "https://www.amazon.com/dp/1305955064?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Books by Author",
+      "groups": {
+        "J.K. Rowling": ["Harry Potter 1", "Harry Potter 7", "Casual Vacancy"],
+        "George Orwell": ["1984", "Animal Farm", "Homage to Catalonia"],
+        "Jane Austen": ["Pride and Prejudice", "Sense and Sensibility", "Emma"],
+        "Stephen King": ["The Shining", "It", "Misery"],
+        "J.R.R. Tolkien": ["The Hobbit", "LOTR: Fellowship", "Silmarillion"]
+      },
+      "amazonLinks": [
+        { "name": "Harry Potter Box Set", "url": "https://www.amazon.com/dp/0545044251?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Cities by Country",
+      "groups": {
+        "USA": ["New York", "Los Angeles", "Chicago"],
+        "Japan": ["Tokyo", "Osaka", "Kyoto"],
+        "France": ["Paris", "Lyon", "Marseille"],
+        "Brazil": ["Rio de Janeiro", "São Paulo", "Brasília"],
+        "Australia": ["Sydney", "Melbourne", "Brisbane"]
+      },
+      "amazonLinks": [
+        { "name": "Lonely Planet World Guide", "url": "https://www.amazon.com/dp/178657148X?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Sports Teams to Their City",
+      "groups": {
+        "New York": ["Yankees", "Knicks", "Giants"],
+        "Los Angeles": ["Dodgers", "Lakers", "Rams"],
+        "Chicago": ["Cubs", "Bulls", "Bears"],
+        "Boston": ["Red Sox", "Celtics", "Patriots"],
+        "Miami": ["Marlins", "Heat", "Dolphins"]
+      },
+      "amazonLinks": [
+        { "name": "NFL Fan Gear Assortment", "url": "https://www.amazon.com/dp/B08K3W5K7Y?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Elements by Group",
+      "groups": {
+        "Noble Gases": ["Helium", "Neon", "Argon"],
+        "Alkali Metals": ["Lithium", "Sodium", "Potassium"],
+        "Halogens": ["Fluorine", "Chlorine", "Bromine"],
+        "Transition Metals": ["Iron", "Copper", "Gold"],
+        "Alkaline Earth": ["Beryllium", "Magnesium", "Calcium"]
+      },
+      "amazonLinks": [
+        { "name": "NATIONAL GEOGRAPHIC Amazing Chemistry Set", "url": "https://www.amazon.com/dp/B093CPZYR8?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group TV Shows by Network",
+      "groups": {
+        "NBC": ["Friends", "The Office", "SNL"],
+        "HBO": ["Game of Thrones", "The Sopranos", "Westworld"],
+        "Netflix": ["Stranger Things", "The Crown", "Mindhunter"],
+        "ABC": ["Lost", "Grey's Anatomy", "Modern Family"],
+        "CBS": ["Big Bang Theory", "NCIS", "Survivor"]
+      },
+      "amazonLinks": [
+        { "name": "Friends: The Complete Series DVD", "url": "https://www.amazon.com/dp/B004K4FUEE?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Animals by Habitat",
+      "groups": {
+        "Desert": ["Camel", "Scorpion", "Lizard"],
+        "Ocean": ["Dolphin", "Shark", "Coral"],
+        "Forest": ["Bear", "Deer", "Owl"],
+        "Arctic": ["Polar Bear", "Seal", "Penguin"],
+        "Savanna": ["Lion", "Elephant", "Giraffe"]
+      },
+      "amazonLinks": [
+        { "name": "National Geographic Animal Encyclopedia", "url": "https://www.amazon.com/dp/1426310226?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Inventions to Their Inventor",
+      "groups": {
+        "Thomas Edison": ["Light Bulb", "Phonograph", "Motion Picture"],
+        "Alexander Bell": ["Telephone", "Hydrofoil", "Photophone"],
+        "Nikola Tesla": ["AC Motor", "Tesla Coil", "Radio"],
+        "Wright Brothers": ["Airplane", "Wind Tunnel", "Control System"],
+        "Gutenberg": ["Printing Press", "Movable Type", "Ink"]
+      },
+      "amazonLinks": [
+        { "name": "Inventions That Changed the World Book", "url": "https://www.amazon.com/dp/0756665310?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Characters by Game",
+      "groups": {
+        "Mario": ["Mario", "Luigi", "Peach"],
+        "Zelda": ["Link", "Zelda", "Ganon"],
+        "Pokémon": ["Pikachu", "Charizard", "Mewtwo"],
+        "Halo": ["Master Chief", "Cortana", "Arbiter"],
+        "Street Fighter": ["Ryu", "Chun-Li", "Bison"]
+      },
+      "amazonLinks": [
+        { "name": "Super Mario Odyssey - Nintendo Switch", "url": "https://www.amazon.com/dp/B01MY7SFKJ?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Foods by Cuisine",
+      "groups": {
+        "Italian": ["Pizza", "Pasta", "Tiramisu"],
+        "Mexican": ["Taco", "Enchilada", "Guacamole"],
+        "Chinese": ["Dumpling", "Fried Rice", "Spring Roll"],
+        "Indian": ["Curry", "Naan", "Samosa"],
+        "French": ["Croissant", "Ratatouille", "Crème Brûlée"]
+      },
+      "amazonLinks": [
+        { "name": "The Complete Cooking for Two Cookbook", "url": "https://www.amazon.com/dp/1936493837?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Movies by Lead Actor",
+      "groups": {
+        "Tom Hanks": ["Forrest Gump", "Cast Away", "Saving Private Ryan"],
+        "Leonardo DiCaprio": ["Titanic", "Inception", "The Revenant"],
+        "Brad Pitt": ["Fight Club", "Se7en", "Inglourious Basterds"],
+        "Robert Downey Jr.": ["Iron Man", "Sherlock Holmes", "The Avengers"],
+        "Denzel Washington": ["Training Day", "Malcolm X", "Fences"]
+      },
+      "amazonLinks": [
+        { "name": "Tom Hanks Collection DVD", "url": "https://www.amazon.com/dp/B07D4ZQN5K?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Movies by Lead Actress",
+      "groups": {
+        "Meryl Streep": ["The Devil Wears Prada", "Sophie's Choice", "Kramer vs. Kramer"],
+        "Sandra Bullock": ["The Blind Side", "Gravity", "Miss Congeniality"],
+        "Natalie Portman": ["Black Swan", "V for Vendetta", "Jackie"],
+        "Julia Roberts": ["Pretty Woman", "Erin Brockovich", "Notting Hill"],
+        "Anne Hathaway": ["The Dark Knight Rises", "Les Misérables", "The Intern"]
+      },
+      "amazonLinks": [
+        { "name": "Meryl Streep Collection DVD", "url": "https://www.amazon.com/dp/B07D4ZQJ5M?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Songs by Singer",
+      "groups": {
+        "Freddie Mercury": ["Bohemian Rhapsody", "Somebody to Love", "Don't Stop Me Now"],
+        "Whitney Houston": ["I Will Always Love You", "Greatest Love of All", "I Wanna Dance"],
+        "Elvis Presley": ["Jailhouse Rock", "Hound Dog", "Can't Help Falling in Love"],
+        "Lady Gaga": ["Bad Romance", "Poker Face", "Shallow"],
+        "Michael Jackson": ["Billie Jean", "Thriller", "Beat It"]
+      },
+      "amazonLinks": [
+        { "name": "Queen - Greatest Hits CD", "url": "https://www.amazon.com/dp/B000000OQF?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Athletes by Sport",
+      "groups": {
+        "Basketball": ["LeBron James", "Michael Jordan", "Kobe Bryant"],
+        "Soccer": ["Lionel Messi", "Cristiano Ronaldo", "Neymar"],
+        "Tennis": ["Roger Federer", "Rafael Nadal", "Novak Djokovic"],
+        "Football": ["Tom Brady", "Peyton Manning", "Patrick Mahomes"],
+        "Baseball": ["Babe Ruth", "Hank Aaron", "Derek Jeter"]
+      },
+      "amazonLinks": [
+        { "name": "NBA 2K23 - PlayStation 5", "url": "https://www.amazon.com/dp/B0B6JRVY2K?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Olympians by Sport",
+      "groups": {
+        "Swimming": ["Michael Phelps", "Katie Ledecky", "Caeleb Dressel"],
+        "Track and Field": ["Usain Bolt", "Jesse Owens", "Allyson Felix"],
+        "Gymnastics": ["Simone Biles", "Nadia Comaneci", "Aly Raisman"],
+        "Boxing": ["Muhammad Ali", "George Foreman", "Claressa Shields"],
+        "Basketball": ["Kevin Durant", "Diana Taurasi", "Lisa Leslie"]
+      },
+      "amazonLinks": [
+        { "name": "Olympic Games History Book", "url": "https://www.amazon.com/dp/1465475893?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Sports Movies by Sport",
+      "groups": {
+        "Boxing": ["Rocky", "Raging Bull", "Creed"],
+        "Basketball": ["Space Jam", "Hoosiers", "Coach Carter"],
+        "Baseball": ["Field of Dreams", "The Sandlot", "Moneyball"],
+        "Football": ["Remember the Titans", "The Blind Side", "Rudy"],
+        "Hockey": ["Miracle", "The Mighty Ducks", "Slap Shot"]
+      },
+      "amazonLinks": [
+        { "name": "Rocky: Heavyweight Collection Blu-ray", "url": "https://www.amazon.com/dp/B00HZM0RFS?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group TV Shows by Genre",
+      "groups": {
+        "Drama": ["Breaking Bad", "Mad Men", "The Wire"],
+        "Comedy": ["The Office", "Parks and Recreation", "Brooklyn Nine-Nine"],
+        "Sci-Fi": ["Stranger Things", "Black Mirror", "The Mandalorian"],
+        "Fantasy": ["Game of Thrones", "The Witcher", "His Dark Materials"],
+        "Crime": ["True Detective", "Fargo", "Sherlock"]
+      },
+      "amazonLinks": [
+        { "name": "Breaking Bad: The Complete Series", "url": "https://www.amazon.com/dp/B00G5SZ7J8?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Superheroes by Team",
+      "groups": {
+        "Avengers": ["Iron Man", "Captain America", "Thor"],
+        "Justice League": ["Batman", "Superman", "Wonder Woman"],
+        "X-Men": ["Wolverine", "Storm", "Cyclops"],
+        "Guardians of the Galaxy": ["Star-Lord", "Gamora", "Rocket"],
+        "Fantastic Four": ["Mr. Fantastic", "Invisible Woman", "Human Torch"]
+      },
+      "amazonLinks": [
+        { "name": "Marvel Avengers: Endgame Blu-ray", "url": "https://www.amazon.com/dp/B07RX2M2Z7?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Video Games by Franchise",
+      "groups": {
+        "Call of Duty": ["Modern Warfare", "Black Ops", "Warzone"],
+        "Assassin’s Creed": ["Origins", "Odyssey", "Valhalla"],
+        "Final Fantasy": ["VII", "XIV", "XV"],
+        "Grand Theft Auto": ["III", "Vice City", "V"],
+        "The Elder Scrolls": ["Morrowind", "Oblivion", "Skyrim"]
+      },
+      "amazonLinks": [
+        { "name": "Call of Duty: Modern Warfare - PS4", "url": "https://www.amazon.com/dp/B07SFZW76N?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Musicals by Composer",
+      "groups": {
+        "Andrew Lloyd Webber": ["Phantom of the Opera", "Cats", "Evita"],
+        "Stephen Sondheim": ["Sweeney Todd", "Into the Woods", "West Side Story"],
+        "Lin-Manuel Miranda": ["Hamilton", "In the Heights", "Encanto"],
+        "Rodgers and Hammerstein": ["The Sound of Music", "Oklahoma!", "South Pacific"],
+        "Claude-Michel Schönberg": ["Les Misérables", "Miss Saigon", "Martin Guerre"]
+      },
+      "amazonLinks": [
+        { "name": "Hamilton Original Broadway Cast Recording", "url": "https://www.amazon.com/dp/B013SKOFOK?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group NBA Teams by Conference",
+      "groups": {
+        "Eastern Atlantic": ["Celtics", "Nets", "Knicks"],
+        "Eastern Central": ["Bulls", "Cavaliers", "Pistons"],
+        "Eastern Southeast": ["Heat", "Hawks", "Hornets"],
+        "Western Northwest": ["Nuggets", "Timberwolves", "Thunder"],
+        "Western Pacific": ["Lakers", "Clippers", "Warriors"]
+      },
+      "amazonLinks": [
+        { "name": "NBA 2K23 - Xbox Series X", "url": "https://www.amazon.com/dp/B0B6JRZ1W2?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group NFL Teams by Division",
+      "groups": {
+        "NFC East": ["Cowboys", "Eagles", "Giants"],
+        "NFC North": ["Packers", "Bears", "Vikings"],
+        "NFC South": ["Saints", "Falcons", "Panthers"],
+        "AFC East": ["Patriots", "Bills", "Dolphins"],
+        "AFC West": ["Chiefs", "Broncos", "Raiders"]
+      },
+      "amazonLinks": [
+        { "name": "Madden NFL 23 - PS5", "url": "https://www.amazon.com/dp/B0B2V5JSLK?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group MLB Teams by League",
+      "groups": {
+        "AL East": ["Yankees", "Red Sox", "Orioles"],
+        "AL Central": ["Guardians", "Twins", "White Sox"],
+        "AL West": ["Astros", "Mariners", "Rangers"],
+        "NL East": ["Braves", "Mets", "Phillies"],
+        "NL West": ["Dodgers", "Giants", "Padres"]
+      },
+      "amazonLinks": [
+        { "name": "MLB The Show 23 - PS5", "url": "https://www.amazon.com/dp/B0BSN7R9QJ?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Soccer Teams by League",
+      "groups": {
+        "Premier League": ["Manchester City", "Liverpool", "Chelsea"],
+        "La Liga": ["Real Madrid", "Barcelona", "Atlético Madrid"],
+        "Serie A": ["Juventus", "AC Milan", "Inter Milan"],
+        "Bundesliga": ["Bayern Munich", "Borussia Dortmund", "RB Leipzig"],
+        "Ligue 1": ["PSG", "Monaco", "Lyon"]
+      },
+      "amazonLinks": [
+        { "name": "FIFA 23 - PS5", "url": "https://www.amazon.com/dp/B0B6JQZ6G6?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Animated Movies by Studio",
+      "groups": {
+        "Pixar": ["Toy Story", "Finding Nemo", "Inside Out"],
+        "Disney": ["The Lion King", "Frozen", "Moana"],
+        "DreamWorks": ["Shrek", "Kung Fu Panda", "How to Train Your Dragon"],
+        "Studio Ghibli": ["Spirited Away", "My Neighbor Totoro", "Princess Mononoke"],
+        "Illumination": ["Despicable Me", "The Secret Life of Pets", "Sing"]
+      },
+      "amazonLinks": [
+        { "name": "Pixar Movie Collection Blu-ray", "url": "https://www.amazon.com/dp/B07D4ZQJ5N?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Action Movies by Franchise",
+      "groups": {
+        "James Bond": ["Skyfall", "Casino Royale", "Goldfinger"],
+        "Mission: Impossible": ["Fallout", "Ghost Protocol", "Rogue Nation"],
+        "Fast & Furious": ["Furious 7", "Fast Five", "Tokyo Drift"],
+        "Die Hard": ["Die Hard", "Live Free or Die Hard", "With a Vengeance"],
+        "John Wick": ["John Wick", "Chapter 2", "Chapter 3 - Parabellum"]
+      },
+      "amazonLinks": [
+        { "name": "James Bond Collection Blu-ray", "url": "https://www.amazon.com/dp/B07H5VKMJL?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Horror Movies by Director",
+      "groups": {
+        "John Carpenter": ["Halloween", "The Thing", "They Live"],
+        "Wes Craven": ["Scream", "A Nightmare on Elm Street", "The Hills Have Eyes"],
+        "Jordan Peele": ["Get Out", "Us", "Nope"],
+        "Alfred Hitchcock": ["Psycho", "The Birds", "Rear Window"],
+        "James Wan": ["The Conjuring", "Insidious", "Saw"]
+      },
+      "amazonLinks": [
+        { "name": "Halloween Blu-ray", "url": "https://www.amazon.com/dp/B07G2D87C6?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Comedies by Actor",
+      "groups": {
+        "Will Ferrell": ["Anchorman", "Step Brothers", "Talladega Nights"],
+        "Melissa McCarthy": ["The Heat", "Bridesmaids", "Spy"],
+        "Adam Sandler": ["Happy Gilmore", "Billy Madison", "The Waterboy"],
+        "Tina Fey": ["Mean Girls", "30 Rock", "Date Night"],
+        "Kevin Hart": ["Ride Along", "Central Intelligence", "Jumanji"]
+      },
+      "amazonLinks": [
+        { "name": "Will Ferrell Collection DVD", "url": "https://www.amazon.com/dp/B07D4ZQJ5P?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Sci-Fi Movies by Theme",
+      "groups": {
+        "Space Exploration": ["Interstellar", "The Martian", "2001: A Space Odyssey"],
+        "Time Travel": ["Back to the Future", "Looper", "The Time Machine"],
+        "Dystopia": ["Blade Runner", "The Matrix", "Mad Max: Fury Road"],
+        "Alien Invasion": ["Independence Day", "Arrival", "War of the Worlds"],
+        "AI": ["Ex Machina", "Her", "Terminator"]
+      },
+      "amazonLinks": [
+        { "name": "Interstellar Blu-ray", "url": "https://www.amazon.com/dp/B00RHM4W9I?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Reality Shows by Type",
+      "groups": {
+        "Cooking": ["MasterChef", "Top Chef", "Hell’s Kitchen"],
+        "Survival": ["Survivor", "Alone", "Naked and Afraid"],
+        "Talent": ["American Idol", "The Voice", "America’s Got Talent"],
+        "Dating": ["The Bachelor", "Love Island", "90 Day Fiancé"],
+        "Home Renovation": ["Fixer Upper", "Property Brothers", "House Hunters"]
+      },
+      "amazonLinks": [
+        { "name": "MasterChef Cookbook", "url": "https://www.amazon.com/dp/162336146X?tag=tinyinfinity-20" }
+      ]
+    },
+    {
+      "title": "Group Board Games by Type",
+      "groups": {
+        "Strategy": ["Chess", "Settlers of Catan", "Risk"],
+        "Party": ["Cards Against Humanity", "Codenames", "Telestrations"],
+        "Trivia": ["Trivial Pursuit", "Jeopardy!", "Who Wants to Be a Millionaire"],
+        "Family": ["Monopoly", "Scrabble", "Clue"],
+        "Cooperative": ["Pandemic", "Forbidden Island", "Betrayal at House on the Hill"]
+      },
+      "amazonLinks": [
+        { "name": "Settlers of Catan Board Game", "url": "https://www.amazon.com/dp/B00U26V4VQ?tag=tinyinfinity-20" }
+      ]
+    }
+  ]
+}
