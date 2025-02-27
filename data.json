@@ -10,7 +10,10 @@
         "Scorsese": ["Goodfellas", "Raging Bull", "Casino"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Movies", "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -23,7 +26,10 @@
         "Jackson": ["Thriller", "Beat It", "Bad"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Music", "url": "https://www.amazon.com/Best-Sellers-Music/zgbs/music?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Music",
+          "url": "https://www.amazon.com/Best-Sellers-Music/zgbs/music?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -36,7 +42,10 @@
         "Radiohead": ["OK Computer", "Kid A", "The Bends"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Vinyl Records", "url": "https://www.amazon.com/Best-Sellers-Vinyl-Records/zgbs/music/2237492011?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Vinyl Records",
+          "url": "https://www.amazon.com/Best-Sellers-Vinyl-Records/zgbs/music/2237492011?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -46,10 +55,13 @@
         "1970s": ["Watergate", "Disco Fever", "Oil Crisis"],
         "1980s": ["Berlin Wall", "Chernobyl", "MTV Launch"],
         "1990s": ["Gulf War", "Y2K Scare", "OJ Trial"],
-        "2000s": ["9/11", "iPhone Debut", "Katrina"]
+        "2000s": ["9/11", "iPhone Debut", "Hurricane Katrina"]
       },
       "amazonLinks": [
-        { "name": "Best Selling History Books", "url": "https://www.amazon.com/Best-Sellers-History-Books/zgbs/books/9?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling History Books",
+          "url": "https://www.amazon.com/Best-Sellers-History-Books/zgbs/books/9?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -62,7 +74,10 @@
         "Michelangelo": ["Sistine Chapel", "David", "Pietà"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Art Books", "url": "https://www.amazon.com/Best-Sellers-Art-Books/zgbs/books/1?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Art Books",
+          "url": "https://www.amazon.com/Best-Sellers-Art-Books/zgbs/books/1?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -75,7 +90,10 @@
         "Tolkien": ["Hobbit", "Fellowship", "Two Towers"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Literature", "url": "https://www.amazon.com/Best-Sellers-Literature-Fiction-Books/zgbs/books/17?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Literature",
+          "url": "https://www.amazon.com/Best-Sellers-Literature-Fiction-Books/zgbs/books/17?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -88,7 +106,10 @@
         "Australia": ["Sydney", "Melbourne", "Perth"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Travel Guides", "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -101,7 +122,10 @@
         "Miami": ["Marlins", "Heat", "Dolphins"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Sports Fan Gear", "url": "https://www.amazon.com/Best-Sellers-Sports-Fan-Shop/zgbs/sporting-goods/325616011?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Sports Fan Gear",
+          "url": "https://www.amazon.com/Best-Sellers-Sports-Fan-Shop/zgbs/sporting-goods/325616011?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -114,33 +138,10 @@
         "Alkaline Earth": ["Beryllium", "Magnesium", "Calcium"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Science Kits", "url": "https://www.amazon.com/Best-Sellers-Toys-Games-Science-Kits-Toys/zgbs/toys-and-games/166093011?tag=tinyinfinity-20" }
-      ]
-    },
-    {
-      "title": "Group TV Shows by Network",
-      "groups": {
-        "NBC": ["Friends", "The Office", "Seinfeld"],
-        "HBO": ["Thrones", "Sopranos", "Westworld"],
-        "Netflix": ["Stranger Things", "The Crown", "Ozark"],
-        "ABC": ["Lost", "Grey’s", "Modern Family"],
-        "CBS": ["Big Bang", "NCIS", "CSI"]
-      },
-      "amazonLinks": [
-        { "name": "Best Selling TV Shows", "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20" }
-      ]
-    },
-    {
-      "title": "Group Animals by Habitat",
-      "groups": {
-        "Desert": ["Camel", "Scorpion", "Lizard"],
-        "Ocean": ["Dolphin", "Shark", "Whale"],
-        "Forest": ["Bear", "Deer", "Fox"],
-        "Arctic": ["Polar Bear", "Seal", "Walrus"],
-        "Savanna": ["Lion", "Elephant", "Giraffe"]
-      },
-      "amazonLinks": [
-        { "name": "Best Selling Animal Books", "url": "https://www.amazon.com/Best-Sellers-Animal-Books/zgbs/books/13474?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Science Kits",
+          "url": "https://www.amazon.com/Best-Sellers-Toys-Games-Science-Kits-Toys/zgbs/toys-and-games/166093011?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -150,10 +151,13 @@
         "Bell": ["Telephone", "Hydrofoil", "Metal Detector"],
         "Tesla": ["AC Motor", "Tesla Coil", "Radio"],
         "Wright": ["Airplane", "Glider", "Wind Tunnel"],
-        "Gutenberg": ["Printing Press", "Type", "Ink"]
+        "Gutenberg": ["Printing Press", "Type", "Oil-Based Ink"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Science History Books", "url": "https://www.amazon.com/Best-Sellers-Science-History-Philosophy-Books/zgbs/books/922170?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Science History Books",
+          "url": "https://www.amazon.com/Best-Sellers-Science-History-Philosophy-Books/zgbs/books/922170?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -166,7 +170,10 @@
         "Street Fighter": ["Ryu", "Chun-Li", "Ken"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Video Games", "url": "https://www.amazon.com/Best-Sellers-Video-Games/zgbs/videogames?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Video Games",
+          "url": "https://www.amazon.com/Best-Sellers-Video-Games/zgbs/videogames?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -179,7 +186,10 @@
         "French": ["Croissant", "Baguette", "Escargot"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Cookbooks", "url": "https://www.amazon.com/Best-Sellers-Cookbooks-Food-Wine/zgbs/books/6?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Cookbooks",
+          "url": "https://www.amazon.com/Best-Sellers-Cookbooks-Food-Wine/zgbs/books/6?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -192,7 +202,10 @@
         "Washington": ["Training Day", "Glory", "Fences"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Movies", "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -205,7 +218,10 @@
         "Hathaway": ["Princess Diaries", "Les Mis", "Intern"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Movies", "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -218,7 +234,10 @@
         "Jackson": ["Thriller", "Beat It", "P.Y.T."]
       },
       "amazonLinks": [
-        { "name": "Best Selling Music", "url": "https://www.amazon.com/Best-Sellers-Music/zgbs/music?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Music",
+          "url": "https://www.amazon.com/Best-Sellers-Music/zgbs/music?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -231,7 +250,10 @@
         "Baseball": ["Ruth", "Bonds", "Jeter"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Sports Memorabilia", "url": "https://www.amazon.com/Best-Sellers-Sports-Collectibles/zgbs/sporting-goods/325614011?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Sports Memorabilia",
+          "url": "https://www.amazon.com/Best-Sellers-Sports-Collectibles/zgbs/sporting-goods/325614011?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -244,7 +266,10 @@
         "Basketball": ["Durant", "Bird", "Taurasi"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Sports Books", "url": "https://www.amazon.com/Best-Sellers-Sports-Outdoors-Books/zgbs/books/26?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Sports Books",
+          "url": "https://www.amazon.com/Best-Sellers-Sports-Outdoors-Books/zgbs/books/26?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -257,137 +282,26 @@
         "Hockey": ["Miracle", "Mighty Ducks", "Slap Shot"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Movies", "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20" }
-      ]
-    },
-    {
-      "title": "Group TV Shows by Genre",
-      "groups": {
-        "Drama": ["Breaking Bad", "Mad Men", "Wire"],
-        "Comedy": ["The Office", "Parks and Rec", "Seinfeld"],
-        "Sci-Fi": ["Stranger Things", "Black Mirror", "Expanse"],
-        "Fantasy": ["Thrones", "Witcher", "Dark Materials"],
-        "Crime": ["True Detective", "Fargo", "Sherlock"]
-      },
-      "amazonLinks": [
-        { "name": "Best Selling TV Shows", "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20" }
-      ]
-    },
-    {
-      "title": "Group Superheroes by Team",
-      "groups": {
-        "Avengers": ["Iron Man", "Cap", "Thor"],
-        "Justice League": ["Batman", "Superman", "Wonder Woman"],
-        "X-Men": ["Wolverine", "Storm", "Cyclops"],
-        "Guardians": ["Star-Lord", "Gamora", "Rocket"],
-        "Fantastic Four": ["Mr. Fantastic", "Invisible Woman", "Torch"]
-      },
-      "amazonLinks": [
-        { "name": "Best Selling Comic Books", "url": "https://www.amazon.com/Best-Sellers-Comics-Graphic-Novels/zgbs/books/4366?tag=tinyinfinity-20" }
-      ]
-    },
-    {
-      "title": "Group Video Games by Franchise",
-      "groups": {
-        "Call of Duty": ["Modern Warfare", "Black Ops", "Ghosts"],
-        "Assassin’s Creed": ["Origins", "Odyssey", "Unity"],
-        "Final Fantasy": ["VII", "XIV", "XV"],
-        "GTA": ["III", "Vice City", "V"],
-        "Elder Scrolls": ["Morrowind", "Oblivion", "Skyrim"]
-      },
-      "amazonLinks": [
-        { "name": "Best Selling Video Games", "url": "https://www.amazon.com/Best-Sellers-Video-Games/zgbs/videogames?tag=tinyinfinity-20" }
-      ]
-    },
-    {
-      "title": "Group Musicals by Composer",
-      "groups": {
-        "Webber": ["Phantom", "Cats", "Evita"],
-        "Sondheim": ["Sweeney Todd", "Into the Woods", "Company"],
-        "Miranda": ["Hamilton", "In the Heights", "Moana"],
-        "Rodgers": ["Sound of Music", "Oklahoma!", "Carousel"],
-        "Schönberg": ["Les Mis", "Miss Saigon", "Pirate Queen"]
-      },
-      "amazonLinks": [
-        { "name": "Best Selling Soundtracks", "url": "https://www.amazon.com/Best-Sellers-Music-Soundtracks/zgbs/music/33?tag=tinyinfinity-20" }
-      ]
-    },
-    {
-      "title": "Group NBA Teams by Conference",
-      "groups": {
-        "Eastern Atlantic": ["Celtics", "Nets", "Knicks"],
-        "Eastern Central": ["Bulls", "Cavs", "Pistons"],
-        "Eastern Southeast": ["Heat", "Hawks", "Hornets"],
-        "Western Northwest": ["Nuggets", "Wolves", "Thunder"],
-        "Western Pacific": ["Lakers", "Clippers", "Warriors"]
-      },
-      "amazonLinks": [
-        { "name": "Best Selling Sports Fan Gear", "url": "https://www.amazon.com/Best-Sellers-Sports-Fan-Shop/zgbs/sporting-goods/325616011?tag=tinyinfinity-20" }
-      ]
-    },
-    {
-      "title": "Group NFL Teams by Division",
-      "groups": {
-        "NFC East": ["Cowboys", "Eagles", "Giants"],
-        "NFC North": ["Packers", "Bears", "Vikings"],
-        "NFC South": ["Saints", "Falcons", "Bucs"],
-        "AFC East": ["Patriots", "Bills", "Jets"],
-        "AFC West": ["Chiefs", "Broncos", "Chargers"]
-      },
-      "amazonLinks": [
-        { "name": "Best Selling Sports Fan Gear", "url": "https://www.amazon.com/Best-Sellers-Sports-Fan-Shop/zgbs/sporting-goods/325616011?tag=tinyinfinity-20" }
-      ]
-    },
-    {
-      "title": "Group MLB Teams by League",
-      "groups": {
-        "AL East": ["Yankees", "Red Sox", "Rays"],
-        "AL Central": ["Guardians", "Twins", "Tigers"],
-        "AL West": ["Astros", "Mariners", "Angels"],
-        "NL East": ["Braves", "Mets", "Phils"],
-        "NL West": ["Dodgers", "Giants", "Pads"]
-      },
-      "amazonLinks": [
-        { "name": "Best Selling Sports Fan Gear", "url": "https://www.amazon.com/Best-Sellers-Sports-Fan-Shop/zgbs/sporting-goods/325616011?tag=tinyinfinity-20" }
-      ]
-    },
-    {
-      "title": "Group Soccer Teams by League",
-      "groups": {
-        "Premier": ["Man City", "Liverpool", "Chelsea"],
-        "La Liga": ["Real Madrid", "Barça", "Atlético"],
-        "Serie A": ["Juventus", "AC Milan", "Inter"],
-        "Bundesliga": ["Bayern", "Dortmund", "Leipzig"],
-        "Ligue 1": ["PSG", "Monaco", "Lyon"]
-      },
-      "amazonLinks": [
-        { "name": "Best Selling Sports Fan Gear", "url": "https://www.amazon.com/Best-Sellers-Sports-Fan-Shop/zgbs/sporting-goods/325616011?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
       ]
     },
     {
       "title": "Group Animated Movies by Studio",
       "groups": {
-        "Pixar": ["Toy Story", "Nemo", "Up"],
+        "Pixar": ["Toy Story", "Finding Nemo", "Inside Out"],
         "Disney": ["Lion King", "Frozen", "Aladdin"],
         "DreamWorks": ["Shrek", "Kung Fu Panda", "Madagascar"],
         "Ghibli": ["Spirited Away", "Totoro", "Howl"],
         "Illumination": ["Minions", "Pets", "Sing"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Movies", "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20" }
-      ]
-    },
-    {
-      "title": "Sci-Fi Movies by Director",
-      "groups": {
-        "Christopher Nolan": ["Inception", "Interstellar", "Tenet"],
-        "James Cameron": ["Avatar", "Aliens", "Terminator 2"],
-        "Ridley Scott": ["Blade Runner", "Alien", "The Martian"],
-        "Steven Spielberg": ["Jurassic Park", "Minority Report", "E.T."],
-        "Denis Villeneuve": ["Dune", "Arrival", "Blade Runner 2049"]
-      },
-      "amazonLinks": [
-        { "name": "Best Sci-Fi Movies", "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Science-Fiction/zgbs/movies-tv/2959103011?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -400,9 +314,12 @@
         "DC": ["Wonder Woman", "The Dark Knight", "Man of Steel"]
       },
       "amazonLinks": [
-        { "name": "Best Fantasy Movies", "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Fantasy/zgbs/movies-tv/2959119011?tag=tinyinfinity-20" }
+        {
+          "name": "Best Fantasy Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Fantasy/zgbs/movies-tv/2959119011?tag=tinyinfinity-20"
+        }
       ]
-    },    
+    },
     {
       "title": "Group Horror Movies by Director",
       "groups": {
@@ -413,7 +330,10 @@
         "Wan": ["Conjuring", "Insidious", "Saw"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Movies", "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -426,7 +346,10 @@
         "Sony Animation": ["Spider-Verse", "Cloudy with a Chance of Meatballs", "Mitchells vs. The Machines"]
       },
       "amazonLinks": [
-        { "name": "Best Animated Movies", "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Animation/zgbs/movies-tv/2958933011?tag=tinyinfinity-20" }
+        {
+          "name": "Best Animated Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Animation/zgbs/movies-tv/2958933011?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -439,7 +362,10 @@
         "Hart": ["Ride Along", "Jumanji", "Get Hard"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Movies", "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -452,7 +378,10 @@
         "AI": ["Ex Machina", "Her", "Terminator"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Movies", "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -465,7 +394,10 @@
         "Reno": ["Fixer Upper", "Property Bros", "Flip or Flop"]
       },
       "amazonLinks": [
-        { "name": "Best Selling TV Shows", "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling TV Shows",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
       ]
     },
     {
@@ -478,7 +410,138 @@
         "Co-op": ["Pandemic", "Forbidden Island", "Betrayal"]
       },
       "amazonLinks": [
-        { "name": "Best Selling Board Games", "url": "https://www.amazon.com/Best-Sellers-Toys-Games-Board-Games/zgbs/toys-and-games/166225011?tag=tinyinfinity-20" }
+        {
+          "name": "Best Selling Board Games",
+          "url": "https://www.amazon.com/Best-Sellers-Toys-Games-Board-Games/zgbs/toys-and-games/166225011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Actors/Actresses by Movies",
+      "groups": {
+        "DiCaprio": ["Titanic", "Inception", "The Revenant"],
+        "Streep": ["The Devil Wears Prada", "Mamma Mia", "The Iron Lady"],
+        "Pitt": ["Fight Club", "Seven", "Ocean's Eleven"],
+        "Bullock": ["Miss Congeniality", "The Blind Side", "While You Were Sleeping"],
+        "Washington": ["Training Day", "Malcolm X", "Fences"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Songs by Bands",
+      "groups": {
+        "Queen": ["Bohemian Rhapsody", "We Will Rock You", "Don't Stop Me Now"],
+        "The Beatles": ["Hey Jude", "Let It Be", "Come Together"],
+        "Rolling Stones": ["Satisfaction", "Paint It Black", "Gimme Shelter"],
+        "Nirvana": ["Smells Like Teen Spirit", "Come As You Are", "Lithium"],
+        "Coldplay": ["Yellow", "Fix You", "Viva la Vida"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Music",
+          "url": "https://www.amazon.com/Best-Sellers-Music/zgbs/music?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Attractions by Country",
+      "groups": {
+        "USA": ["Statue of Liberty", "Grand Canyon", "Yellowstone"],
+        "France": ["Eiffel Tower", "Louvre", "Mont Saint-Michel"],
+        "Italy": ["Colosseum", "Venice Canals", "Leaning Tower of Pisa"],
+        "UK": ["Big Ben", "London Eye", "Tower of London"],
+        "Egypt": ["Pyramids of Giza", "Sphinx", "Karnak Temple"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Tourist Attractions",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Characters by T.V. Show",
+      "groups": {
+        "Friends": ["Rachel", "Ross", "Monica", "Chandler", "Joey", "Phoebe"],
+        "The Simpsons": ["Homer", "Marge", "Bart", "Lisa", "Maggie"],
+        "Game of Thrones": ["Jon Snow", "Daenerys", "Tyrion", "Cersei", "Arya"],
+        "Breaking Bad": ["Walter White", "Jesse Pinkman", "Saul Goodman"],
+        "Stranger Things": ["Eleven", "Mike", "Dustin", "Lucas", "Will"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling TV Shows",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Cities by Country (Alternate)",
+      "groups": {
+        "UK": ["London", "Manchester", "Birmingham"],
+        "Germany": ["Berlin", "Munich", "Frankfurt"],
+        "Canada": ["Toronto", "Vancouver", "Montreal"],
+        "India": ["Mumbai", "Delhi", "Bangalore"],
+        "China": ["Beijing", "Shanghai", "Shenzhen"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Attractions by Country (Alternate)",
+      "groups": {
+        "UK": ["Buckingham Palace", "Stonehenge", "Edinburgh Castle"],
+        "Germany": ["Brandenburg Gate", "Neuschwanstein", "Cologne Cathedral"],
+        "India": ["Taj Mahal", "Red Fort", "Qutub Minar"],
+        "China": ["Great Wall", "Forbidden City", "Terracotta Army"],
+        "Australia": ["Sydney Opera House", "Uluru", "Great Barrier Reef"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Tourist Attractions",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Books by Author (Alternate)",
+      "groups": {
+        "King": ["The Shining", "It", "Misery"],
+        "Agatha Christie": ["Murder on the Orient Express", "And Then There Were None", "Death on the Nile"],
+        "Tolkien": ["The Hobbit", "The Lord of the Rings", "The Silmarillion"],
+        "Rowling": ["Harry Potter and the Sorcerer's Stone", "Harry Potter and the Chamber of Secrets", "Harry Potter and the Prisoner of Azkaban"],
+        "Martin": ["A Game of Thrones", "A Clash of Kings", "A Storm of Swords"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Literature",
+          "url": "https://www.amazon.com/Best-Sellers-Literature-Fiction-Books/zgbs/books/17?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Historical Events by Decade (Alternate)",
+      "groups": {
+        "1950s": ["Korean War", "Sputnik", "Rosa Parks"],
+        "1960s": ["Civil Rights Act", "Assassination of JFK", "Summer of Love"],
+        "1970s": ["Vietnam War Ends", "Watergate Scandal", "Rise of Punk"],
+        "1980s": ["Fall of Berlin Wall", "AIDS Crisis", "Chernobyl Disaster"],
+        "1990s": ["Dissolution of USSR", "Rise of Internet", "Euro Introduced"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling History Books",
+          "url": "https://www.amazon.com/Best-Sellers-History-Books/zgbs/books/9?tag=tinyinfinity-20"
+        }
       ]
     }
   ]
