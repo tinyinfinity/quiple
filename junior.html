@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiple - Daily Trivia Game</title>
+  <title>Quiple Junior - Daily Trivia Game</title>
   <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
   <style>
-    /* Your existing styles remain unchanged */
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: "Arial", sans-serif; background-color: #f5f5f5; color: #333; line-height: 1.6; text-align: center; padding-bottom: 80px; }
     #quiple-title { font-family: "Bungee Shade", cursive; font-size: 2.75rem; margin: 20px 0; color: #ff4500; cursor: pointer; }
@@ -75,7 +74,7 @@
   </style>
 </head>
 <body>
-  <h1 id="quiple-title">Quiple Sci</h1>
+  <h1 id="quiple-title">Quiple Junior</h1>
   <div class="game-container">
     <h2 id="game-title">Daily Match Game</h2>
     <p id="score-info">
@@ -128,11 +127,12 @@
       e.preventDefault();
     });
 
-    const iskidsPage = window.location.pathname.includes("kids.html");
-    const streakKey = iskidsPage ? "kidsStreak" : "mainStreak";
-    const lastResetKey = iskidsPage ? "kidsLastReset" : "mainLastReset";
-    const lastStreakDayKey = iskidsPage ? "kidsLastStreakDay" : "mainLastStreakDay";
-    const gameStateKey = iskidsPage ? "kidsGameState" : "mainGameState";
+    const isSciencePage = window.location.pathname.includes("science.html");
+    const isJuniorPage = window.location.pathname.includes("junior.html");
+    const streakKey = isSciencePage ? "scienceStreak" : isJuniorPage ? "juniorStreak" : "mainStreak";
+    const lastResetKey = isSciencePage ? "scienceLastReset" : isJuniorPage ? "juniorLastReset" : "mainLastReset";
+    const lastStreakDayKey = isSciencePage ? "scienceLastStreakDay" : isJuniorPage ? "juniorLastStreakDay" : "mainLastStreakDay";
+    const gameStateKey = isSciencePage ? "scienceGameState" : isJuniorPage ? "juniorGameState" : "mainGameState";
 
     let streak = parseInt(localStorage.getItem(streakKey)) || 0;
     let selectedCells = [];
@@ -262,10 +262,14 @@
       console.log("Entering loadDailyGame");
       try {
         const dailyDateString = getDailyDateString();
-        const files = iskidsPage ? ["kids.json", "kids2.json"] : ["data.json", "data2.json"];
+        const isSciencePage = window.location.pathname.includes("science.html");
+        const isJuniorPage = window.location.pathname.includes("junior.html");
+        const files = isSciencePage ? ["science.json"] : isJuniorPage ? ["junior.json", "junior2.json"] : ["data.json", "data2.json"];
         const dailyFile = getDailyFile(files);
-        const url = `${dailyFile}?date=${dailyDateString}`;
-        const response = await fetch(url);
+        const url = `${dailyFile}?date=${dailyDateString}&page=junior`;
+        const response = await fetch(url, {
+          cache: "no-store"
+        });
         console.log("Fetch response status:", response.status, "URL:", url);
         if (!response.ok) {
           throw new Error(`Failed to fetch ${dailyFile} (Status: ${response.status})`);
