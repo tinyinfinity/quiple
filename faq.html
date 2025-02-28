@@ -56,6 +56,18 @@
     .faq-question::after { content: " +"; float: right; font-size: 1.2rem; }
     .faq-question.active::after { content: " -"; }
 
+    /* Style for QuipleSci and QuipleJr links within FAQ text */
+    .faq-answer a[href="quiplesci.html"],
+    .faq-answer a[href="quiplejr.html"] {
+      font-weight: bold;
+      color: #ff4500;
+      text-decoration: none;
+    }
+    .faq-answer a[href="quiplesci.html"]:hover,
+    .faq-answer a[href="quiplejr.html"]:hover {
+      color: #3457D5;
+    }
+
     /* Back to Game Button */
     .back-button {
       display: inline-block;
