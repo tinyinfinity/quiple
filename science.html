@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiple - Daily Trivia Game</title>
+  <title>Quiple - Daily Science Trivia</title>
   <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
   <style>
     /* Your existing styles remain unchanged */
@@ -31,15 +31,15 @@
     .answer-group:last-child { border-bottom: none; }
     .answer-group-name { font-weight: 600; width: 35%; text-align: left; }
     .answer-group-items { width: 65%; text-align: left; white-space: normal; }
-    .amazon-btn { display: block; background-color: #ff8c00; color: #fff; text-decoration: none; padding: 12px; border-radius: 8px; font-size: 0.95rem; transition: background-color 0.2s ease; margin: 15px auto; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    .amazon-btn:hover { background-color: #e07b00; }
+    .sponsor-btn { display: block; background-color: #ff8c00; color: #fff; padding: 12px; border-radius: 8px; font-size: 0.95rem; transition: background-color 0.2s ease; margin: 15px auto; max-width: 100%; border: none; cursor: pointer; }
+    .sponsor-btn:hover { background-color: #e07b00; }
     #exit-btn { background-color: #ddd; border: none; padding: 10px 20px; border-radius: 8px; font-size: 1rem; cursor: pointer; transition: background-color 0.2s ease; width: 100%; max-width: 200px; }
     #exit-btn:hover { background-color: #ccc; }
     #coffee-container { margin: 20px auto; font-size: 0.95rem; color: #666; max-width: 480px; width: 90%; }
-    #coffee-container a { color: #ff8c00; text-decoration: none; }
+    #coffee-container a { color: #ff4500; text-decoration: none; }
     #coffee-container a:hover { text-decoration: underline; }
     #site-footer { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; border-top: 1px solid #ddd; padding: 10px; text-align: center; font-size: 0.85rem; color: #666; z-index: 1500; }
-    #site-footer a { color: #ff8c00; text-decoration: none; }
+    #site-footer a { color: #ff4500; text-decoration: none; }
     #site-footer a:hover { text-decoration: underline; }
     #info-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 2500; align-items: center; justify-content: center; }
     #info-container { background: #fff; padding: 20px; border-radius: 12px; width: 90%; max-width: 400px; max-height: 80vh; overflow-y: auto; box-shadow: 0 4px 16px rgba(0,0,0,0.2); }
@@ -52,7 +52,7 @@
     #contact-container h2 { font-size: 1.5rem; margin-bottom: 15px; color: #1a1a1a; text-align: center; }
     #contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
     #contact-form textarea { resize: vertical; height: 100px; }
-    #contact-form button { display: block; width: 100%; padding: 10px; border: none; background-color: #ff8c00; color: #fff; font-size: 1rem; border-radius: 8px; cursor: pointer; transition: background-color 0.2s ease; margin: 10px auto; }
+    #contact-form button { display: block; width: 100%; padding: 10px; border: none; background-color: #ff4500; color: #fff; font-size: 1rem; border-radius: 8px; cursor: pointer; transition: background-color 0.2s ease; margin: 10px auto; }
     #contact-form button:hover { background-color: #e07b00; }
     #contact-close-btn { display: block; width: 100%; padding: 10px; border: none; background-color: #ddd; color: #333; font-size: 1rem; border-radius: 8px; cursor: pointer; transition: background-color 0.2s ease; margin: 10px auto; }
     #contact-close-btn:hover { background-color: #ccc; }
@@ -65,7 +65,7 @@
       #result-title { font-size: 1.5rem; }
       #correct-answers { font-size: 0.8rem; }
       .answer-group { padding: 6px; }
-      .amazon-btn { font-size: 0.9rem; padding: 10px; }
+      .sponsor-btn { font-size: 0.9rem; padding: 10px; }
       #exit-btn { font-size: 0.9rem; padding: 8px 15px; }
       #info-container { padding: 15px; }
       #info-container h2 { font-size: 1.25rem; }
@@ -93,7 +93,7 @@
       <div id="score-container">
         <p id="final-message"></p>
         <div id="correct-answers"></div>
-        <a id="amazon-link" target="_blank" class="amazon-btn"></a>
+        <button id="sponsor-btn" class="sponsor-btn">Become A Sponsor</button>
         <button id="exit-btn">Exit</button>
       </div>
     </div>
@@ -149,8 +149,7 @@
         "Animals": ["Dog", "Cat", "Bird"],
         "Cities": ["Paris", "Tokyo", "New York"],
         "Planets": ["Earth", "Mars", "Venus"]
-      },
-      amazonLinks: [{ name: "Sample Product", url: "https://amazon.com" }]
+      }
     };
 
     document.addEventListener("DOMContentLoaded", async () => {
@@ -262,7 +261,7 @@
       console.log("Entering loadDailyGame");
       try {
         const dailyDateString = getDailyDateString();
-        const files = isSciencePage ? ["science.json", "science2.json"] : ["data.json", "data2.json"];
+        const files = ["science.json", "science2.json"];
         const dailyFile = getDailyFile(files);
         const url = `${dailyFile}?date=${dailyDateString}`;
         const response = await fetch(url);
@@ -433,8 +432,9 @@
       const resultTitle = document.getElementById("result-title");
       const finalMessage = document.getElementById("final-message");
       const correctAnswers = document.getElementById("correct-answers");
-      const amazonLink = document.getElementById("amazon-link");
+      const sponsorBtn = document.getElementById("sponsor-btn");
       const exitBtn = document.getElementById("exit-btn");
+      const contactOverlay = document.getElementById("contact-overlay");
       const todaySeed = getDailySeed();
       const lastStreakDay = localStorage.getItem(lastStreakDayKey);
 
@@ -469,10 +469,12 @@
         `;
       }
 
-      const amazonLinks = currentGame.amazonLinks || [];
-      let randomItem = amazonLinks.length > 0 ? amazonLinks[Math.floor(Math.random() * amazonLinks.length)] : { name: "Explore More", url: "https://amazon.com" };
-      amazonLink.href = randomItem.url;
-      amazonLink.textContent = `Find ${randomItem.name}`;
+      sponsorBtn.textContent = "Become A Sponsor";
+      sponsorBtn.onclick = () => {
+        console.log("Sponsor button clicked, hiding final overlay, showing contact overlay");
+        finalOverlay.style.display = "none";
+        contactOverlay.style.display = "flex";
+      };
 
       console.log("Setting final-overlay display to flex");
       finalOverlay.style.display = "flex";
