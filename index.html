@@ -264,7 +264,7 @@
         const dailyDateString = getDailyDateString();
         const isSciencePage = window.location.pathname.includes("science.html");
         const isJuniorPage = window.location.pathname.includes("junior.html");
-        const files = isSciencePage ? ["science.json"] : isJuniorPage ? ["junior.json", "junior2.json"] : ["data.json", "data2.json"];
+        const files = isSciencePage ? ["science.json", "science2.json"] : isJuniorPage ? ["kids.json", "kids2.json"] : ["data.json", "data2.json", "data3.json"];
         const dailyFile = getDailyFile(files);
         const url = `${dailyFile}?date=${dailyDateString}&page=main`;
         const response = await fetch(url, {
