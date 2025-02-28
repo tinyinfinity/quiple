@@ -60,7 +60,7 @@
       "groups": {
         "Cell Organelles": ["Mitochondria", "Ribosome", "Golgi Apparatus"],
         "Genetic Material": ["DNA", "RNA", "Chromosome"],
-        "Photosynthesis Stages": ["Light Reaction", "Calvin Cycle", "Electron Transport Chain"],
+        "Photosynthesis Stages": ["Light Reaction", "Calvin Cycle", "E.T.C."],
         "Types of Muscle Tissue": ["Skeletal", "Cardiac", "Smooth"],
         "Human Body Systems": ["Circulatory", "Respiratory", "Nervous"]
       },
