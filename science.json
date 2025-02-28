@@ -1,0 +1,136 @@
+{
+  "games": [
+    {
+      "title": "Group Elements by Type",
+      "groups": {
+        "Noble Gases": ["Helium", "Neon", "Argon"],
+        "Alkali Metals": ["Lithium", "Sodium", "Potassium"],
+        "Transition Metals": ["Iron", "Copper", "Zinc"],
+        "Halogens": ["Fluorine", "Chlorine", "Iodine"],
+        "Lanthanides": ["Lanthanum", "Cerium", "Neodymium"]
+      },
+      "amazonLinks": []
+    },
+    {
+      "title": "Group Blood Pressure Medications",
+      "groups": {
+        "ACE Inhibitors": ["Lisinopril", "Enalapril", "Ramipril"],
+        "Beta-Blockers": ["Metoprolol", "Propranolol", "Atenolol"],
+        "Calcium Channel Blockers": ["Amlodipine", "Diltiazem", "Verapamil"],
+        "Diuretics": ["Hydrochlorothiazide", "Furosemide", "Spironolactone"],
+        "ARBs": ["Losartan", "Valsartan", "Irbesartan"]
+      },
+      "amazonLinks": []
+    },
+    {
+      "title": "Group Cancer Types",
+      "groups": {
+        "Carcinomas": ["Breast Cancer", "Lung Cancer", "Prostate Cancer"],
+        "Sarcomas": ["Osteosarcoma", "Leiomyosarcoma", "Liposarcoma"],
+        "Leukemias": ["Acute Lymphoblastic Leukemia", "Chronic Myeloid Leukemia", "Acute Myeloid Leukemia"],
+        "Lymphomas": ["Hodgkin's Lymphoma", "Non-Hodgkin's Lymphoma", "Burkitt's Lymphoma"],
+        "Myelomas": ["Multiple Myeloma", "Plasmacytoma", "Light Chain Myeloma"]
+      },
+      "amazonLinks": []
+    },
+    {
+      "title": "Group Antimicrobials",
+      "groups": {
+        "Penicillins": ["Amoxicillin", "Penicillin G", "Piperacillin"],
+        "Cephalosporins": ["Ceftriaxone", "Cefuroxime", "Cephalexin"],
+        "Macrolides": ["Azithromycin", "Clarithromycin", "Erythromycin"],
+        "Fluoroquinolones": ["Ciprofloxacin", "Levofloxacin", "Moxifloxacin"],
+        "Tetracyclines": ["Doxycycline", "Minocycline", "Tetracycline"]
+      },
+      "amazonLinks": []
+    },
+    {
+      "title": "Group Endocrine Disorders",
+      "groups": {
+        "Pituitary Disorders": ["Acromegaly", "Cushing's Disease", "Diabetes Insipidus"],
+        "Thyroid Disorders": ["Hyperthyroidism", "Hypothyroidism", "Hashimoto's Thyroiditis"],
+        "Adrenal Disorders": ["Addison's Disease", "Cushing's Syndrome", "Pheochromocytoma"],
+        "Pancreatic Disorders": ["Type 1 Diabetes", "Type 2 Diabetes", "Insulinoma"],
+        "Parathyroid Disorders": ["Hyperparathyroidism", "Hypoparathyroidism", "Parathyroid Adenoma"]
+      },
+      "amazonLinks": []
+    },
+    {
+      "title": "Group General Chemistry Topics",
+      "groups": {
+        "Acids": ["Hydrochloric Acid", "Sulfuric Acid", "Nitric Acid"],
+        "Bases": ["Sodium Hydroxide", "Potassium Hydroxide", "Ammonia"],
+        "Organic Functional Groups": ["Alcohol", "Aldehyde", "Carboxylic Acid"],
+        "Types of Chemical Bonds": ["Ionic", "Covalent", "Metallic"],
+        "States of Matter": ["Solid", "Liquid", "Gas"]
+      },
+      "amazonLinks": []
+    },
+    {
+      "title": "Group Biology Concepts",
+      "groups": {
+        "Cell Organelles": ["Mitochondria", "Ribosome", "Golgi Apparatus"],
+        "Genetic Material": ["DNA", "RNA", "Chromosome"],
+        "Photosynthesis Stages": ["Light Reaction", "Calvin Cycle", "Electron Transport Chain"],
+        "Types of Muscle Tissue": ["Skeletal", "Cardiac", "Smooth"],
+        "Human Body Systems": ["Circulatory", "Respiratory", "Nervous"]
+      },
+      "amazonLinks": []
+    },
+    {
+      "title": "Group Microbiology Categories",
+      "groups": {
+        "Bacterial Shapes": ["Coccus", "Bacillus", "Spirillum"],
+        "Gram Staining": ["Gram-Positive", "Gram-Negative", "Acid-Fast"],
+        "Types of Viruses": ["DNA Virus", "RNA Virus", "Retrovirus"],
+        "Fungal Infections": ["Candida", "Aspergillus", "Cryptococcus"],
+        "Types of Protozoa": ["Amoeba", "Flagellate", "Ciliate"]
+      },
+      "amazonLinks": []
+    },
+    {
+      "title": "Group Physics Topics",
+      "groups": {
+        "Forces": ["Gravity", "Electromagnetic", "Strong Nuclear"],
+        "Types of Energy": ["Kinetic", "Potential", "Thermal"],
+        "Types of Waves": ["Mechanical", "Electromagnetic", "Matter"],
+        "Thermodynamic Laws": ["First Law", "Second Law", "Third Law"],
+        "Subatomic Particles": ["Proton", "Neutron", "Electron"]
+      },
+      "amazonLinks": []
+    },
+    {
+      "title": "Group Additional Element Categories",
+      "groups": {
+        "Alkali Earth Metals": ["Beryllium", "Magnesium", "Calcium"],
+        "Actinides": ["Uranium", "Plutonium", "Thorium"],
+        "Metalloids": ["Silicon", "Boron", "Arsenic"],
+        "Nonmetals": ["Oxygen", "Carbon", "Nitrogen"],
+        "Noble Metals": ["Gold", "Silver", "Platinum"]
+      },
+      "amazonLinks": []
+    },
+    {
+      "title": "Group Pharmaceuticals",
+      "groups": {
+        "Antidepressants": ["Fluoxetine", "Sertraline", "Citalopram"],
+        "Antipsychotics": ["Risperidone", "Olanzapine", "Quetiapine"],
+        "Anti-inflammatory Drugs": ["Ibuprofen", "Naproxen", "Diclofenac"],
+        "Antiepileptics": ["Phenytoin", "Carbamazepine", "Valproate"],
+        "Anticoagulants": ["Warfarin", "Heparin", "Dabigatran"]
+      },
+      "amazonLinks": []
+    },
+    {
+      "title": "Group Disease States",
+      "groups": {
+        "Cardiovascular Diseases": ["Coronary Artery Disease", "Congestive Heart Failure", "Arrhythmia"],
+        "Neurological Disorders": ["Alzheimer's Disease", "Parkinson's Disease", "Multiple Sclerosis"],
+        "Infectious Diseases": ["Tuberculosis", "HIV/AIDS", "Malaria"],
+        "Autoimmune Diseases": ["Rheumatoid Arthritis", "Lupus", "Type 1 Diabetes"],
+        "Genetic Disorders": ["Cystic Fibrosis", "Sickle Cell Anemia", "Huntington's Disease"]
+      },
+      "amazonLinks": []
+    }
+  ]
+}
