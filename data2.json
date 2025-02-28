@@ -264,7 +264,7 @@
         "Arizona": ["Grand Canyon", "Petrified Forest", "Saguaro"],
         "California": ["Death Valley", "Joshua Tree", "Yosemite"],
         "Utah": ["Arches", "Bryce Canyon", "Zion"],
-        "Washington": ["Mount Rainier", "North Cascades", "Olympic"],
+        "Washington": ["Mount Rainier", "North Cascades", "Olympic"]
       },
       "amazonLinks": [
         {
