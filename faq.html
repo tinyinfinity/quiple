@@ -69,6 +69,97 @@
       transition: background-color 0.2s ease;
     }
     .back-button:hover { background-color: #e07b00; }
+
+        /* Contact Form Modal Styles */
+    #contact-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 3000;
+      align-items: center;
+      justify-content: center;
+    }
+    #contact-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      text-align: left;
+    }
+    #contact-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #1a1a1a;
+      text-align: center;
+    }
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    #contact-form textarea {
+      resize: vertical;
+      height: 100px;
+    }
+    #contact-form button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #ff8c00;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      margin: 10px auto;
+    }
+    #contact-form button:hover {
+      background-color: #e07b00;
+    }
+    #contact-close-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #ddd;
+      color: #333;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      margin: 10px auto;
+    }
+    #contact-close-btn:hover {
+      background-color: #ccc;
+    }
+    @media (max-width: 480px) {
+      .game-container { margin: 10px auto; padding: 15px; }
+      #game-title { font-size: 1.25rem; }
+      #score-info { font-size: 0.9rem; }
+      .cell { min-height: 60px; font-size: 0.85rem; padding: 8px; }
+      #final-screen { padding: 15px; }
+      #result-title { font-size: 1.5rem; }
+      #correct-answers { font-size: 0.8rem; }
+      .answer-group { padding: 6px; }
+      .amazon-btn { font-size: 0.9rem; padding: 10px; }
+      #exit-btn { font-size: 0.9rem; padding: 8px 15px; }
+      #info-container { padding: 15px; }
+      #info-container h2 { font-size: 1.25rem; }
+      #info-container p { font-size: 0.75rem; }
+      #info-close-btn { font-size: 0.9rem; padding: 8px 15px; }
+    }
   </style>
 </head>
 <body>
