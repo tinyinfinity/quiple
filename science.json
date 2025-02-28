@@ -28,7 +28,7 @@
         "Carcinomas": ["Breast Cancer", "Lung Cancer", "Prostate Cancer"],
         "Sarcomas": ["Osteosarcoma", "Leiomyosarcoma", "Liposarcoma"],
         "Leukemias": ["ALL", "CML", "AML"],
-        "Lymphomas": ["Hodgkin's Lymphoma", "Non-Hodgkin's Lymphoma", "Burkitt's Lymphoma"],
+        "Lymphomas": ["Hodgkin's", "Non-Hodgkin's", "Burkitt's"],
         "Myelomas": ["Multiple Myeloma", "Plasmacytoma", "Light Chain"]
       },
       "amazonLinks": []
