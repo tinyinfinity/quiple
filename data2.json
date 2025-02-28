@@ -17,6 +17,39 @@
       ]
     },
     {
+      "title": "Group Songs by Artist (Motown)",
+      "groups": {
+        "The Temptations": ["My Girl", "Get Ready", "Cloud Nine"],
+        "Marvin Gaye": ["What's Going On", "Sexual Healing", "Mercy Mercy Me"],
+        "Diana Ross": ["I'm Coming Out", "Upside Down", "Love Hangover"],
+        "Stevie Wonder": ["Superstition", "Sir Duke", "I Wish"],
+        "The Supremes": ["Baby Love", "Love Child", "Reflections"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Music",
+          "url": "https://www.amazon.com/Best-Sellers-Music/zgbs/music?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Songs by Artist (Americana)",
+      "groups": {
+        "Johnny Cash": ["Folsom Prison Blues", "Ring of Fire", "Walk the Line"],
+        "Dolly Parton": ["Jolene", "9 to 5", "Here You Come"],
+        "Willie Nelson": ["Red Headed Stranger", "Night Life", "Whiskey River"],
+        "Emmylou Harris": ["Boulder to Birmingham", "Love Hurts", "Together"],
+        "The Eagles": ["Hotel California", "Desperado", "Take It Easy"],
+        "Paul Simon": ["Graceland", "Me and Julio", "Slip Slidin' Away"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Music",
+          "url": "https://www.amazon.com/Best-Sellers-Music/zgbs/music?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
       "title": "Group Cars by Manufacturer",
       "groups": {
         "Toyota": ["Camry", "Corolla", "Prius"],
