@@ -6,6 +6,7 @@
   <title>Quiple - Daily Trivia Game</title>
   <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
   <style>
+    /* Your existing styles remain unchanged */
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: "Arial", sans-serif; background-color: #f5f5f5; color: #333; line-height: 1.6; text-align: center; padding-bottom: 80px; }
     #quiple-title { font-family: "Bungee Shade", cursive; font-size: 2.75rem; margin: 20px 0; color: #ff4500; cursor: pointer; }
@@ -46,81 +47,15 @@
     #info-container p { font-size: 1rem; color: #333; margin-bottom: 15px; text-align: left; }
     #info-close-btn { background-color: #ddd; border: none; padding: 10px 20px; border-radius: 8px; font-size: 1rem; cursor: pointer; transition: background-color 0.2s ease; width: 100%; max-width: 200px; }
     #info-close-btn:hover { background-color: #ccc; }
-
-    /* Contact Form Modal Styles */
-    #contact-overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0,0,0,0.6);
-      z-index: 3000;
-      align-items: center;
-      justify-content: center;
-    }
-    #contact-container {
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      width: 90%;
-      max-width: 400px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-      text-align: left;
-    }
-    #contact-container h2 {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-      color: #1a1a1a;
-      text-align: center;
-    }
-    #contact-form input[type="text"],
-    #contact-form input[type="email"],
-    #contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-    #contact-form textarea {
-      resize: vertical;
-      height: 100px;
-    }
-    #contact-form button {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      border: none;
-      background-color: #3457D5;
-      color: #fff;
-      font-size: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
-      margin: 10px auto;
-    }
-    #contact-form button:hover {
-      background-color: #151b54;
-    }
-    #contact-close-btn {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      border: none;
-      background-color: #ddd;
-      color: #333;
-      font-size: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
-      margin: 10px auto;
-    }
-    #contact-close-btn:hover {
-      background-color: #ccc;
-    }
+    #contact-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 3000; align-items: center; justify-content: center; }
+    #contact-container { background: #fff; padding: 20px; border-radius: 12px; width: 90%; max-width: 400px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); text-align: left; }
+    #contact-container h2 { font-size: 1.5rem; margin-bottom: 15px; color: #1a1a1a; text-align: center; }
+    #contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
+    #contact-form textarea { resize: vertical; height: 100px; }
+    #contact-form button { display: block; width: 100%; padding: 10px; border: none; background-color: #3457D5; color: #fff; font-size: 1rem; border-radius: 8px; cursor: pointer; transition: background-color 0.2s ease; margin: 10px auto; }
+    #contact-form button:hover { background-color: #151b54; }
+    #contact-close-btn { display: block; width: 100%; padding: 10px; border: none; background-color: #ddd; color: #333; font-size: 1rem; border-radius: 8px; cursor: pointer; transition: background-color 0.2s ease; margin: 10px auto; }
+    #contact-close-btn:hover { background-color: #ccc; }
     @media (max-width: 480px) {
       .game-container { margin: 10px auto; padding: 15px; }
       #game-title { font-size: 1.25rem; }
@@ -140,7 +75,7 @@
   </style>
 </head>
 <body>
-  <h1 id="quiple-title">Quiple</h1>
+  <h1 id="quiple-title">Quiple Sci</h1>
   <div class="game-container">
     <h2 id="game-title">Daily Match Game</h2>
     <p id="score-info">
@@ -172,8 +107,6 @@
       <button id="info-close-btn">Close</button>
     </div>
   </div>
-  
-  <!-- Contact Form Modal -->
   <div id="contact-overlay">
     <div id="contact-container">
       <h2>Contact Us</h2>
@@ -186,7 +119,6 @@
       <button id="contact-close-btn">Close</button>
     </div>
   </div>
-  
   <footer id="site-footer">
     <p>© 2025 Quiple. All rights reserved. | <a href="faq.html">About</a> | <a href="#" id="contact-link">Contact</a></p>
   </footer>
@@ -196,7 +128,13 @@
       e.preventDefault();
     });
 
-    let streak = parseInt(localStorage.getItem("streak")) || 0;
+    const iskidsPage = window.location.pathname.includes("kids.html");
+    const streakKey = iskidsPage ? "kidsStreak" : "mainStreak";
+    const lastResetKey = iskidsPage ? "kidsLastReset" : "mainLastReset";
+    const lastStreakDayKey = iskidsPage ? "kidsLastStreakDay" : "mainLastStreakDay";
+    const gameStateKey = iskidsPage ? "kidsGameState" : "mainGameState";
+
+    let streak = parseInt(localStorage.getItem(streakKey)) || 0;
     let selectedCells = [];
     let matchedGroups = 0;
     let mistakes = 0;
@@ -238,7 +176,6 @@
         }
       });
 
-      // Contact form handling
       const contactLink = document.getElementById("contact-link");
       const contactOverlay = document.getElementById("contact-overlay");
       const contactCloseBtn = document.getElementById("contact-close-btn");
@@ -291,18 +228,23 @@
       return index;
     }
 
+    function getDailyDateString() {
+      const estDate = getESTDate();
+      return estDate.toISOString().split('T')[0];
+    }
+
     async function initializeGame() {
-      const lastReset = localStorage.getItem("lastReset");
+      const lastReset = localStorage.getItem(lastResetKey);
       const todaySeed = getDailySeed();
-      streak = parseInt(localStorage.getItem("streak")) || 0;
+      streak = parseInt(localStorage.getItem(streakKey)) || 0;
       document.getElementById("streak").textContent = streak;
 
       if (!lastReset || parseInt(lastReset) !== todaySeed) {
-        localStorage.setItem("lastReset", todaySeed);
-        localStorage.removeItem("gameState");
+        localStorage.setItem(lastResetKey, todaySeed);
+        localStorage.removeItem(gameStateKey);
         await loadDailyGame();
       } else {
-        const savedState = JSON.parse(localStorage.getItem("gameState"));
+        const savedState = JSON.parse(localStorage.getItem(gameStateKey));
         if (savedState) {
           currentGame = savedState.currentGame;
           matchedGroups = savedState.matchedGroups;
@@ -319,10 +261,15 @@
     async function loadDailyGame() {
       console.log("Entering loadDailyGame");
       try {
-        const files = ["data.json", "data2.json", "data3.json"];
+        const dailyDateString = getDailyDateString();
+        const files = iskidsPage ? ["kids.json", "kids2.json"] : ["data.json", "data2.json"];
         const dailyFile = getDailyFile(files);
-        const response = await fetch(dailyFile);
-        console.log("Fetch response status:", response.status);
+        // Updated fetch URL with page-specific cache-busting parameter
+        const url = `${dailyFile}?date=${dailyDateString}&page=main`;
+        const response = await fetch(url, {
+          cache: "no-store" // Forces fresh fetch, bypassing browser cache
+        });
+        console.log("Fetch response status:", response.status, "URL:", url);
         if (!response.ok) {
           throw new Error(`Failed to fetch ${dailyFile} (Status: ${response.status})`);
         }
@@ -380,7 +327,7 @@
     }
 
     function restoreGameState(win) {
-      console.log("Restoring game state");
+      console.log("Restoring game state, win:", win);
       const grid = document.getElementById("grid");
       grid.innerHTML = "";
       updateMistakes();
@@ -392,7 +339,7 @@
         });
       }
       items = shuffle(items);
-      const savedState = JSON.parse(localStorage.getItem("gameState"));
+      const savedState = JSON.parse(localStorage.getItem(gameStateKey));
       items.forEach(obj => {
         const cell = document.createElement("div");
         cell.classList.add("cell");
@@ -412,6 +359,7 @@
         grid.appendChild(cell);
       });
       if (gameOver) {
+        console.log("Game over detected in restore, calling endGame with win:", win);
         endGame(win);
       }
       console.log("Game state restored, gameOver:", gameOver);
@@ -427,7 +375,7 @@
         correctCells: Array.from(document.querySelectorAll(".cell.correct")).map(cell => cell.textContent),
         win: matchedGroups === Object.keys(currentGame.groups).length
       };
-      localStorage.setItem("gameState", JSON.stringify(state));
+      localStorage.setItem(gameStateKey, JSON.stringify(state));
     }
 
     function handleSelection(cell) {
@@ -464,7 +412,9 @@
         }, 1000);
       }
       const totalGroups = Object.keys(currentGame.groups).length;
+      console.log("checkMatch: matchedGroups =", matchedGroups, "totalGroups =", totalGroups, "mistakes =", mistakes);
       if (matchedGroups === totalGroups || mistakes >= 3) {
+        console.log("Calling endGame with win =", matchedGroups === totalGroups);
         endGame(matchedGroups === totalGroups);
       }
       saveGameState();
@@ -475,11 +425,12 @@
     }
 
     function endGame(win) {
+      console.log("Entering endGame, win =", win);
       gameOver = true;
       const gridCells = document.querySelectorAll(".cell");
       gridCells.forEach(cell => {
         cell.classList.add("disabled");
-        cell.removeEventListener("click", handleSelection);
+        if (cell.click) cell.removeEventListener("click", handleSelection);
       });
       const finalOverlay = document.getElementById("final-overlay");
       const resultTitle = document.getElementById("result-title");
@@ -488,12 +439,13 @@
       const amazonLink = document.getElementById("amazon-link");
       const exitBtn = document.getElementById("exit-btn");
       const todaySeed = getDailySeed();
-      const lastStreakDay = localStorage.getItem("lastStreakDay");
+      const lastStreakDay = localStorage.getItem(lastStreakDayKey);
+
       if (win) {
         if (!lastStreakDay || parseInt(lastStreakDay) !== todaySeed) {
           streak++;
-          localStorage.setItem("streak", streak);
-          localStorage.setItem("lastStreakDay", todaySeed);
+          localStorage.setItem(streakKey, streak);
+          localStorage.setItem(lastStreakDayKey, todaySeed);
           resultTitle.textContent = "🎉 You Won!";
           finalMessage.textContent = `Your current streak is ${streak}.`;
         } else {
@@ -502,12 +454,13 @@
         }
       } else {
         streak = 0;
-        localStorage.setItem("streak", streak);
-        localStorage.setItem("lastStreakDay", todaySeed);
+        localStorage.setItem(streakKey, streak);
+        localStorage.setItem(lastStreakDayKey, todaySeed);
         resultTitle.textContent = "😢 Game Over";
         finalMessage.textContent = "Better luck tomorrow. Streak reset.";
       }
       document.getElementById("streak").textContent = streak;
+
       correctAnswers.innerHTML = "<h3>Answers:</h3>";
       for (let group in currentGame.groups) {
         const groupItems = currentGame.groups[group].join(", ");
@@ -518,14 +471,21 @@
           </div>
         `;
       }
-      let randomItem = currentGame.amazonLinks[Math.floor(Math.random() * currentGame.amazonLinks.length)];
+
+      const amazonLinks = currentGame.amazonLinks || [];
+      let randomItem = amazonLinks.length > 0 ? amazonLinks[Math.floor(Math.random() * amazonLinks.length)] : { name: "Explore More", url: "https://amazon.com" };
       amazonLink.href = randomItem.url;
       amazonLink.textContent = `Find ${randomItem.name}`;
+
+      console.log("Setting final-overlay display to flex");
       finalOverlay.style.display = "flex";
       exitBtn.onclick = () => {
+        console.log("Exit button clicked, hiding overlay");
         finalOverlay.style.display = "none";
       };
+
       saveGameState();
+      console.log("endGame complete, overlay should be visible");
     }
 
     function shuffle(array) {
