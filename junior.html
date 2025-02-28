@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiple - Daily Trivia Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Arial", sans-serif; background-color: #f5f5f5; color: #333; line-height: 1.6; text-align: center; padding-bottom: 80px; }
+    #quiple-title { font-family: "Bungee Shade", cursive; font-size: 2.75rem; margin: 20px 0; color: #ff4500; cursor: pointer; }
+    #quiple-title:hover { color: #3457D5; }
+    .game-container { background: #fff; padding: 20px; margin: 20px auto; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 480px; width: 90%; }
+    #game-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 10px; color: #1a1a1a; }
+    #score-info { font-size: 1rem; margin-bottom: 15px; color: #666; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 10px; max-width: 100%; }
+    .cell { background-color: #e8ecef; border-radius: 8px; min-height: 70px; padding: 10px; font-size: 0.9rem; text-align: center; cursor: pointer; transition: all 0.2s ease; display: flex; align-items: center; justify-content: center; word-wrap: break-word; }
+    .cell.selected { background-color: #a3c1e6; }
+    .cell.correct { background-color: #6bb33e; color: #fff; }
+    .cell.incorrect { background-color: #e63946; color: #fff; }
+    .cell.disabled { cursor: not-allowed; opacity: 0.6; }
+    #final-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 2000; align-items: center; justify-content: center; }
+    #final-screen { background: #fff; padding: 20px; border-radius: 12px; width: 90%; max-width: 400px; max-height: 80vh; overflow-y: auto; box-shadow: 0 4px 16px rgba(0,0,0,0.2); }
+    #result-title { font-size: 1.75rem; font-weight: 700; margin-bottom: 10px; color: #1a1a1a; }
+    #score-container { font-size: 1rem; color: #333; }
+    #final-message { margin-bottom: 15px; }
+    #correct-answers { margin-bottom: 20px; font-size: 0.85rem; color: #333; }
+    #correct-answers h3 { font-size: 1.1rem; margin-bottom: 10px; color: #1a1a1a; }
+    .answer-group { display: flex; justify-content: space-between; align-items: flex-start; padding: 8px; border-bottom: 1px solid #eee; }
+    .answer-group:last-child { border-bottom: none; }
+    .answer-group-name { font-weight: 600; width: 35%; text-align: left; }
+    .answer-group-items { width: 65%; text-align: left; white-space: normal; }
+    .amazon-btn { display: block; background-color: #ff8c00; color: #fff; text-decoration: none; padding: 12px; border-radius: 8px; font-size: 0.95rem; transition: background-color 0.2s ease; margin: 15px auto; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .amazon-btn:hover { background-color: #e07b00; }
+    #exit-btn { background-color: #ddd; border: none; padding: 10px 20px; border-radius: 8px; font-size: 1rem; cursor: pointer; transition: background-color 0.2s ease; width: 100%; max-width: 200px; }
+    #exit-btn:hover { background-color: #ccc; }
+    #coffee-container { margin: 20px auto; font-size: 0.95rem; color: #666; max-width: 480px; width: 90%; }
+    #coffee-container a { color: #ff8c00; text-decoration: none; }
+    #coffee-container a:hover { text-decoration: underline; }
+    #site-footer { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; border-top: 1px solid #ddd; padding: 10px; text-align: center; font-size: 0.85rem; color: #666; z-index: 1500; }
+    #site-footer a { color: #ff8c00; text-decoration: none; }
+    #site-footer a:hover { text-decoration: underline; }
+    #info-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 2500; align-items: center; justify-content: center; }
+    #info-container { background: #fff; padding: 20px; border-radius: 12px; width: 90%; max-width: 400px; max-height: 80vh; overflow-y: auto; box-shadow: 0 4px 16px rgba(0,0,0,0.2); }
+    #info-container h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 15px; color: #1a1a1a; }
+    #info-container p { font-size: 1rem; color: #333; margin-bottom: 15px; text-align: left; }
+    #info-close-btn { background-color: #ddd; border: none; padding: 10px 20px; border-radius: 8px; font-size: 1rem; cursor: pointer; transition: background-color 0.2s ease; width: 100%; max-width: 200px; }
+    #info-close-btn:hover { background-color: #ccc; }
+
+    /* Contact Form Modal Styles */
+    #contact-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 3000;
+      align-items: center;
+      justify-content: center;
+    }
+    #contact-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      text-align: left;
+    }
+    #contact-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #1a1a1a;
+      text-align: center;
+    }
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    #contact-form textarea {
+      resize: vertical;
+      height: 100px;
+    }
+    #contact-form button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #ff8c00;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      margin: 10px auto;
+    }
+    #contact-form button:hover {
+      background-color: #e07b00;
+    }
+    #contact-close-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #ddd;
+      color: #333;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      margin: 10px auto;
+    }
+    #contact-close-btn:hover {
+      background-color: #ccc;
+    }
+    @media (max-width: 480px) {
+      .game-container { margin: 10px auto; padding: 15px; }
+      #game-title { font-size: 1.25rem; }
+      #score-info { font-size: 0.9rem; }
+      .cell { min-height: 60px; font-size: 0.85rem; padding: 8px; }
+      #final-screen { padding: 15px; }
+      #result-title { font-size: 1.5rem; }
+      #correct-answers { font-size: 0.8rem; }
+      .answer-group { padding: 6px; }
+      .amazon-btn { font-size: 0.9rem; padding: 10px; }
+      #exit-btn { font-size: 0.9rem; padding: 8px 15px; }
+      #info-container { padding: 15px; }
+      #info-container h2 { font-size: 1.25rem; }
+      #info-container p { font-size: 0.75rem; }
+      #info-close-btn { font-size: 0.9rem; padding: 8px 15px; }
+    }
+  </style>
+</head>
+<body>
+  <h1 id="quiple-title">Quiple Jr.</h1>
+  <div class="game-container">
+    <h2 id="game-title">Daily Match Game</h2>
+    <p id="score-info">
+      Streak: <span id="streak">0</span> | Incorrect Tries: <span id="mistakes">0</span>/3
+    </p>
+    <div id="grid" class="grid"></div>
+  </div>
+  <div id="coffee-container">
+    <p>Enjoying the game? Consider supporting me!</p>
+    <a href="https://www.buymeacoffee.com/tinyinfinity" target="_blank">Buy Me a Coffee</a>
+  </div>
+  <div id="final-overlay">
+    <div id="final-screen">
+      <h2 id="result-title"></h2>
+      <div id="score-container">
+        <p id="final-message"></p>
+        <div id="correct-answers"></div>
+        <a id="amazon-link" target="_blank" class="amazon-btn"></a>
+        <button id="exit-btn">Exit</button>
+      </div>
+    </div>
+  </div>
+  <div id="info-overlay">
+    <div id="info-container">
+      <h2><center>How to Play Quiple</center></h2>
+      <p><center>Quiple is a daily trivia game.</center></p>
+      <p><center>Each day, you'll see a grid of items. Click to select three items you think form a group. You have 3 incorrect tries before the game ends.</center></p>
+      <p><center>Win by matching all groups correctly, and build your streak by playing daily!</center></p>
+      <button id="info-close-btn">Close</button>
+    </div>
+  </div>
+  
+  <!-- Contact Form Modal -->
+  <div id="contact-overlay">
+    <div id="contact-container">
+      <h2>Contact Us</h2>
+      <form id="contact-form" action="https://formspree.io/f/xovjgvvq" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="_replyto" placeholder="E-mail" required>
+        <textarea name="message" placeholder="Message (max 500 characters)" maxlength="500" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <button id="contact-close-btn">Close</button>
+    </div>
+  </div>
+  
+  <footer id="site-footer">
+    <p>© 2025 Quiple. All rights reserved. | <a href="faq.html">About</a> | <a href="#" id="contact-link">Contact</a></p>
+  </footer>
+
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    let streak = parseInt(localStorage.getItem("streak")) || 0;
+    let selectedCells = [];
+    let matchedGroups = 0;
+    let mistakes = 0;
+    let currentGame = {};
+    let gameOver = false;
+
+    const fallbackGame = {
+      title: "Sample Daily Match Game",
+      groups: {
+        "Fruits": ["Apple", "Banana", "Orange"],
+        "Colors": ["Red", "Blue", "Green"],
+        "Animals": ["Dog", "Cat", "Bird"],
+        "Cities": ["Paris", "Tokyo", "New York"],
+        "Planets": ["Earth", "Mars", "Venus"]
+      },
+      amazonLinks: [{ name: "Sample Product", url: "https://amazon.com" }]
+    };
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      console.log("DOM loaded, starting game initialization");
+      document.getElementById("streak").textContent = streak;
+      await initializeGame();
+
+      const quipleTitle = document.getElementById("quiple-title");
+      const infoOverlay = document.getElementById("info-overlay");
+      const infoCloseBtn = document.getElementById("info-close-btn");
+
+      quipleTitle.addEventListener("click", () => {
+        infoOverlay.style.display = "flex";
+      });
+
+      infoCloseBtn.addEventListener("click", () => {
+        infoOverlay.style.display = "none";
+      });
+
+      infoOverlay.addEventListener("click", (e) => {
+        if (e.target === infoOverlay) {
+          infoOverlay.style.display = "none";
+        }
+      });
+
+      // Contact form handling
+      const contactLink = document.getElementById("contact-link");
+      const contactOverlay = document.getElementById("contact-overlay");
+      const contactCloseBtn = document.getElementById("contact-close-btn");
+
+      contactLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        contactOverlay.style.display = "flex";
+      });
+
+      contactCloseBtn.addEventListener("click", () => {
+        contactOverlay.style.display = "none";
+      });
+
+      contactOverlay.addEventListener("click", (e) => {
+        if (e.target === contactOverlay) {
+          contactOverlay.style.display = "none";
+        }
+      });
+    });
+
+    function getESTDate() {
+      const now = new Date();
+      const estOffset = -5 * 60;
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+      const estDate = new Date(utc + (estOffset * 60000));
+      if (estDate.getHours() < 5) {
+        estDate.setDate(estDate.getDate() - 1);
+      }
+      estDate.setHours(5, 0, 0, 0);
+      return estDate;
+    }
+
+    function getDailySeed() {
+      const estDate = getESTDate();
+      const epoch = new Date(Date.UTC(2020, 0, 1, 10, 0, 0));
+      return Math.floor((estDate - epoch) / 86400000);
+    }
+
+    function getDailyFile(files) {
+      const seed = getDailySeed();
+      const index = seed % files.length;
+      console.log("Daily file index:", index, "File:", files[index]);
+      return files[index];
+    }
+
+    function getDailyIndex(totalGames) {
+      const seed = getDailySeed();
+      const index = seed % totalGames;
+      console.log("Daily game index:", index);
+      return index;
+    }
+
+    async function initializeGame() {
+      const lastReset = localStorage.getItem("lastReset");
+      const todaySeed = getDailySeed();
+      streak = parseInt(localStorage.getItem("streak")) || 0;
+      document.getElementById("streak").textContent = streak;
+
+      if (!lastReset || parseInt(lastReset) !== todaySeed) {
+        localStorage.setItem("lastReset", todaySeed);
+        localStorage.removeItem("gameState");
+        await loadDailyGame();
+      } else {
+        const savedState = JSON.parse(localStorage.getItem("gameState"));
+        if (savedState) {
+          currentGame = savedState.currentGame;
+          matchedGroups = savedState.matchedGroups;
+          mistakes = savedState.mistakes;
+          gameOver = savedState.gameOver;
+          document.getElementById("game-title").textContent = currentGame.title;
+          restoreGameState(savedState.win);
+        } else {
+          await loadDailyGame();
+        }
+      }
+    }
+
+    async function loadDailyGame() {
+      console.log("Entering loadDailyGame");
+      try {
+        const files = ["data.json", "data2.json", "data3.json"];
+        const dailyFile = getDailyFile(files);
+        const response = await fetch(dailyFile);
+        console.log("Fetch response status:", response.status);
+        if (!response.ok) {
+          throw new Error(`Failed to fetch ${dailyFile} (Status: ${response.status})`);
+        }
+        const data = await response.json();
+        console.log("Fetched data:", data);
+        if (!data.games || !Array.isArray(data.games)) {
+          throw new Error("Invalid game data format: 'games' array not found.");
+        }
+        let totalGames = data.games.length;
+        let todayIndex = getDailyIndex(totalGames);
+        currentGame = data.games[todayIndex];
+        if (!currentGame.groups || Object.keys(currentGame.groups).length !== 5) {
+          throw new Error("Game data must have exactly 5 groups.");
+        }
+        document.getElementById("game-title").textContent = currentGame.title || "Daily Match Game";
+        console.log("Setup game with fetched data");
+        setupGame();
+      } catch (error) {
+        console.error("Error loading game data:", error);
+        console.log("Switching to fallback game data");
+        currentGame = fallbackGame;
+        document.getElementById("game-title").textContent = currentGame.title;
+        document.getElementById("grid").innerHTML = "";
+        setupGame();
+      }
+    }
+
+    function setupGame() {
+      console.log("Entering setupGame with currentGame:", currentGame);
+      const grid = document.getElementById("grid");
+      grid.innerHTML = "";
+      matchedGroups = 0;
+      mistakes = 0;
+      gameOver = false;
+      updateMistakes();
+      selectedCells = [];
+      let groups = currentGame.groups;
+      let items = [];
+      for (let group in groups) {
+        groups[group].forEach(item => {
+          items.push({ text: item, group: group });
+        });
+      }
+      items = shuffle(items);
+      items.forEach(obj => {
+        const cell = document.createElement("div");
+        cell.classList.add("cell");
+        cell.textContent = obj.text;
+        cell.dataset.group = obj.group;
+        cell.addEventListener("click", () => handleSelection(cell));
+        grid.appendChild(cell);
+      });
+      console.log("Grid setup complete with", items.length, "items");
+      saveGameState();
+    }
+
+    function restoreGameState(win) {
+      console.log("Restoring game state");
+      const grid = document.getElementById("grid");
+      grid.innerHTML = "";
+      updateMistakes();
+      let groups = currentGame.groups;
+      let items = [];
+      for (let group in groups) {
+        groups[group].forEach(item => {
+          items.push({ text: item, group: group });
+        });
+      }
+      items = shuffle(items);
+      const savedState = JSON.parse(localStorage.getItem("gameState"));
+      items.forEach(obj => {
+        const cell = document.createElement("div");
+        cell.classList.add("cell");
+        cell.textContent = obj.text;
+        cell.dataset.group = obj.group;
+        if (savedState.correctCells.includes(obj.text)) {
+          cell.classList.add("correct");
+        } else if (!gameOver && savedState.selectedCells.includes(obj.text)) {
+          cell.classList.add("selected");
+          selectedCells.push(cell);
+        }
+        if (gameOver) {
+          cell.classList.add("disabled");
+        } else {
+          cell.addEventListener("click", () => handleSelection(cell));
+        }
+        grid.appendChild(cell);
+      });
+      if (gameOver) {
+        endGame(win);
+      }
+      console.log("Game state restored, gameOver:", gameOver);
+    }
+
+    function saveGameState() {
+      const state = {
+        currentGame,
+        matchedGroups,
+        mistakes,
+        gameOver,
+        selectedCells: selectedCells.map(cell => cell.textContent),
+        correctCells: Array.from(document.querySelectorAll(".cell.correct")).map(cell => cell.textContent),
+        win: matchedGroups === Object.keys(currentGame.groups).length
+      };
+      localStorage.setItem("gameState", JSON.stringify(state));
+    }
+
+    function handleSelection(cell) {
+      if (gameOver || cell.classList.contains("correct") || selectedCells.length >= 3) return;
+      if (cell.classList.contains("selected")) {
+        cell.classList.remove("selected");
+        selectedCells = selectedCells.filter(c => c !== cell);
+        saveGameState();
+        return;
+      }
+      cell.classList.add("selected");
+      selectedCells.push(cell);
+      if (selectedCells.length === 3) {
+        checkMatch();
+      }
+      saveGameState();
+    }
+
+    function checkMatch() {
+      const groups = selectedCells.map(cell => cell.dataset.group);
+      const allSame = groups.every(g => g === groups[0]);
+      const cellsToReset = [...selectedCells];
+      selectedCells = [];
+      if (allSame) {
+        cellsToReset.forEach(cell => cell.classList.add("correct"));
+        matchedGroups++;
+      } else {
+        cellsToReset.forEach(cell => cell.classList.add("incorrect"));
+        mistakes++;
+        updateMistakes();
+        setTimeout(() => {
+          cellsToReset.forEach(cell => cell.classList.remove("incorrect", "selected"));
+          saveGameState();
+        }, 1000);
+      }
+      const totalGroups = Object.keys(currentGame.groups).length;
+      if (matchedGroups === totalGroups || mistakes >= 3) {
+        endGame(matchedGroups === totalGroups);
+      }
+      saveGameState();
+    }
+
+    function updateMistakes() {
+      document.getElementById("mistakes").textContent = mistakes;
+    }
+
+    function endGame(win) {
+      gameOver = true;
+      const gridCells = document.querySelectorAll(".cell");
+      gridCells.forEach(cell => {
+        cell.classList.add("disabled");
+        cell.removeEventListener("click", handleSelection);
+      });
+      const finalOverlay = document.getElementById("final-overlay");
+      const resultTitle = document.getElementById("result-title");
+      const finalMessage = document.getElementById("final-message");
+      const correctAnswers = document.getElementById("correct-answers");
+      const amazonLink = document.getElementById("amazon-link");
+      const exitBtn = document.getElementById("exit-btn");
+      const todaySeed = getDailySeed();
+      const lastStreakDay = localStorage.getItem("lastStreakDay");
+      if (win) {
+        if (!lastStreakDay || parseInt(lastStreakDay) !== todaySeed) {
+          streak++;
+          localStorage.setItem("streak", streak);
+          localStorage.setItem("lastStreakDay", todaySeed);
+          resultTitle.textContent = "🎉 You Won!";
+          finalMessage.textContent = `Your current streak is ${streak}.`;
+        } else {
+          resultTitle.textContent = "🎉 You Won!";
+          finalMessage.textContent = `Your current streak is ${streak} (already counted today).`;
+        }
+      } else {
+        streak = 0;
+        localStorage.setItem("streak", streak);
+        localStorage.setItem("lastStreakDay", todaySeed);
+        resultTitle.textContent = "😢 Game Over";
+        finalMessage.textContent = "Better luck tomorrow. Streak reset.";
+      }
+      document.getElementById("streak").textContent = streak;
+      correctAnswers.innerHTML = "<h3>Answers:</h3>";
+      for (let group in currentGame.groups) {
+        const groupItems = currentGame.groups[group].join(", ");
+        correctAnswers.innerHTML += `
+          <div class="answer-group">
+            <span class="answer-group-name">${group}</span>
+            <span class="answer-group-items">${groupItems}</span>
+          </div>
+        `;
+      }
+      let randomItem = currentGame.amazonLinks[Math.floor(Math.random() * currentGame.amazonLinks.length)];
+      amazonLink.href = randomItem.url;
+      amazonLink.textContent = `Find ${randomItem.name}`;
+      finalOverlay.style.display = "flex";
+      exitBtn.onclick = () => {
+        finalOverlay.style.display = "none";
+      };
+      saveGameState();
+    }
+
+    function shuffle(array) {
+      return array.sort(() => Math.random() - 0.5);
+    }
+  </script>
+</body>
+</html>
