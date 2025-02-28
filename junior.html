@@ -319,7 +319,7 @@
     async function loadDailyGame() {
       console.log("Entering loadDailyGame");
       try {
-        const files = ["data.json", "data2.json", "data3.json"];
+        const files = ["kids.json", "kids2.json"];
         const dailyFile = getDailyFile(files);
         const response = await fetch(dailyFile);
         console.log("Fetch response status:", response.status);
