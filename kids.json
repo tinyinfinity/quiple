@@ -1,0 +1,74 @@
+{
+  "games": [
+    {
+      "title": "Group Characters by Pixar Movie",
+      "groups": {
+        "Toy Story": ["Woody", "Buzz", "Jessie"],
+        "Finding Nemo": ["Nemo", "Dory", "Marlin"],
+        "Monsters, Inc.": ["Mike", "Sulley", "Boo"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Kids' Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Kids-Family/zgbs/movies-tv/2958940011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Pop Songs by Artist",
+      "groups": {
+        "Imagine Dragons": ["Believer", "Thunder", "Radioactive"],
+        "Taylor Swift": ["Shake It Off", "You Belong With Me", "Love Story"],
+        "BTS": ["Dynamite", "Butter", "Boy With Luv"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Children's Music",
+          "url": "https://www.amazon.com/Best-Sellers-Music-Childrens/zgbs/music/173425?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Characters by Disney Movie",
+      "groups": {
+        "The Lion King": ["Simba", "Nala", "Timon"],
+        "Aladdin": ["Aladdin", "Jasmine", "Genie"],
+        "Frozen": ["Elsa", "Anna", "Olaf"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Kids' Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Kids-Family/zgbs/movies-tv/2958940011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Characters by Book Series",
+      "groups": {
+        "Harry Potter": ["Harry", "Hermione", "Ron"],
+        "Percy Jackson": ["Percy", "Annabeth", "Grover"],
+        "Diary of a Wimpy Kid": ["Greg", "Rowley", "Rodrick"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Children's Books",
+          "url": "https://www.amazon.com/Best-Sellers-Childrens-Books/zgbs/books/4?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Attractions by Country",
+      "groups": {
+        "USA": ["Statue of Liberty", "Grand Canyon", "Yellowstone"],
+        "France": ["Eiffel Tower", "Louvre Museum", "Mont Saint-Michel"],
+        "Japan": ["Mount Fuji", "Tokyo Disneyland", "Osaka Castle"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Travel Books for Kids",
+          "url": "https://www.amazon.com/Best-Sellers-Childrens-Travel-Books/zgbs/books/69281?tag=tinyinfinity-20"
+        }
+      ]
+    }
+  ]
+}
