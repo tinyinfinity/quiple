@@ -45,8 +45,8 @@
       "groups": {
         "Acids": ["Hydrochloric Acid", "Sulfuric Acid", "Nitric Acid"],
         "Bases": ["Sodium Hydroxide", "Potassium Hydroxide", "Ammonia"],
-        "Organic Functional Groups": ["Alcohol", "Aldehyde", "Carboxylic Acid"],
-        "Types of Chemical Bonds": ["Ionic", "Covalent", "Metallic"],
+        "Functional Groups": ["Alcohol", "Aldehyde", "Carboxylic Acid"],
+        "Chemical Bonds": ["Ionic", "Covalent", "Metallic"],
         "States of Matter": ["Solid", "Liquid", "Gas"]
       }
     },
