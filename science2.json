@@ -45,17 +45,6 @@
       "amazonLinks": []
     },
     {
-      "title": "Group Endocrine Disorders",
-      "groups": {
-        "Pituitary Disorders": ["Acromegaly", "Cushing’s Disease", "Diabetes Insipidus"],
-        "Thyroid Disorders": ["Hyperthyroidism", "Hypothyroidism", "Hashimoto’s Thyroiditis"],
-        "Adrenal Disorders": ["Addison’s Disease", "Cushing’s Syndrome", "Pheochromocytoma"],
-        "Pancreatic Disorders": ["Type 1 Diabetes", "Type 2 Diabetes", "Insulinoma"],
-        "Parathyroid Disorders": ["Hyperparathyroidism", "Hypoparathyroidism", "Parathyroid Adenoma"]
-      },
-      "amazonLinks": []
-    },
-    {
       "title": "Group General Chemistry Topics",
       "groups": {
         "Acids": ["Hydrochloric Acid", "Sulfuric Acid", "Nitric Acid"],
