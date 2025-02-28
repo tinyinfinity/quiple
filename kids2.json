@@ -1,0 +1,404 @@
+{
+  "games": [
+    {
+      "title": "Group Characters by Pixar Movie",
+      "groups": {
+        "Toy Story": ["Woody", "Buzz", "Jessie"],
+        "Finding Nemo": ["Nemo", "Dory", "Marlin"],
+        "Monsters, Inc.": ["Mike", "Sulley", "Boo"],
+        "Cars": ["Lightning McQueen", "Mater", "Sally"],
+        "Inside Out": ["Joy", "Sadness", "Anger"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Kids' Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Kids-Family/zgbs/movies-tv/2958940011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Pop Songs by Artist",
+      "groups": {
+        "Kidz Bop": ["Dance Monkey", "Sweet but Psycho", "Old Town Road"],
+        "Taylor Swift": ["Shake It Off", "You Belong With Me", "Love Story"],
+        "Justin Bieber": ["Baby", "Sorry", "Yummy"],
+        "BTS": ["Dynamite", "Butter", "Boy With Luv"],
+        "Ariana Grande": ["Thank U, Next", "7 Rings", "Break Free"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Children's Music",
+          "url": "https://www.amazon.com/Best-Sellers-Music-Childrens/zgbs/music/173425?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Cartoon Characters by Show",
+      "groups": {
+        "SpongeBob SquarePants": ["SpongeBob", "Patrick", "Squidward"],
+        "Paw Patrol": ["Chase", "Marshall", "Skye"],
+        "Peppa Pig": ["Peppa", "George", "Mummy Pig"],
+        "Bluey": ["Bluey", "Bingo", "Bandit"],
+        "Mickey Mouse Clubhouse": ["Mickey", "Minnie", "Donald"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Kids' TV Shows",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Kids-Family/zgbs/movies-tv/2958940011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Characters by Disney Movie",
+      "groups": {
+        "Cinderella": ["Cinderella", "Prince Charming", "Fairy Godmother"],
+        "The Little Mermaid": ["Ariel", "Prince Eric", "Ursula"],
+        "Beauty and the Beast": ["Belle", "Beast", "Gaston"],
+        "Aladdin": ["Aladdin", "Jasmine", "Genie"],
+        "Frozen": ["Elsa", "Anna", "Olaf"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Kids' Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Kids-Family/zgbs/movies-tv/2958940011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Superheroes by Team",
+      "groups": {
+        "Avengers": ["Iron Man", "Captain America", "Thor"],
+        "Justice League": ["Superman", "Batman", "Wonder Woman"],
+        "X-Men": ["Wolverine", "Storm", "Cyclops"],
+        "Teen Titans": ["Robin", "Starfire", "Beast Boy"],
+        "Fantastic Four": ["Mr. Fantastic", "Invisible Woman", "Human Torch"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Action Figures",
+          "url": "https://www.amazon.com/Best-Sellers-Toys-Games-Action-Figures/zgbs/toys-and-games/165993011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Children's Books by Author",
+      "groups": {
+        "Dr. Seuss": ["The Cat in the Hat", "Green Eggs and Ham", "Horton Hears a Who"],
+        "Roald Dahl": ["Charlie Chocolate Factory", "Matilda", "The BFG"],
+        "J.K. Rowling": ["Sorcerer's Stone", "Chamber of Secrets", "Prisoner of Azkaban"],
+        "Eric Carle": ["Very Hungry Caterpillar", "Brown Bear, What Do You See?", "The Grouchy Ladybug"],
+        "Maurice Sendak": ["Where the Wild Things Are", "In the Night Kitchen", "Outside Over There"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Children's Books",
+          "url": "https://www.amazon.com/Best-Sellers-Childrens-Books/zgbs/books/4?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Sports by Equipment",
+      "groups": {
+        "Basketball": ["Basketball", "Hoop", "Net"],
+        "Soccer": ["Soccer Ball", "Goal", "Cleats"],
+        "Baseball": ["Baseball", "Bat", "Glove"],
+        "Tennis": ["Tennis Ball", "Racket", "Net"],
+        "Swimming": ["Swimsuit", "Goggles", "Cap"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Sports Toys",
+          "url": "https://www.amazon.com/Best-Sellers-Toys-Games-Sports-Toys/zgbs/toys-and-games/166420011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Animals by Habitat",
+      "groups": {
+        "Forest": ["Bear", "Deer", "Owl"],
+        "Ocean": ["Dolphin", "Shark", "Octopus"],
+        "Desert": ["Camel", "Lizard", "Scorpion"],
+        "Jungle": ["Tiger", "Monkey", "Parrot"],
+        "Arctic": ["Polar Bear", "Penguin", "Seal"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Animal Books for Kids",
+          "url": "https://www.amazon.com/Best-Sellers-Childrens-Animal-Books/zgbs/books/2787?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Toys by Type",
+      "groups": {
+        "Dolls": ["Barbie", "American Girl", "Baby Alive"],
+        "Action Figures": ["G.I. Joe", "Transformers", "Superheroes"],
+        "Board Games": ["Monopoly", "Clue", "Candy Land"],
+        "Building Toys": ["LEGO", "Lincoln Logs", "Mega Bloks"],
+        "Puzzles": ["Jigsaw", "Rubik's Cube", "Crossword"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Kids' Toys",
+          "url": "https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Video Game Characters by Game",
+      "groups": {
+        "Mario": ["Mario", "Luigi", "Peach"],
+        "Sonic": ["Sonic", "Tails", "Knuckles"],
+        "Pokémon": ["Pikachu", "Charizard", "Eevee"],
+        "Minecraft": ["Steve", "Creeper", "Enderman"],
+        "Roblox": ["Noob", "Guest", "Bacon Hair"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Video Games",
+          "url": "https://www.amazon.com/Best-Sellers-Video-Games/zgbs/videogames?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Snacks by Type",
+      "groups": {
+        "Chips": ["Potato Chips", "Tortilla Chips", "Veggie Chips"],
+        "Cookies": ["Chocolate Chip", "Oatmeal Raisin", "Sugar Cookies"],
+        "Fruits": ["Apples", "Bananas", "Grapes"],
+        "Candy": ["Gummy Bears", "Chocolate Bars", "Lollipops"],
+        "Crackers": ["Goldfish", "Ritz", "Cheez-Its"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Snack Foods",
+          "url": "https://www.amazon.com/Best-Sellers-Grocery-Gourmet-Food-Snack-Foods/zgbs/grocery/16322721?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Animated Movies by Studio",
+      "groups": {
+        "Pixar": ["Toy Story", "Finding Nemo", "Inside Out"],
+        "Disney": ["The Lion King", "Frozen", "Aladdin"],
+        "DreamWorks": ["Shrek", "Kung Fu Panda", "Madagascar"],
+        "Illumination": ["Minions", "Despicable Me", "Sing"],
+        "Sony": ["Spider-Verse", "Cloudy with Meatballs", "Hotel Transylvania"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Animated Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Animation/zgbs/movies-tv/2958933011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Disney Songs by Movie",
+      "groups": {
+        "Frozen": ["Let It Go", "Build a Snowman", "First Time in Forever"],
+        "Moana": ["How Far I'll Go", "You're Welcome", "Shiny"],
+        "The Lion King": ["Circle of Life", "Hakuna Matata", "Can You Feel the Love"],
+        "Aladdin": ["A Whole New World", "Friend Like Me", "Prince Ali"],
+        "Beauty and the Beast": ["Beauty and the Beast", "Be Our Guest", "Gaston"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Children's Music",
+          "url": "https://www.amazon.com/Best-Sellers-Music-Childrens/zgbs/music/173425?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Cartoon Characters by Show (Alternate)",
+      "groups": {
+        "Phineas and Ferb": ["Phineas", "Ferb", "Candace"],
+        "Gravity Falls": ["Dipper", "Mabel", "Grunkle Stan"],
+        "Avatar: The Last Airbender": ["Aang", "Katara", "Sokka"],
+        "The Loud House": ["Lincoln", "Lori", "Luna"],
+        "Adventure Time": ["Finn", "Jake", "Princess Bubblegum"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Kids' TV Shows",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Kids-Family/zgbs/movies-tv/2958940011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Kids' Movies by Genre",
+      "groups": {
+        "Adventure": ["Moana", "Frozen", "Toy Story"],
+        "Comedy": ["Minions", "Despicable Me", "Shrek"],
+        "Fantasy": ["Sorcerer's Stone", "Narnia: Lion Witch Wardrobe", "Percy Jackson"],
+        "Superhero": ["Spider-Verse", "Big Hero 6", "The Incredibles"],
+        "Animals": ["Zootopia", "The Lion King", "Finding Nemo"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Kids' Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Kids-Family/zgbs/movies-tv/2958940011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Kids' TV Shows by Channel",
+      "groups": {
+        "Disney Channel": ["Mickey Mouse Clubhouse", "Phineas and Ferb", "Gravity Falls"],
+        "Nickelodeon": ["SpongeBob", "The Loud House", "Avatar: Airbender"],
+        "Cartoon Network": ["Adventure Time", "Regular Show", "Teen Titans Go!"],
+        "PBS Kids": ["Sesame Street", "Arthur", "Wild Kratts"],
+        "Netflix": ["Cocomelon", "Peppa Pig", "Magic School Bus"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Kids' TV Shows",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Kids-Family/zgbs/movies-tv/2958940011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Halloween Candy by Type",
+      "groups": {
+        "Chocolate": ["Hershey's", "Reese's", "M&M's"],
+        "Gummy": ["Gummy Bears", "Sour Patch Kids", "Worms"],
+        "Hard Candy": ["Lollipops", "Jolly Ranchers", "Life Savers"],
+        "Chewy": ["Starburst", "Skittles", "Twizzlers"],
+        "Novelty": ["Candy Corn", "Peeps", "Pixy Stix"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Candy",
+          "url": "https://www.amazon.com/Best-Sellers-Grocery-Gourmet-Food-Candy-Chocolates/zgbs/grocery/16322461?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Board Games by Type",
+      "groups": {
+        "Family": ["Monopoly", "Scrabble", "Clue"],
+        "Party": ["Pictionary", "Charades for Kids", "Guess Who"],
+        "Strategy": ["Ticket to Ride", "Carcassonne", "Chess"],
+        "Adventure": ["Candy Land", "Chutes and Ladders", "The Game of Life"],
+        "Card": ["Uno", "Go Fish", "Old Maid"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Board Games",
+          "url": "https://www.amazon.com/Best-Sellers-Toys-Games-Board-Games/zgbs/toys-and-games/166225011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Cartoon Characters by Show (Second Alternate)",
+      "groups": {
+        "Scooby-Doo": ["Scooby", "Shaggy", "Velma"],
+        "Tom and Jerry": ["Tom", "Jerry", "Spike"],
+        "Looney Tunes": ["Bugs Bunny", "Daffy Duck", "Porky Pig"],
+        "The Flintstones": ["Fred", "Barney", "Wilma"],
+        "Powerpuff Girls": ["Blossom", "Bubbles", "Buttercup"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Kids' TV Shows",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Kids-Family/zgbs/movies-tv/2958940011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Kids' Books by Series",
+      "groups": {
+        "Diary of a Wimpy Kid": ["Diary of a Wimpy Kid", "Rodrick Rules", "The Last Straw"],
+        "Percy Jackson": ["Lightning Thief", "Sea of Monsters", "Titan's Curse"],
+        "Goosebumps": ["Welcome to Dead House", "Stay Out of Basement", "Monster Blood"],
+        "Magic Tree House": ["Dinosaurs Before Dark", "Knight at Dawn", "Mummies in Morning"],
+        "Unfortunate Events": ["Bad Beginning", "Reptile Room", "Wide Window"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Children's Books",
+          "url": "https://www.amazon.com/Best-Sellers-Childrens-Books/zgbs/books/4?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Outdoor Games by Type",
+      "groups": {
+        "Running": ["Tag", "Capture the Flag", "Red Rover"],
+        "Ball": ["Kickball", "Dodgeball", "Four Square"],
+        "Water": ["Water Balloon Toss", "Sprinkler Run", "Marco Polo"],
+        "Hiding": ["Hide and Seek", "Sardines", "I Spy"],
+        "Jumping": ["Hopscotch", "Jump Rope", "Sack Race"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Outdoor Toys",
+          "url": "https://www.amazon.com/Best-Sellers-Toys-Games-Outdoor-Play-Equipment/zgbs/toys-and-games/165793011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Musical Instruments by Family",
+      "groups": {
+        "Strings": ["Guitar", "Violin", "Ukulele"],
+        "Woodwinds": ["Flute", "Clarinet", "Recorder"],
+        "Brass": ["Trumpet", "Trombone", "Tuba"],
+        "Percussion": ["Drums", "Tambourine", "Xylophone"],
+        "Keyboard": ["Piano", "Keyboard", "Accordion"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Musical Toys",
+          "url": "https://www.amazon.com/Best-Sellers-Toys-Games-Musical-Instruments/zgbs/toys-and-games/166326011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Space Objects by Category",
+      "groups": {
+        "Planets": ["Earth", "Mars", "Jupiter"],
+        "Moons": ["Moon", "Titan", "Europa"],
+        "Stars": ["Sun", "Sirius", "Betelgeuse"],
+        "Asteroids": ["Ceres", "Vesta", "Pallas"],
+        "Comets": ["Halley's Comet", "Hale-Bopp", "Comet NEOWISE"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Science Kits",
+          "url": "https://www.amazon.com/Best-Sellers-Toys-Games-Science-Kits-Toys/zgbs/toys-and-games/166093011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Holidays by Month",
+      "groups": {
+        "October": ["Halloween", "Columbus Day", "Oktoberfest"],
+        "November": ["Thanksgiving", "Veterans Day", "Diwali"],
+        "December": ["Christmas", "Hanukkah", "Kwanzaa"],
+        "February": ["Valentine's Day", "Presidents' Day", "Groundhog Day"],
+        "July": ["Independence Day", "Canada Day", "Bastille Day"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Holiday Books for Kids",
+          "url": "https://www.amazon.com/Best-Sellers-Childrens-Holiday-Books/zgbs/books/3249?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Characters by Fairy Tale",
+      "groups": {
+        "Cinderella": ["Cinderella", "Prince", "Fairy Godmother"],
+        "Snow White": ["Snow White", "Prince", "Evil Queen"],
+        "Little Red Riding Hood": ["Red Riding Hood", "Wolf", "Grandmother"],
+        "Hansel and Gretel": ["Hansel", "Gretel", "Witch"],
+        "Beauty and the Beast": ["Belle", "Beast", "Gaston"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Fairy Tale Books",
+          "url": "https://www.amazon.com/Best-Sellers-Childrens-Fairy-Tale-Folklore-Books/zgbs/books/2977?tag=tinyinfinity-20"
+        }
+      ]
+    }
+  ]
+}
