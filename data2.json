@@ -304,6 +304,70 @@
           "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
         }
       ]
+    },
+    {
+      "title": "Group Characters by Television Series",
+      "groups": {
+        "Full House": ["Danny Tanner", "Jesse Katsopolis", "Joey Gladstone"],
+        "Friends": ["Ross Geller", "Rachel Green", "Chandler Bing"],
+        "Simpsons": ["Homer Simpson", "Marge Simpson", "Bart Simpson"],
+        "Seinfeld": ["Jerry Seinfeld", "Elaine Benes", "George Costanza"],
+        "The Office": ["Michael Scott", "Dwight Schrute", "Jim Halpert"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling TV Series",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Characters by T.V. Series",
+      "groups": {
+        "Frasier": ["Roz Doyle", "Niles Crane", "Daphne Moon"],
+        "Breaking Bad": ["Walter White", "Jesse Pinkman", "Skyler White"],
+        "Family Guy": ["Joe Swanson", "Cleveland Brown", "Stewie Griffin"],
+        "Mad Men": ["Don Draper", "Peggy Olson", "Roger Sterling"],
+        "Parks & Rec": ["Leslie Knope", "Ron Swanson", "Tom Haverford"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling TV Series",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Characters by HBO Series",
+      "groups": {
+        "The Wire": ["Jimmy McNulty", "Stringer Bell", "Omar Little"],
+        "The Sopranos": ["Tony Soprano", "Carmela Soprano", "Christopher Moltisanti"],
+        "True Blood": ["Sookie Stackhouse", "Bill Compton", "Eric Northman"],
+        "Silicon Valley": ["Richard Hendricks", "Erlich Bachman", "Dinesh Chugtai"],
+        "G.O.T.": ["Jon Snow", "Daenerys Targaryen", "Tyrion Lannister"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling TV Series",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Characters by HBO Show",
+      "groups": {
+        "Veep": ["Selina Meyer", "Gary Walsh", "Amy Brookheimer"],
+        "Deadwood": ["Seth Bullock", "Al Swearengen", "Calamity Jane"],
+        "Curb Your Enthusiasm": ["Larry David", "Cheryl David", "Jeff Greene"],
+        "Sex and The City": ["Carrie Bradshaw", "Samantha Jones", "Miranda Hobbes"],
+        "Succession": ["Tom Wambsgan", "Kendall Roy", "Shiv Roy"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling TV Series",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
+      ]
     }
   ]
 }
