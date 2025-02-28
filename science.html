@@ -30,8 +30,8 @@
     .answer-group:last-child { border-bottom: none; }
     .answer-group-name { font-weight: 600; width: 35%; text-align: left; }
     .answer-group-items { width: 65%; text-align: left; white-space: normal; }
-    .amazon-btn { display: block; background-color: #ff8c00; color: #fff; text-decoration: none; padding: 12px; border-radius: 8px; font-size: 0.95rem; transition: background-color 0.2s ease; margin: 15px auto; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    .amazon-btn:hover { background-color: #e07b00; }
+    .sponsor-btn { display: block; background-color: #ff8c00; color: #fff; text-decoration: none; padding: 12px; border-radius: 8px; font-size: 0.95rem; transition: background-color 0.2s ease; margin: 15px auto; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: none; cursor: pointer; }
+    .sponsor-btn:hover { background-color: #e07b00; }
     #exit-btn { background-color: #ddd; border: none; padding: 10px 20px; border-radius: 8px; font-size: 1rem; cursor: pointer; transition: background-color 0.2s ease; width: 100%; max-width: 200px; }
     #exit-btn:hover { background-color: #ccc; }
     #coffee-container { margin: 20px auto; font-size: 0.95rem; color: #666; max-width: 480px; width: 90%; }
@@ -64,7 +64,7 @@
       #result-title { font-size: 1.5rem; }
       #correct-answers { font-size: 0.8rem; }
       .answer-group { padding: 6px; }
-      .amazon-btn { font-size: 0.9rem; padding: 10px; }
+      .sponsor-btn { font-size: 0.9rem; padding: 10px; }
       #exit-btn { font-size: 0.9rem; padding: 8px 15px; }
       #info-container { padding: 15px; }
       #info-container h2 { font-size: 1.25rem; }
@@ -92,7 +92,7 @@
       <div id="score-container">
         <p id="final-message"></p>
         <div id="correct-answers"></div>
-        <a id="amazon-link" target="_blank" class="amazon-btn"></a>
+        <button id="sponsor-btn" class="sponsor-btn">Sponsor This Game</button>
         <button id="exit-btn">Exit</button>
       </div>
     </div>
@@ -149,8 +149,7 @@
         "Animals": ["Dog", "Cat", "Bird"],
         "Cities": ["Paris", "Tokyo", "New York"],
         "Planets": ["Earth", "Mars", "Venus"]
-      },
-      amazonLinks: [{ name: "Sample Product", url: "https://amazon.com" }]
+      }
     };
 
     document.addEventListener("DOMContentLoaded", async () => {
@@ -264,7 +263,7 @@
         const dailyDateString = getDailyDateString();
         const isSciencePage = window.location.pathname.includes("science.html");
         const isJuniorPage = window.location.pathname.includes("junior.html");
-        const files = isSciencePage ? ["science.json", "science2.json"] : isJuniorPage ? ["kids.json", "kids2.json"] : ["data.json", "data2.json", "data3.json"];
+        const files = isSciencePage ? ["science.json"] : isJuniorPage ? ["junior.json", "junior2.json"] : ["data.json", "data2.json"];
         const dailyFile = getDailyFile(files);
         const url = `${dailyFile}?date=${dailyDateString}&page=science`;
         const response = await fetch(url, {
@@ -437,8 +436,9 @@
       const resultTitle = document.getElementById("result-title");
       const finalMessage = document.getElementById("final-message");
       const correctAnswers = document.getElementById("correct-answers");
-      const amazonLink = document.getElementById("amazon-link");
+      const sponsorBtn = document.getElementById("sponsor-btn");
       const exitBtn = document.getElementById("exit-btn");
+      const contactOverlay = document.getElementById("contact-overlay");
       const todaySeed = getDailySeed();
       const lastStreakDay = localStorage.getItem(lastStreakDayKey);
 
@@ -473,13 +473,15 @@
         `;
       }
 
-      const amazonLinks = currentGame.amazonLinks || [];
-      let randomItem = amazonLinks.length > 0 ? amazonLinks[Math.floor(Math.random() * amazonLinks.length)] : { name: "Explore More", url: "https://amazon.com" };
-      amazonLink.href = randomItem.url;
-      amazonLink.textContent = `Find ${randomItem.name}`;
-
       console.log("Setting final-overlay display to flex");
       finalOverlay.style.display = "flex";
+      
+      sponsorBtn.onclick = () => {
+        console.log("Sponsor button clicked, closing final overlay and opening contact overlay");
+        finalOverlay.style.display = "none";
+        contactOverlay.style.display = "flex";
+      };
+      
       exitBtn.onclick = () => {
         console.log("Exit button clicked, hiding overlay");
         finalOverlay.style.display = "none";
