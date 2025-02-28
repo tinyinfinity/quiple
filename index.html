@@ -262,7 +262,7 @@
       console.log("Entering loadDailyGame");
       try {
         const dailyDateString = getDailyDateString();
-        const files = iskidsPage ? ["kids.json", "kids2.json"] : ["data.json", "data2.json"];
+        const files = iskidsPage ? ["kids.json", "kids2.json"] : ["data.json", "data2.json", "data3.json"];
         const dailyFile = getDailyFile(files);
         // Updated fetch URL with page-specific cache-busting parameter
         const url = `${dailyFile}?date=${dailyDateString}&page=main`;
