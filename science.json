@@ -8,8 +8,7 @@
         "Transition Metals": ["Iron", "Copper", "Zinc"],
         "Halogens": ["Fluorine", "Chlorine", "Iodine"],
         "Lanthanides": ["Lanthanum", "Cerium", "Neodymium"]
-      },
-      "amazonLinks": []
+      }
     },
     {
       "title": "Group Blood Pressure Medications",
@@ -19,8 +18,7 @@
         "Calcium Channel Blockers": ["Amlodipine", "Diltiazem", "Verapamil"],
         "Diuretics": ["Mannitol", "Furosemide", "Amiloride"],
         "ARBs": ["Losartan", "Valsartan", "Irbesartan"]
-      },
-      "amazonLinks": []
+      }
     },
     {
       "title": "Group Cancer Types",
@@ -30,8 +28,7 @@
         "Leukemias": ["ALL", "CML", "AML"],
         "Lymphomas": ["Hodgkin's", "Non-Hodgkin's", "Burkitt's"],
         "Myelomas": ["Multiple Myeloma", "Plasmacytoma", "Light Chain"]
-      },
-      "amazonLinks": []
+      }
     },
     {
       "title": "Group Antimicrobials",
@@ -52,8 +49,7 @@
         "Organic Functional Groups": ["Alcohol", "Aldehyde", "Carboxylic Acid"],
         "Types of Chemical Bonds": ["Ionic", "Covalent", "Metallic"],
         "States of Matter": ["Solid", "Liquid", "Gas"]
-      },
-      "amazonLinks": []
+      }
     },
     {
       "title": "Group Biology Concepts",
@@ -63,8 +59,7 @@
         "Photosynthesis Stages": ["Light Reaction", "Calvin Cycle", "E.T.C."],
         "Types of Muscle Tissue": ["Skeletal", "Cardiac", "Smooth"],
         "Human Body Systems": ["Circulatory", "Respiratory", "Nervous"]
-      },
-      "amazonLinks": []
+      }
     },
     {
       "title": "Group Microbiology Categories",
@@ -85,8 +80,7 @@
         "Types of Waves": ["Mechanical", "Electromagnetic", "Matter"],
         "Thermodynamic Laws": ["First Law", "Second Law", "Third Law"],
         "Subatomic Particles": ["Proton", "Neutron", "Electron"]
-      },
-      "amazonLinks": []
+      }
     },
     {
       "title": "Group Additional Element Categories",
@@ -96,8 +90,7 @@
         "Metalloids": ["Silicon", "Boron", "Arsenic"],
         "Nonmetals": ["Oxygen", "Carbon", "Nitrogen"],
         "Noble Metals": ["Gold", "Silver", "Platinum"]
-      },
-      "amazonLinks": []
+      }
     },
     {
       "title": "Group Pharmaceuticals",
@@ -107,8 +100,7 @@
         "Anti-inflammatory Drugs": ["Ibuprofen", "Naproxen", "Diclofenac"],
         "Antiepileptics": ["Phenytoin", "Carbamazepine", "Valproate"],
         "Anticoagulants": ["Warfarin", "Heparin", "Dabigatran"]
-      },
-      "amazonLinks": []
+      }
     },
     {
       "title": "Group Disease States",
@@ -118,8 +110,7 @@
         "Infectious Diseases": ["Tuberculosis", "HIV/AIDS", "Malaria"],
         "Autoimmune Diseases": ["RA", "Lupus", "Type 1 Diabetes"],
         "Genetic Disorders": ["Cystic Fibrosis", "Sickle Cell Anemia", "Huntington's"]
-      },
-      "amazonLinks": []
+      }
     }
   ]
 }
