@@ -27,9 +27,9 @@
       "groups": {
         "Carcinomas": ["Breast Cancer", "Lung Cancer", "Prostate Cancer"],
         "Sarcomas": ["Osteosarcoma", "Leiomyosarcoma", "Liposarcoma"],
-        "Leukemias": ["Acute Lymphoblastic Leukemia", "Chronic Myeloid Leukemia", "Acute Myeloid Leukemia"],
+        "Leukemias": ["ALL", "CML", "AML"],
         "Lymphomas": ["Hodgkin's Lymphoma", "Non-Hodgkin's Lymphoma", "Burkitt's Lymphoma"],
-        "Myelomas": ["Multiple Myeloma", "Plasmacytoma", "Light Chain Myeloma"]
+        "Myelomas": ["Multiple Myeloma", "Plasmacytoma", "Light Chain"]
       },
       "amazonLinks": []
     },
@@ -48,7 +48,7 @@
       "title": "Group Endocrine Disorders",
       "groups": {
         "Pituitary Disorders": ["Acromegaly", "Cushing's Disease", "Diabetes Insipidus"],
-        "Thyroid Disorders": ["Hyperthyroidism", "Hypothyroidism", "Hashimoto's Thyroiditis"],
+        "Thyroid Disorders": ["Hyperthyroidism", "Hypothyroidism", "Hashimoto's"],
         "Adrenal Disorders": ["Addison's Disease", "Cushing's Syndrome", "Pheochromocytoma"],
         "Pancreatic Disorders": ["Type 1 Diabetes", "Type 2 Diabetes", "Insulinoma"],
         "Parathyroid Disorders": ["Hyperparathyroidism", "Hypoparathyroidism", "Parathyroid Adenoma"]
