@@ -17,7 +17,7 @@
         "ACE Inhibitors": ["Lisinopril", "Enalapril", "Ramipril"],
         "Beta-Blockers": ["Metoprolol", "Propranolol", "Atenolol"],
         "Calcium Channel Blockers": ["Amlodipine", "Diltiazem", "Verapamil"],
-        "Diuretics": ["Hydrochlorothiazide", "Furosemide", "Spironolactone"],
+        "Diuretics": ["Sorbitol", "Furosemide", "Spironolactone"],
         "ARBs": ["Losartan", "Valsartan", "Irbesartan"]
       },
       "amazonLinks": []
