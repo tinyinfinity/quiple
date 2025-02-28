@@ -185,10 +185,24 @@
 
   <a href="https://www.quiple.xyz" class="back-button">Back to Quiple</a>
 
+  <!-- Contact Form Modal -->
+  <div id="contact-overlay">
+    <div id="contact-container">
+      <h2>Contact Us</h2>
+      <form id="contact-form" action="https://formspree.io/f/xovjgvvq" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="_replyto" placeholder="E-mail" required>
+        <textarea name="message" placeholder="Message (max 500 characters)" maxlength="500" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <button id="contact-close-btn">Close</button>
+    </div>
+  </div>
+  
   <footer id="site-footer">
-    <p>© 2025 Quiple. All rights reserved. | <a href="#" id="contact-link">Contact Us</a></p>
+    <p>© 2025 Quiple. All rights reserved. | <a href="faq.html">About</a> | <a href="#" id="contact-link">Contact</a></p>
   </footer>
-
+        
   <script>
     document.querySelectorAll('.faq-question').forEach(button => {
       button.addEventListener('click', () => {
