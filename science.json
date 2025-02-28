@@ -71,7 +71,7 @@
       "groups": {
         "Cell Organelles": ["Mitochondria", "Ribosome", "Golgi Apparatus"],
         "Genetic Material": ["DNA", "RNA", "Chromosome"],
-        "Photosynthesis Stages": ["Light Reaction", "Calvin Cycle", "Electron Transport Chain"],
+        "Photosynthesis Stages": ["Light Reaction", "Calvin Cycle", "E.T.C."],
         "Types of Muscle Tissue": ["Skeletal", "Cardiac", "Smooth"],
         "Human Body Systems": ["Circulatory", "Respiratory", "Nervous"]
       },
@@ -124,11 +124,11 @@
     {
       "title": "Group Disease States",
       "groups": {
-        "Cardiovascular Diseases": ["Coronary Artery Disease", "Congestive Heart Failure", "Arrhythmia"],
-        "Neurological Disorders": ["Alzheimer's Disease", "Parkinson's Disease", "Multiple Sclerosis"],
+        "Cardiovascular Diseases": ["CAD", "CHF", "Arrhythmia"],
+        "Neurological Disorders": ["Alzheimer's", "Parkinson's", "M.S."],
         "Infectious Diseases": ["Tuberculosis", "HIV/AIDS", "Malaria"],
-        "Autoimmune Diseases": ["Rheumatoid Arthritis", "Lupus", "Type 1 Diabetes"],
-        "Genetic Disorders": ["Cystic Fibrosis", "Sickle Cell Anemia", "Huntington's Disease"]
+        "Autoimmune Diseases": ["RA", "Lupus", "Type 1 Diabetes"],
+        "Genetic Disorders": ["Cystic Fibrosis", "Sickle Cell Anemia", "Huntington's"]
       },
       "amazonLinks": []
     }
