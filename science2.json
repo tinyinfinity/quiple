@@ -8,8 +8,7 @@
         "Transition Metals": ["Iron", "Copper", "Zinc"],
         "Halogens": ["Fluorine", "Chlorine", "Iodine"],
         "Lanthanides": ["Lanthanum", "Cerium", "Neodymium"]
-      },
-      "amazonLinks": []
+      }
     },
     {
       "title": "Group Blood Pressure Medications",
@@ -19,8 +18,7 @@
         "Calcium Channel Blockers": ["Amlodipine", "Diltiazem", "Verapamil"],
         "Diuretics": ["Sorbitol", "Furosemide", "Spironolactone"],
         "ARBs": ["Losartan", "Valsartan", "Irbesartan"]
-      },
-      "amazonLinks": []
+      }
     },
     {
       "title": "Group Cancer Types",
@@ -30,8 +28,7 @@
         "Leukemias": ["ALL", "CML", "AML"],
         "Lymphomas": ["Hodgkin’s", "Non-Hodgkin’s", "Burkitt’s"],
         "Myelomas": ["Multiple Myeloma", "Plasmacytoma", "Light Chain Myeloma"]
-      },
-      "amazonLinks": []
+      }
     },
     {
       "title": "Group Antimicrobials",
@@ -41,8 +38,7 @@
         "Macrolides": ["Azithromycin", "Clarithromycin", "Erythromycin"],
         "Fluoroquinolones": ["Ciprofloxacin", "Levofloxacin", "Moxifloxacin"],
         "Tetracyclines": ["Doxycycline", "Minocycline", "Tetracycline"]
-      },
-      "amazonLinks": []
+      }
     },
     {
       "title": "Group General Chemistry Topics",
@@ -52,8 +48,7 @@
         "Organic Functional Groups": ["Alcohol", "Aldehyde", "Carboxylic Acid"],
         "Types of Chemical Bonds": ["Ionic", "Covalent", "Metallic"],
         "States of Matter": ["Solid", "Liquid", "Gas"]
-      },
-      "amazonLinks": []
+      }
     },
     {
       "title": "Group Biology Concepts",
@@ -74,8 +69,7 @@
         "Types of Viruses": ["DNA Virus", "RNA Virus", "Retrovirus"],
         "Fungal Infections": ["Candida", "Aspergillus", "Cryptococcus"],
         "Types of Protozoa": ["Amoeba", "Flagellate", "Ciliate"]
-      },
-      "amazonLinks": []
+      }
     },
     {
       "title": "Group Physics Topics",
@@ -85,8 +79,7 @@
         "Types of Waves": ["Mechanical", "Electromagnetic", "Matter"],
         "Thermodynamic Laws": ["First Law", "Second Law", "Third Law"],
         "Subatomic Particles": ["Proton", "Neutron", "Electron"]
-      },
-      "amazonLinks": []
+      }
     }
   ]
 }
