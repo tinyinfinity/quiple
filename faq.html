@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiple - FAQs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+  <style>
+    /* Main Page Styles */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Arial", sans-serif; background-color: #f5f5f5; color: #333; line-height: 1.6; text-align: center; padding-bottom: 80px; }
+    #quiple-title { font-family: "Bungee Shade", cursive; font-size: 2.75rem; margin: 20px 0; color: #ff4500; }
+    #quiple-title:hover { color: #3457D5; }
+    .game-container { background: #fff; padding: 20px; margin: 20px auto; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 480px; width: 90%; }
+    #game-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 10px; color: #1a1a1a; }
+    #score-info { font-size: 1rem; margin-bottom: 15px; color: #666; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 10px; max-width: 100%; }
+    .cell { background-color: #e8ecef; border-radius: 8px; min-height: 70px; padding: 10px; font-size: 0.9rem; text-align: center; cursor: pointer; transition: all 0.2s ease; display: flex; align-items: center; justify-content: center; word-wrap: break-word; }
+    .cell.selected { background-color: #a3c1e6; }
+    .cell.correct { background-color: #6bb33e; color: #fff; }
+    .cell.incorrect { background-color: #e63946; color: #fff; }
+    .cell.disabled { cursor: not-allowed; opacity: 0.6; }
+    #final-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 2000; align-items: center; justify-content: center; }
+    #final-screen { background: #fff; padding: 20px; border-radius: 12px; width: 90%; max-width: 400px; max-height: 80vh; overflow-y: auto; box-shadow: 0 4px 16px rgba(0,0,0,0.2); }
+    #result-title { font-size: 1.75rem; font-weight: 700; margin-bottom: 10px; color: #1a1a1a; }
+    #score-container { font-size: 1rem; color: #333; }
+    #final-message { margin-bottom: 15px; }
+    #correct-answers { margin-bottom: 20px; font-size: 0.85rem; color: #333; }
+    #correct-answers h3 { font-size: 1.1rem; margin-bottom: 10px; color: #1a1a1a; }
+    .answer-group { display: flex; justify-content: space-between; align-items: flex-start; padding: 8px; border-bottom: 1px solid #eee; }
+    .answer-group:last-child { border-bottom: none; }
+    .answer-group-name { font-weight: 600; width: 35%; text-align: left; }
+    .answer-group-items { width: 65%; text-align: left; white-space: normal; }
+    .amazon-btn { display: block; background-color: #ff8c00; color: #fff; text-decoration: none; padding: 12px; border-radius: 8px; font-size: 0.95rem; transition: background-color 0.2s ease; margin: 15px auto; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .amazon-btn:hover { background-color: #e07b00; }
+    #exit-btn { background-color: #ddd; border: none; padding: 10px 20px; border-radius: 8px; font-size: 1rem; cursor: pointer; transition: background-color 0.2s ease; width: 100%; max-width: 200px; }
+    #exit-btn:hover { background-color: #ccc; }
+    #coffee-container { margin: 20px auto; font-size: 0.95rem; color: #666; max-width: 480px; width: 90%; }
+    #coffee-container a { color: #ff8c00; text-decoration: none; }
+    #coffee-container a:hover { text-decoration: underline; }
+    #site-footer { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; border-top: 1px solid #ddd; padding: 10px; text-align: center; font-size: 0.85rem; color: #666; z-index: 1500; }
+    #site-footer a { color: #ff8c00; text-decoration: none; }
+    #site-footer a:hover { text-decoration: underline; }
+    #info-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 2500; align-items: center; justify-content: center; }
+    #info-container { background: #fff; padding: 20px; border-radius: 12px; width: 90%; max-width: 400px; max-height: 80vh; overflow-y: auto; box-shadow: 0 4px 16px rgba(0,0,0,0.2); }
+    #info-container h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 15px; color: #1a1a1a; }
+    #info-container p { font-size: 1rem; color: #333; margin-bottom: 15px; text-align: left; }
+    #info-close-btn { background-color: #ddd; border: none; padding: 10px 20px; border-radius: 8px; font-size: 1rem; cursor: pointer; transition: background-color 0.2s ease; width: 100%; max-width: 200px; }
+    #info-close-btn:hover { background-color: #ccc; }
+
+    /* FAQ Dropdown Styles */
+    .faq-container { max-width: 600px; margin: 40px auto; text-align: left; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .faq-item { border-bottom: 1px solid #ddd; padding: 10px 0; }
+    .faq-question { background: none; border: none; font-size: 1.1rem; font-weight: bold; width: 100%; text-align: left; cursor: pointer; padding: 10px 0; outline: none; }
+    .faq-answer { display: none; padding: 10px 0; font-size: 1rem; color: #666; }
+    .faq-question::after { content: " +"; float: right; font-size: 1.2rem; }
+    .faq-question.active::after { content: " -"; }
+
+    /* Back to Game Button */
+    .back-button {
+      display: inline-block;
+      margin: 30px auto 0;
+      padding: 12px 24px;
+      background-color: #ff8c00;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background-color 0.2s ease;
+    }
+    .back-button:hover { background-color: #e07b00; }
+  </style>
+</head>
+<body>
+  <h1 id="quiple-title">Quiple FAQs</h1>
+  <div class="faq-container">
+    <div class="faq-item">
+      <button class="faq-question">What is Quiple?</button>
+      <div class="faq-answer">Quiple is a daily game that challenges your pattern-matching skills in a fun and engaging way. Every day, you get a new puzzle to solve, keeping your mind sharp and entertained.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Why did I make Quiple?</button>
+      <div class="faq-answer">I created Quiple as a hands-on way to learn more about artificial intelligence. Rather than just reading about AI, I wanted to build something practical that people could enjoy while I deepened my technical knowledge.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">What technical skills did I learn from making Quiple?</button>
+      <div class="faq-answer">Building Quiple was my introduction to the world of coding. I learned the basics of programming, how to use GitHub for version control, and how to integrate APIs to enhance functionality. Most importantly, I gained an appreciation for iteration and testing—Quiple wasn’t perfect on day one, and refining it over time has been a valuable learning experience.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">What marketing skills did I learn from making Quiple?</button>
+      <div class="faq-answer">Beyond the technical side, I also explored the business and marketing aspects of running a digital product. I learned how to create engaging content that keeps users coming back, experimented with different monetization strategies (you’ll notice ads, Amazon affiliate links, and Buy Me a Coffee buttons), and explored ways to expand the Quiple brand with spin-offs like Quiple Sci and Quiple Jr.</div>
+    </div>
+  </div>
+
+  <a href="https://www.quiple.xyz" class="back-button">Back to Quiple</a>
+
+  <footer id="site-footer">
+    <p>© 2025 Quiple. All rights reserved. | <a href="#" id="contact-link">Contact Us</a></p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        button.classList.toggle('active');
+        let answer = button.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>
