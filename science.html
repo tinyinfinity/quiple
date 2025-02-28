@@ -128,7 +128,6 @@
       e.preventDefault();
     });
 
-    // Determine if this is the science page
     const isSciencePage = window.location.pathname.includes("science.html");
     const streakKey = isSciencePage ? "scienceStreak" : "mainStreak";
     const lastResetKey = isSciencePage ? "scienceLastReset" : "mainLastReset";
@@ -199,7 +198,7 @@
 
     function getESTDate() {
       const now = new Date();
-      const estOffset = -5 * 60; // EST is UTC-5
+      const estOffset = -5 * 60;
       const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
       const estDate = new Date(utc + (estOffset * 60000));
       if (estDate.getHours() < 5) {
@@ -231,7 +230,7 @@
 
     function getDailyDateString() {
       const estDate = getESTDate();
-      return estDate.toISOString().split('T')[0]; // e.g., "2025-02-28"
+      return estDate.toISOString().split('T')[0];
     }
 
     async function initializeGame() {
@@ -325,7 +324,7 @@
     }
 
     function restoreGameState(win) {
-      console.log("Restoring game state");
+      console.log("Restoring game state, win:", win);
       const grid = document.getElementById("grid");
       grid.innerHTML = "";
       updateMistakes();
@@ -357,6 +356,7 @@
         grid.appendChild(cell);
       });
       if (gameOver) {
+        console.log("Game over detected in restore, calling endGame with win:", win);
         endGame(win);
       }
       console.log("Game state restored, gameOver:", gameOver);
@@ -409,7 +409,9 @@
         }, 1000);
       }
       const totalGroups = Object.keys(currentGame.groups).length;
+      console.log("checkMatch: matchedGroups =", matchedGroups, "totalGroups =", totalGroups, "mistakes =", mistakes);
       if (matchedGroups === totalGroups || mistakes >= 3) {
+        console.log("Calling endGame with win =", matchedGroups === totalGroups);
         endGame(matchedGroups === totalGroups);
       }
       saveGameState();
@@ -420,11 +422,12 @@
     }
 
     function endGame(win) {
+      console.log("Entering endGame, win =", win);
       gameOver = true;
       const gridCells = document.querySelectorAll(".cell");
       gridCells.forEach(cell => {
         cell.classList.add("disabled");
-        cell.removeEventListener("click", handleSelection);
+        if (cell.click) cell.removeEventListener("click", handleSelection);
       });
       const finalOverlay = document.getElementById("final-overlay");
       const resultTitle = document.getElementById("result-title");
@@ -434,6 +437,7 @@
       const exitBtn = document.getElementById("exit-btn");
       const todaySeed = getDailySeed();
       const lastStreakDay = localStorage.getItem(lastStreakDayKey);
+
       if (win) {
         if (!lastStreakDay || parseInt(lastStreakDay) !== todaySeed) {
           streak++;
@@ -453,6 +457,7 @@
         finalMessage.textContent = "Better luck tomorrow. Streak reset.";
       }
       document.getElementById("streak").textContent = streak;
+
       correctAnswers.innerHTML = "<h3>Answers:</h3>";
       for (let group in currentGame.groups) {
         const groupItems = currentGame.groups[group].join(", ");
@@ -463,14 +468,21 @@
           </div>
         `;
       }
-      let randomItem = currentGame.amazonLinks[Math.floor(Math.random() * currentGame.amazonLinks.length)];
+
+      const amazonLinks = currentGame.amazonLinks || [];
+      let randomItem = amazonLinks.length > 0 ? amazonLinks[Math.floor(Math.random() * amazonLinks.length)] : { name: "Explore More", url: "https://amazon.com" };
       amazonLink.href = randomItem.url;
       amazonLink.textContent = `Find ${randomItem.name}`;
+
+      console.log("Setting final-overlay display to flex");
       finalOverlay.style.display = "flex";
       exitBtn.onclick = () => {
+        console.log("Exit button clicked, hiding overlay");
         finalOverlay.style.display = "none";
       };
+
       saveGameState();
+      console.log("endGame complete, overlay should be visible");
     }
 
     function shuffle(array) {
