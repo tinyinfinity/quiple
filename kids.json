@@ -5,7 +5,9 @@
       "groups": {
         "Toy Story": ["Woody", "Buzz", "Jessie"],
         "Finding Nemo": ["Nemo", "Dory", "Marlin"],
-        "Monsters, Inc.": ["Mike", "Sulley", "Boo"]
+        "Monsters, Inc.": ["Mike", "Sulley", "Boo"],
+        "Cars": ["Lightning McQueen", "Mater", "Sally"],
+        "Inside Out": ["Joy", "Sadness", "Anger"]
       },
       "amazonLinks": [
         {
@@ -19,7 +21,9 @@
       "groups": {
         "Imagine Dragons": ["Believer", "Thunder", "Radioactive"],
         "Taylor Swift": ["Shake It Off", "You Belong With Me", "Love Story"],
-        "BTS": ["Dynamite", "Butter", "Boy With Luv"]
+        "BTS": ["Dynamite", "Butter", "Boy With Luv"],
+        "Ariana Grande": ["Thank U, Next", "7 Rings", "Positions"],
+        "Shawn Mendes": ["Stitches", "Treat You Better", "There's Nothing Holdin' Me Back"]
       },
       "amazonLinks": [
         {
@@ -33,7 +37,9 @@
       "groups": {
         "The Lion King": ["Simba", "Nala", "Timon"],
         "Aladdin": ["Aladdin", "Jasmine", "Genie"],
-        "Frozen": ["Elsa", "Anna", "Olaf"]
+        "Frozen": ["Elsa", "Anna", "Olaf"],
+        "Moana": ["Moana", "Maui", "Heihei"],
+        "Beauty and the Beast": ["Belle", "Beast", "Gaston"]
       },
       "amazonLinks": [
         {
@@ -47,7 +53,9 @@
       "groups": {
         "Harry Potter": ["Harry", "Hermione", "Ron"],
         "Percy Jackson": ["Percy", "Annabeth", "Grover"],
-        "Diary of a Wimpy Kid": ["Greg", "Rowley", "Rodrick"]
+        "Diary of a Wimpy Kid": ["Greg", "Rowley", "Rodrick"],
+        "The Magic Tree House": ["Jack", "Annie", "Morgan le Fay"],
+        "Captain Underpants": ["George", "Harold", "Captain Underpants"]
       },
       "amazonLinks": [
         {
@@ -61,12 +69,174 @@
       "groups": {
         "USA": ["Statue of Liberty", "Grand Canyon", "Yellowstone"],
         "France": ["Eiffel Tower", "Louvre Museum", "Mont Saint-Michel"],
-        "Japan": ["Mount Fuji", "Tokyo Disneyland", "Osaka Castle"]
+        "Japan": ["Mount Fuji", "Tokyo Disneyland", "Osaka Castle"],
+        "Australia": ["Sydney Opera House", "Great Barrier Reef", "Uluru"],
+        "Egypt": ["Pyramids of Giza", "Sphinx", "Nile River"]
       },
       "amazonLinks": [
         {
           "name": "Best Selling Travel Books for Kids",
           "url": "https://www.amazon.com/Best-Sellers-Childrens-Travel-Books/zgbs/books/69281?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Characters by Kids' Show",
+      "groups": {
+        "Paw Patrol": ["Chase", "Marshall", "Skye"],
+        "Peppa Pig": ["Peppa", "George", "Mummy Pig"],
+        "SpongeBob SquarePants": ["SpongeBob", "Patrick", "Squidward"],
+        "Bluey": ["Bluey", "Bingo", "Bandit"],
+        "Mickey Mouse Clubhouse": ["Mickey", "Minnie", "Donald"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Kids' TV Shows",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Kids-Family/zgbs/movies-tv/2958940011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Songs by Artist",
+      "groups": {
+        "Taylor Swift": ["Shake It Off", "You Belong With Me", "Love Story"],
+        "Justin Bieber": ["Baby", "Sorry", "Yummy"],
+        "BTS": ["Dynamite", "Butter", "Boy With Luv"],
+        "Ariana Grande": ["Thank U, Next", "7 Rings", "Positions"],
+        "Shawn Mendes": ["Stitches", "Treat You Better", "There's Nothing Holdin' Me Back"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Children's Music",
+          "url": "https://www.amazon.com/Best-Sellers-Music-Childrens/zgbs/music/173425?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Characters by Classic Cartoon",
+      "groups": {
+        "Tom and Jerry": ["Tom", "Jerry", "Spike"],
+        "Looney Tunes": ["Bugs Bunny", "Daffy Duck", "Porky Pig"],
+        "Scooby-Doo": ["Scooby", "Shaggy", "Velma"],
+        "The Flintstones": ["Fred", "Wilma", "Barney"],
+        "Popeye": ["Popeye", "Olive Oyl", "Bluto"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Kids' Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV-Kids-Family/zgbs/movies-tv/2958940011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Animals by Habitat",
+      "groups": {
+        "Forest": ["Bear", "Deer", "Owl"],
+        "Ocean": ["Dolphin", "Shark", "Octopus"],
+        "Desert": ["Camel", "Lizard", "Scorpion"],
+        "Jungle": ["Tiger", "Monkey", "Parrot"],
+        "Arctic": ["Polar Bear", "Penguin", "Seal"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Animal Books for Kids",
+          "url": "https://www.amazon.com/Best-Sellers-Childrens-Animal-Books/zgbs/books/2787?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Snacks by Type",
+      "groups": {
+        "Chips": ["Potato Chips", "Tortilla Chips", "Veggie Chips"],
+        "Cookies": ["Chocolate Chip", "Oatmeal Raisin", "Sugar Cookies"],
+        "Fruits": ["Apples", "Bananas", "Grapes"],
+        "Candy": ["Gummy Bears", "Chocolate Bars", "Lollipops"],
+        "Crackers": ["Goldfish", "Ritz", "Cheez-Its"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Snack Foods",
+          "url": "https://www.amazon.com/Best-Sellers-Grocery-Gourmet-Food-Snack-Foods/zgbs/grocery/16322721?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Sports by Equipment",
+      "groups": {
+        "Basketball": ["Basketball", "Hoop", "Net"],
+        "Soccer": ["Soccer Ball", "Goal", "Cleats"],
+        "Baseball": ["Baseball", "Bat", "Glove"],
+        "Tennis": ["Tennis Ball", "Racket", "Net"],
+        "Swimming": ["Swimsuit", "Goggles", "Cap"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Sports Toys",
+          "url": "https://www.amazon.com/Best-Sellers-Toys-Games-Sports-Toys/zgbs/toys-and-games/166420011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Toys by Type",
+      "groups": {
+        "Dolls": ["Barbie", "American Girl", "Baby Alive"],
+        "Action Figures": ["G.I. Joe", "Transformers", "Superheroes"],
+        "Board Games": ["Monopoly", "Clue", "Candy Land"],
+        "Building Toys": ["LEGO", "Lincoln Logs", "Mega Bloks"],
+        "Puzzles": ["Jigsaw", "Rubik's Cube", "Crossword"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Kids' Toys",
+          "url": "https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Video Game Characters by Game",
+      "groups": {
+        "Mario": ["Mario", "Luigi", "Peach"],
+        "Sonic": ["Sonic", "Tails", "Knuckles"],
+        "Pokémon": ["Pikachu", "Charizard", "Eevee"],
+        "Minecraft": ["Steve", "Creeper", "Enderman"],
+        "Roblox": ["Noob", "Guest", "Bacon Hair"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Video Games",
+          "url": "https://www.amazon.com/Best-Sellers-Video-Games/zgbs/videogames?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Disney Songs by Movie",
+      "groups": {
+        "Frozen": ["Let It Go", "Build a Snowman", "First Time in Forever"],
+        "Moana": ["How Far I'll Go", "You're Welcome", "Shiny"],
+        "The Lion King": ["Circle of Life", "Hakuna Matata", "Can You Feel the Love"],
+        "Aladdin": ["A Whole New World", "Friend Like Me", "Prince Ali"],
+        "Beauty and the Beast": ["Beauty and the Beast", "Be Our Guest", "Gaston"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Children's Music",
+          "url": "https://www.amazon.com/Best-Sellers-Music-Childrens/zgbs/music/173425?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Superheroes by Team",
+      "groups": {
+        "Avengers": ["Iron Man", "Captain America", "Thor"],
+        "Justice League": ["Superman", "Batman", "Wonder Woman"],
+        "Teen Titans": ["Robin", "Starfire", "Beast Boy"],
+        "X-Men": ["Wolverine", "Storm", "Cyclops"],
+        "Guardians of the Galaxy": ["Star-Lord", "Gamora", "Rocket"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Superhero Toys",
+          "url": "https://www.amazon.com/Best-Sellers-Toys-Games-Superhero-Action-Figures/zgbs/toys-and-games/165993011?tag=tinyinfinity-20"
         }
       ]
     }
