@@ -68,10 +68,10 @@
       color: #3457D5;
     }
 
-    /* Back to Game Button */
+    /* Back to Game Buttons */
+    .buttons-container { margin: 30px auto 0; max-width: 600px; display: flex; justify-content: space-between; gap: 10px; }
     .back-button {
-      display: inline-block;
-      margin: 30px auto 0;
+      display: block;
       padding: 12px 24px;
       background-color: #ff8c00;
       color: #fff;
@@ -79,6 +79,8 @@
       border-radius: 8px;
       font-size: 1rem;
       transition: background-color 0.2s ease;
+      width: 100%; /* Equal width for all buttons */
+      text-align: center;
     }
     .back-button:hover { background-color: #e07b00; }
 
@@ -171,6 +173,8 @@
       #info-container h2 { font-size: 1.25rem; }
       #info-container p { font-size: 0.75rem; }
       #info-close-btn { font-size: 0.9rem; padding: 8px 15px; }
+      .buttons-container { flex-direction: column; gap: 5px; }
+      .back-button { padding: 10px 20px; font-size: 0.9rem; }
     }
   </style>
 </head>
@@ -184,26 +188,41 @@
       </div>
     </div>
     <div class="faq-item">
-      <button class="faq-question">Why did I make Quiple?</button>
+      <button class="faq-question">Why did you make Quiple?</button>
       <div class="faq-answer">
-        I created Quiple as a hands-on way to learn more about artificial intelligence. Rather than just reading about AI, I wanted to build something practical that people could enjoy while I strengthened my technical knowledge.
+        I created Quiple as a hands-on way to learn more about artificial intelligence. Rather than just reading about AI, I wanted to build something practical that people could enjoy while I strengthened my technical knowledge. Also, I love trivia and daily games.
       </div>
     </div>
     <div class="faq-item">
-      <button class="faq-question">What technical skills did I learn from making Quiple?</button>
+      <button class="faq-question">What technical skills did you learn from making Quiple?</button>
       <div class="faq-answer">
-        Building Quiple was my introduction to the world of coding. I learned the very basics of programming, how to use GitHub for version control, and how to integrate APIs to enhance functionality. Most importantly, I gained an appreciation for iteration and testing — Quiple wasn’t perfect on day one, and refining it over time has been a valuable learning experience.
+        Building Quiple was my introduction to the world of coding. Here are some key technical skills I picked up:
+        <ul>
+          <li>The very basics of programming, starting from scratch.</li>
+          <li>Using GitHub for version control to manage my code changes.</li>
+          <li>Integrating APIs to add dynamic features and functionality.</li>
+          <li>An appreciation for iteration and testing—Quiple evolved through continuous refinement.</li>
+        </ul>
       </div>
     </div>
     <div class="faq-item">
-      <button class="faq-question">What marketing skills did I learn from making Quiple?</button>
+      <button class="faq-question">What marketing lessons did you learn from making Quiple?</button>
       <div class="faq-answer">
-        Beyond the technical side, I also explored the business and marketing aspects of running a digital product. I learned how to create engaging content (hopefully) that keeps users coming back, experimented with different monetization strategies (you’ll notice ads, Amazon affiliate links, and Buy Me a Coffee buttons), and explored ways to expand the Quiple brand with spin-offs like <a href="science.html">Quiple Sci</a> and <a href="junior.html">Quiple Jr.</a>
+        Beyond the technical side, I explored the business and marketing aspects of running a digital product. Here are some lessons I learned:
+        <ul>
+          <li>How to create engaging content (hopefully) that keeps users coming back daily.</li>
+          <li>Experimenting with monetization strategies, like ads, Amazon affiliate links, and Buy Me a Coffee buttons.</li>
+          <li>Expanding the Quiple brand with spin-offs like <a href="science.html">Quiple Sci</a> and <a href="junior.html">Quiple Jr.</a></li>
+        </ul>
       </div>
     </div>
   </div>
 
-  <a href="https://www.quiple.xyz" class="back-button">Back to Quiple</a>
+  <div class="buttons-container">
+    <a href="https://www.quiple.xyz" class="back-button">Play Quiple</a>
+    <a href="https://www.quiple.xyz/science.html" class="back-button">Play Quiple Sci</a>
+    <a href="https://www.quiple.xyz/junior.html" class="back-button">Play Quiple Jr</a>
+  </div>
 
   <!-- Contact Form Modal -->
   <div id="contact-overlay">
