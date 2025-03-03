@@ -196,11 +196,11 @@
     {
       "title": "Group Actors by Movie",
       "groups": {
-        "Titanic": ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane"],
-        "The Godfather": ["Marlon Brando", "Al Pacino", "James Caan"],
-        "The Dark Knight": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
-        "Forrest Gump": ["Tom Hanks", "Robin Wright", "Gary Sinise"],
-        "Pulp Fiction": ["John Travolta", "Samuel L. Jackson", "Uma Thurman"]
+        "Titanic": ["DiCaprio", "Winslet", "Zane"],
+        "The Godfather": ["Brando", "Al Pacino", "Caan"],
+        "The Dark Knight": ["Bale", "Ledger", "Eckhart"],
+        "Forrest Gump": ["Hanks", "Wright", "Sinise"],
+        "Pulp Fiction": ["Travolta", "Jackson", "Thurman"]
       },
       "amazonLinks": [
         {
@@ -340,11 +340,11 @@
     {
       "title": "Group Characters by HBO Series",
       "groups": {
-        "The Wire": ["Jimmy McNulty", "Stringer Bell", "Omar Little"],
-        "The Sopranos": ["Tony Soprano", "Carmela Soprano", "Christopher Moltisanti"],
-        "True Blood": ["Sookie Stackhouse", "Bill Compton", "Eric Northman"],
-        "Silicon Valley": ["Richard Hendricks", "Erlich Bachman", "Dinesh Chugtai"],
-        "G.O.T.": ["Jon Snow", "Daenerys Targaryen", "Tyrion Lannister"]
+        "The Wire": ["McNulty", "Bell", "Little"],
+        "The Sopranos": ["Soprano", "Melfi", "Moltisanti"],
+        "True Blood": ["Stackhouse", "Compton", "Northman"],
+        "Silicon Valley": ["Hendricks", "Bachman", "Chugtai"],
+        "G.O.T.": ["Snow", "Targaryen", "Lannister"]
       },
       "amazonLinks": [
         {
