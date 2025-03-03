@@ -39,8 +39,7 @@
         "Dolly Parton": ["Jolene", "9 to 5", "Here You Come"],
         "Willie Nelson": ["Red Headed Stranger", "Night Life", "Whiskey River"],
         "Emmylou Harris": ["Boulder to Birmingham", "Love Hurts", "Together"],
-        "The Eagles": ["Hotel California", "Desperado", "Take It Easy"],
-        "Paul Simon": ["Graceland", "Me and Julio", "Slip Slidin' Away"]
+        "The Eagles": ["Hotel California", "Desperado", "Take It Easy"]
       },
       "amazonLinks": [
         {
@@ -366,6 +365,118 @@
         {
           "name": "Best Selling TV Series",
           "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Characters by Shakespeare Play",
+      "groups": {
+        "Hamlet": ["Hamlet", "Ophelia", "Claudius"],
+        "Macbeth": ["Macbeth", "Lady Macbeth", "Banquo"],
+        "Romeo and Juliet": ["Romeo", "Juliet", "Mercutio"],
+        "A Midsummer Night's Dream": ["Oberon", "Titania", "Puck"],
+        "Othello": ["Othello", "Desdemona", "Iago"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Shakespeare Books",
+          "url": "https://www.amazon.com/Best-Sellers-Shakespeare-Books/zgbs/books/69721?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Events by Century",
+      "groups": {
+        "16th Century": ["Magellan’s Expedition", "Spanish Armada", "Elizabeth I"],
+        "17th Century": ["30 Years' War", "English Civil War", "Jamestown"],
+        "18th Century": ["French Revolution", "American Revolution", "Smallpox Vaccine"],
+        "19th Century": ["American Civil War", "Industrial Revolution", "Napoleonic Wars"],
+        "20th Century": ["World War II", "Moon Landing", "Cold War"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling History Books",
+          "url": "https://www.amazon.com/Best-Sellers-History-Books/zgbs/books/9?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Words by Language",
+      "groups": {
+        "English": ["Hello", "Thank you", "Goodbye"],
+        "Spanish": ["Hola", "Gracias", "Adiós"],
+        "French": ["Bonjour", "Merci", "Au revoir"],
+        "German": ["Hallo", "Danke", "Tschüss"],
+        "Italian": ["Ciao", "Grazie", "Prego"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Language Learning Books",
+          "url": "https://www.amazon.com/Best-Sellers-Language-Learning-Books/zgbs/books/11495?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Words by Language (Alt)",
+      "groups": {
+        "Japanese": ["Kon'nichiwa", "Arigatō", "Sayōnara"],
+        "Chinese": ["Nǐ hǎo", "Xièxiè", "Zàijiàn"],
+        "Russian": ["Izvinite", "Spasibo", "Privet"],
+        "Arabic": ["Marhaba", "Shukran", "Hasanan"],
+        "Portuguese": ["Olá", "Obrigado", "Adeus"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Language Learning Books",
+          "url": "https://www.amazon.com/Best-Sellers-Language-Learning-Books/zgbs/books/11495?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Words by Parts of Speech",
+      "groups": {
+        "Nouns": ["Cat", "House", "Car"],
+        "Verbs": ["Run", "Jump", "Sing"],
+        "Adjectives": ["Happy", "Tall", "Blue"],
+        "Adverbs": ["Quickly", "Loudly", "Well"],
+        "Prepositions": ["On", "Under", "Between"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Grammar Books",
+          "url": "https://www.amazon.com/Best-Sellers-Grammar-Books/zgbs/books/11621?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Characters by Shakespeare Play (Alt)",
+      "groups": {
+        "King Lear": ["Lear", "Cordelia", "Goneril"],
+        "Twelfth Night": ["Viola", "Orsino", "Olivia"],
+        "The Tempest": ["Prospero", "Miranda", "Caliban"],
+        "Julius Caesar": ["Caesar", "Brutus", "Cassius"],
+        "Antony and Cleopatra": ["Antony", "Cleopatra", "Octavius"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Shakespeare Books",
+          "url": "https://www.amazon.com/Best-Sellers-Shakespeare-Books/zgbs/books/69721?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Events by Century (Alt)",
+      "groups": {
+        "15th Century": ["Constantinople Falls", "Printing Press", "Joan of Arc"],
+        "14th Century": ["Black Death", "Hundred Years' War", "Avignon Papacy"],
+        "13th Century": ["Magna Carta", "Mongols Invade", "Seventh Crusade"],
+        "12th Century": ["Crusades", "Thomas Becket", "Eleanor of Aquitaine"],
+        "11th Century": ["Norman Conquest", "Great Schism", "Hastings Battle"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling History Books",
+          "url": "https://www.amazon.com/Best-Sellers-History-Books/zgbs/books/9?tag=tinyinfinity-20"
         }
       ]
     }
