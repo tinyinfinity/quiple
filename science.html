@@ -80,6 +80,62 @@
       #info-container p { font-size: 0.75rem; }
       #info-close-btn { font-size: 0.9rem; padding: 8px 15px; }
     }
+    
+     #more-games-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 2500;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    #more-games-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    
+    .more-games-btn {
+      display: block;
+      background-color: #3457D5;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      margin: 10px auto;
+      max-width: 200px;
+    }
+    
+    .more-games-btn:hover {
+      background-color: #151b54;
+    }
+    
+    #more-games-close-btn {
+      background-color: #ddd;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      width: 100%;
+      max-width: 200px;
+      margin: 10px auto;
+    }
+    
+    #more-games-close-btn:hover {
+      background-color: #ccc;
+    }
   </style>
 </head>
 <body>
@@ -127,8 +183,16 @@
       <button id="contact-close-btn">Close</button>
     </div>
   </div>
+  <div id="more-games-overlay">
+  <div id="more-games-container">
+    <h2>Play More Quiple</h2>
+    <a href="science.html" class="more-games-btn">Play Quiple Sci</a>
+    <a href="junior.html" class="more-games-btn">Play Quiple Jr</a>
+    <button id="more-games-close-btn">Close</button>
+  </div>
+</div>
   <footer id="site-footer">
-    <p>© 2025 Quiple. All rights reserved. | <a href="faq.html">About</a> | <a href="#" id="contact-link">Contact</a></p>
+    <p>© 2025 Quiple. All rights reserved. | <a href="#" id="more-games-link">More Games</a> | <a href="#" id="contact-link">Contact</a></p>
   </footer>
 
   <script>
@@ -204,6 +268,25 @@
       });
     });
 
+    const moreGamesLink = document.getElementById("more-games-link");
+    const moreGamesOverlay = document.getElementById("more-games-overlay");
+    const moreGamesCloseBtn = document.getElementById("more-games-close-btn");
+    
+    moreGamesLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      moreGamesOverlay.style.display = "flex";
+    });
+    
+    moreGamesCloseBtn.addEventListener("click", () => {
+      moreGamesOverlay.style.display = "none";
+    });
+    
+    moreGamesOverlay.addEventListener("click", (e) => {
+      if (e.target === moreGamesOverlay) {
+        moreGamesOverlay.style.display = "none";
+      }
+    });
+    
     function getESTDate() {
       const now = new Date();
       const estOffset = -5 * 60;
