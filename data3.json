@@ -3,11 +3,11 @@
     {
       "title": "Group Songs by Iconic Rock Artists",
       "groups": {
-        "U2": ["With or Without You", "One", "Beautiful Day"],
+        "U2": ["Sweetest Thing", "One", "Beautiful Day"],
         "Coldplay": ["Yellow", "Clocks", "Viva la Vida"],
         "The Beatles": ["Hey Jude", "Come Together", "Let It Be"],
-        "Wilco": ["Jesus, Etc.", "Impossible Germany", "Heavy Metal Drummer"],
-        "R.E.M.": ["Losing My Religion", "Everybody Hurts", "Man on the Moon"]
+        "Wilco": ["Jesus, Etc.", "California Stars", "You and I"],
+        "The Cure": ["Boys Don't Cry", "Just Like Heaven", "Lovesong"]
       },
       "amazonLinks": [
         {
@@ -19,11 +19,11 @@
     {
       "title": "Group Songs by Hip Hop Legends",
       "groups": {
-        "Drake": ["God's Plan", "Hotline Bling", "In My Feelings"],
+        "Drake": ["One Dance", "Hotline Bling", "In My Feelings"],
         "Kendrick Lamar": ["HUMBLE.", "Alright", "DNA"],
-        "Tupac Shakur": ["California Love", "Changes", "Keep Ya Head Up"],
+        "2Pac": ["Hit 'Em Up", "Changes", "Keep Ya Head Up"],
         "The Notorious B.I.G.": ["Juicy", "Big Poppa", "Hypnotize"],
-        "Nas": ["It Ain't Hard to Tell", "N.Y. State of Mind", "If I Ruled the World"]
+        "Jay-Z": ["99 Problems", "Takeover", "Song Cry"]
       },
       "amazonLinks": [
         {
@@ -35,7 +35,7 @@
     {
       "title": "Group Songs by Modern Alternative Artists",
       "groups": {
-        "Maroon 5": ["She Will Be Loved", "Sugar", "Moves Like Jagger"],
+        "Maroon 5": ["Sunday Morning", "Sugar", "Moves Like Jagger"],
         "John Mayer": ["Gravity", "Stop This Train", "New Light"],
         "Lorde": ["Royals", "Team", "Green Light"],
         "Vampire Weekend": ["A-Punk", "Oxford Comma", "Diane Young"],
@@ -150,7 +150,7 @@
         "RPG": ["The Witcher 3", "Skyrim", "Final Fantasy XV"],
         "Sports": ["FIFA", "NBA 2K", "Madden NFL"],
         "Strategy": ["Civilization VI", "StarCraft II", "Age of Empires II"],
-        "Adventure": ["The Legend of Zelda", "Uncharted", "Tomb Raider"]
+        "Adventure": ["Legend of Zelda", "Uncharted", "Tomb Raider"]
       },
       "amazonLinks": [
         {
@@ -165,7 +165,7 @@
         "Fiction": ["The Great Gatsby", "1984", "To Kill a Mockingbird"],
         "Non-Fiction": ["Sapiens", "Educated", "The Wright Brothers"],
         "Mystery": ["Gone Girl", "The Girl with the Dragon Tattoo", "Big Little Lies"],
-        "Romance": ["Pride and Prejudice", "Outlander", "Me Before You"],
+        "Romance": ["Pride & Prejudice", "Outlander", "Me Before You"],
         "Science Fiction": ["Dune", "Neuromancer", "Foundation"]
       },
       "amazonLinks": [
