@@ -305,11 +305,43 @@
       ]
     },
     {
+      "title": "Group Cities by Asian Country",
+      "groups": {
+        "China": ["Shanghai", "Beijing", "Xiamen"],
+        "Japan": ["Toyko", "Osaka", "Sapporo"],
+        "Thailand": ["Bangkok", "Chiang Mai", "Phuket"],
+        "India": ["Jaipur", "Mumbai", "Bengaluru"],
+        "Vietnam": ["Ho Chi Minh", "Hanoi", "Haiphong"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Cities by Latin American Country",
+      "groups": {
+        "Colombia": ["Cali", "Medellin", "Bogota"],
+        "Brazil": ["Brasilia", "Rio de Janeiro", "Sao Paulo"],
+        "Mexico": ["Mexico City", "Guadalajara", "Tijuana"],
+        "Argentina": ["Cordoba", "Buenos Aires", "Rosario"],
+        "Venezuela": ["Caracas", "Maracaibo", "Valencia"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
       "title": "Group Characters by Television Series",
       "groups": {
         "Full House": ["Danny Tanner", "Jesse Katsopolis", "Joey Gladstone"],
         "Friends": ["Ross Geller", "Rachel Green", "Chandler Bing"],
-        "Simpsons": ["Homer Simpson", "Marge Simpson", "Bart Simpson"],
+        "Simpsons": ["Mr. Burns", "Ned Flanders", "Bart Simpson"],
         "Seinfeld": ["Jerry Seinfeld", "Elaine Benes", "George Costanza"],
         "The Office": ["Michael Scott", "Dwight Schrute", "Jim Halpert"]
       },
