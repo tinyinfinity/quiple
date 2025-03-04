@@ -340,7 +340,7 @@
       "title": "Group Musical Instruments by Family",
       "groups": {
         "Strings": ["Guitar", "Violin", "Ukulele"],
-        "Woodwinds": ["Flute", "Clarinet", "Recorder"],
+        "Woodwinds": ["Flute", "Clarinet", "Saxophone"],
         "Brass": ["Trumpet", "Trombone", "Tuba"],
         "Percussion": ["Drums", "Tambourine", "Xylophone"],
         "Keyboard": ["Piano", "Keyboard", "Accordion"]
