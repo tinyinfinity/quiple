@@ -130,11 +130,11 @@
     {
       "title": "Group Movies by Genre",
       "groups": {
-        "Action": ["Die Hard", "Mad Max: Fury Road", "John Wick"],
-        "Drama": ["The Shawshank Redemption", "Forrest Gump", "The Godfather"],
-        "Comedy": ["Superbad", "Anchorman", "Step Brothers"],
+        "Action": ["Die Hard", "Mission Impossible", "John Wick"],
+        "Drama": ["Shawshank Redemption", "Forrest Gump", "The Godfather"],
+        "Comedy": ["Superbad", "Anchorman", "Happy Gilmore"],
         "Horror": ["The Exorcist", "Get Out", "A Quiet Place"],
-        "Sci-Fi": ["Blade Runner", "The Matrix", "Inception"]
+        "Romantic": ["The Notebook", "Titanic", "Pretty Woman"]
       },
       "amazonLinks": [
         {
