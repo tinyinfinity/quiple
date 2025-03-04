@@ -451,7 +451,7 @@
     {
       "title": "Group Words by Language (Alt)",
       "groups": {
-        "Japanese": ["Kon'nichiwa", "Arigatō", "Sayōnara"],
+        "Japanese": ["Ohayou", "Arigatō", "Sayōnara"],
         "Chinese": ["Nǐ hǎo", "Xièxiè", "Zàijiàn"],
         "Russian": ["Izvinite", "Spasibo", "Privet"],
         "Arabic": ["Marhaba", "Shukran", "Hasanan"],
