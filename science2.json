@@ -33,7 +33,7 @@
     {
       "title": "Group Antimicrobials",
       "groups": {
-        "Penicillins": ["Amoxicillin", "Penicillin G", "Piperacillin"],
+        "Penicillins": ["Amoxicillin", "Penicillin", "Piperacillin"],
         "Cephalosporins": ["Ceftriaxone", "Cefuroxime", "Cephalexin"],
         "Macrolides": ["Azithromycin", "Clarithromycin", "Erythromycin"],
         "Fluoroquinolones": ["Ciprofloxacin", "Levofloxacin", "Moxifloxacin"],
@@ -75,9 +75,9 @@
       "title": "Group Physics Topics",
       "groups": {
         "Forces": ["Gravity", "Electromagnetic", "Strong Nuclear"],
-        "Types of Energy": ["Kinetic", "Potential", "Thermal"],
-        "Types of Waves": ["Mechanical", "Electromagnetic", "Matter"],
-        "Thermodynamic Laws": ["First Law", "Second Law", "Third Law"],
+        "Types of Energy": ["Chemical", "Elastic", "Thermal"],
+        "Types of Waves": ["Mechanical", "Transverse", "Longitudinal"],
+        "Simple Machines": ["Inclined Plane", "Pulley", "Lever"],
         "Subatomic Particles": ["Proton", "Neutron", "Electron"]
       }
     }
