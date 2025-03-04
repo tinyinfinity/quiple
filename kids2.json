@@ -227,10 +227,10 @@
     {
       "title": "Group Kids' Movies by Genre",
       "groups": {
-        "Adventure": ["Moana", "Frozen", "Toy Story"],
-        "Comedy": ["Minions", "Despicable Me", "Shrek"],
-        "Fantasy": ["Sorcerer's Stone", "Narnia: Lion Witch Wardrobe", "Percy Jackson"],
-        "Superhero": ["Spider-Verse", "Big Hero 6", "The Incredibles"],
+        "Sports": ["The Sandlot", "Space Jam", "Little Giants"],
+        "Comedy": ["Minions", "Lego Movie", "Home Alone"],
+        "Fantasy": ["Sorcerer's Stone", "Spirited Away", "Percy Jackson"],
+        "Sci-Fi": ["Wall-E", "Big Hero 6", "Meet the Robinsons"],
         "Animals": ["Zootopia", "The Lion King", "Finding Nemo"]
       },
       "amazonLinks": [
