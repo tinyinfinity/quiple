@@ -97,6 +97,54 @@
       ]
     },
     {
+      "title": "Group Landmarks by Country",
+      "groups": {
+        "France": ["Eiffel Tower", "Louvre Museum", "Notre-Dame"],
+        "Italy": ["Colosseum", "Vatican City", "Pantheon"],
+        "US": ["Mount Rushmore", "Willis Tower", "Old Faithful"],
+        "China": ["Great Wall", "Terracotta Army", "Summer Palace"],
+        "Egypt": ["Pyramids", "Sphinx", "Temple of Karnak"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Landmarks by State",
+      "groups": {
+        "California": ["Hollywood", "Disneyland", "Yosemite"],
+        "NY": ["Central Park", "Statue of Liberty", "Niagara Falls"],
+        "Texas": ["Space Center", "Alamo", "Big Bend"],
+        "Arizona": ["Grand Canyon", "Antelope Canyon", "Monument Valley"],
+        "Washington": ["Space Needle", "Mt. Rainer", "Leavenworth"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Landmarks by Country (Alt)",
+      "groups": {
+        "Russia": ["Eiffel Tower", "Louvre Museum", "Notre-Dame"],
+        "Greece": ["Acropolis", "Parthenon", "Santorini"],
+        "UK": ["Big Ben", "Stonehedge", "Tower of London"],
+        "Australia": ["Opera House", "Great Barrier Reef", "Uluru"],
+        "Japan": ["Mount Fiji", "Kinkaku-ji", "Himeji Castle"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
       "title": "Group Animals by Classification",
       "groups": {
         "Mammals": ["Lion", "Elephant", "Whale"],
