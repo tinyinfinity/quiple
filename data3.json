@@ -33,6 +33,22 @@
       ]
     },
     {
+      "title": "Group Songs by 2000s Artist",
+      "groups": {
+        "Eminem": ["Lose Yourself", "Stan", "Without Me"],
+        "Outkast": ["Hey Ya!", "Ms. Jackson", "Roses"],
+        "Usher": ["Yeah!", "Burn", "Confessions"],
+        "Rihanna": ["Only Girl", "We Found Love", "Umbrella"],
+        "Katy Perry": ["Hot N Cold", "Teenage Dream", "Firework"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Pop Albums",
+          "url": "https://www.amazon.com/Best-Sellers-Pop/zgbs/digital-music-album/195407011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
       "title": "Group Songs by Modern Alternative Artists",
       "groups": {
         "Maroon 5": ["Sunday Morning", "Sugar", "Moves Like Jagger"],
