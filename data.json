@@ -321,13 +321,13 @@
       ]
     },
     {
-      "title": "Group Horror Movies by Director",
+      "title": "Group Movies by Director (Alt)",
       "groups": {
-        "Carpenter": ["Halloween", "The Thing", "Fog"],
-        "Craven": ["Scream", "Nightmare", "Hills"],
+        "Fincher": ["Se7en", "Fight Club", "Zodiac"],
+        "Scott": ["Alien", "Gladiator", "The Martian"],
         "Peele": ["Get Out", "Us", "Nope"],
         "Hitchcock": ["Psycho", "Birds", "Vertigo"],
-        "Wan": ["Conjuring", "Insidious", "Saw"]
+        "Kubrick": ["The Shining", "Dr. Strangelove", "Full Metal Jacket"]
       },
       "amazonLinks": [
         {
@@ -343,7 +343,7 @@
         "Disney": ["Aladdin", "The Lion King", "Frozen"],
         "DreamWorks": ["Shrek", "Kung Fu Panda", "How to Train Your Dragon"],
         "Studio Ghibli": ["Spirited Away", "My Neighbor Totoro", "Princess Mononoke"],
-        "Sony Animation": ["Spider-Verse", "Cloudy with a Chance of Meatballs", "Mitchells vs. The Machines"]
+        "Sony Animation": ["Spider-Verse", "Peter Rabbit", "Surf's Up"]
       },
       "amazonLinks": [
         {
@@ -435,10 +435,10 @@
     {
       "title": "Group Songs by Bands",
       "groups": {
-        "Queen": ["Bohemian Rhapsody", "We Will Rock You", "Don't Stop Me Now"],
+        "Fleetwood Mac": ["Dreams", "Landslide", "Everywhere"],
         "The Beatles": ["Hey Jude", "Let It Be", "Come Together"],
         "Rolling Stones": ["Satisfaction", "Paint It Black", "Gimme Shelter"],
-        "Nirvana": ["Smells Like Teen Spirit", "Come As You Are", "Lithium"],
+        "Nirvana": ["In Bloom", "All Apologies", "Lithium"],
         "Coldplay": ["Yellow", "Fix You", "Viva la Vida"]
       },
       "amazonLinks": [
@@ -453,7 +453,7 @@
       "groups": {
         "USA": ["Statue of Liberty", "Grand Canyon", "Yellowstone"],
         "France": ["Eiffel Tower", "Louvre", "Mont Saint-Michel"],
-        "Italy": ["Colosseum", "Venice Canals", "Leaning Tower of Pisa"],
+        "Italy": ["Colosseum", "Venice Canals", "Leaning Tower"],
         "UK": ["Big Ben", "London Eye", "Tower of London"],
         "Egypt": ["Pyramids of Giza", "Sphinx", "Karnak Temple"]
       },
@@ -481,7 +481,7 @@
       ]
     },
     {
-      "title": "Group Cities by Country (Alternate)",
+      "title": "Group Cities by Country (Alt)",
       "groups": {
         "UK": ["London", "Manchester", "Birmingham"],
         "Germany": ["Berlin", "Munich", "Frankfurt"],
@@ -497,7 +497,7 @@
       ]
     },
     {
-      "title": "Group Attractions by Country (Alternate)",
+      "title": "Group Attractions by Country (Alt)",
       "groups": {
         "UK": ["Buckingham Palace", "Stonehenge", "Edinburgh Castle"],
         "Germany": ["Brandenburg Gate", "Neuschwanstein", "Cologne Cathedral"],
@@ -513,7 +513,7 @@
       ]
     },
     {
-      "title": "Group Books by Author (Alternate)",
+      "title": "Group Books by Author (Alt)",
       "groups": {
         "King": ["The Shining", "It", "Misery"],
         "Agatha Christie": ["Murder on the Orient Express", "And Then There Were None", "Death on the Nile"],
@@ -529,7 +529,7 @@
       ]
     },
     {
-      "title": "Group Historical Events by Decade (Alternate)",
+      "title": "Group Historical Events by Decade (Alt)",
       "groups": {
         "1950s": ["Korean War", "Sputnik", "Rosa Parks"],
         "1960s": ["Civil Rights Act", "Assassination of JFK", "Summer of Love"],
