@@ -129,7 +129,7 @@
       ]
     },
     {
-      "title": "Group Landmarks by Country (Alt)",
+      "title": "Group Landmarks by Country ()",
       "groups": {
         "Russia": ["Eiffel Tower", "Louvre Museum", "Notre-Dame"],
         "Greece": ["Acropolis", "Parthenon", "Santorini"],
@@ -167,7 +167,7 @@
         "Medieval": ["Notre Dame", "Alhambra", "Tower of London"],
         "Renaissance": ["St. Peter's Basilica", "Florence Cathedral", "Sistine Chapel"],
         "Modern": ["Burj Khalifa", "Sydney Opera House", "Shanghai Tower"],
-        "Contemporary": ["The Shard", "Walt Disney Concert Hall", "Guggenheim Bilbao"]
+        "Contemporary": ["The Shard", "W Disney Concert Hall", "Guggenheim Bilbao"]
       },
       "amazonLinks": [
         {
@@ -404,7 +404,7 @@
       "title": "Group Characters by T.V. Series",
       "groups": {
         "Frasier": ["Roz Doyle", "Niles Crane", "Daphne Moon"],
-        "Breaking Bad": ["Walter White", "Jesse Pinkman", "Skyler White"],
+        "Breaking Bad": ["Wer White", "Jesse Pinkman", "Skyler White"],
         "Family Guy": ["Joe Swanson", "Cleveland Brown", "Stewie Griffin"],
         "Mad Men": ["Don Draper", "Peggy Olson", "Roger Sterling"],
         "Parks & Rec": ["Leslie Knope", "Ron Swanson", "Tom Haverford"]
@@ -497,7 +497,7 @@
       ]
     },
     {
-      "title": "Group Words by Language (Alt)",
+      "title": "Group Words by Language ()",
       "groups": {
         "Japanese": ["Ohayou", "Arigatō", "Sayōnara"],
         "Chinese": ["Nǐ hǎo", "Xièxiè", "Zàijiàn"],
@@ -529,7 +529,7 @@
       ]
     },
     {
-      "title": "Group Characters by Shakespeare Play (Alt)",
+      "title": "Group Characters by Shakespeare Play ()",
       "groups": {
         "King Lear": ["Lear", "Cordelia", "Goneril"],
         "Twelfth Night": ["Viola", "Orsino", "Olivia"],
