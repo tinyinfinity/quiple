@@ -147,9 +147,9 @@
       "title": "Group Video Games by Genre",
       "groups": {
         "Action": ["Call of Duty", "Fortnite", "DOOM"],
-        "RPG": ["The Witcher 3", "Skyrim", "Final Fantasy XV"],
+        "RPG": ["The Witcher", "Skyrim", "Final Fantasy"],
         "Sports": ["FIFA", "NBA 2K", "Madden NFL"],
-        "Strategy": ["Civilization VI", "StarCraft II", "Age of Empires II"],
+        "Strategy": ["Civilization", "StarCraft", "Age of Empires"],
         "Adventure": ["Legend of Zelda", "Uncharted", "Tomb Raider"]
       },
       "amazonLinks": [
@@ -162,10 +162,10 @@
     {
       "title": "Group Books by Genre",
       "groups": {
-        "Fiction": ["The Great Gatsby", "1984", "To Kill a Mockingbird"],
-        "Non-Fiction": ["Sapiens", "Educated", "The Wright Brothers"],
-        "Mystery": ["Gone Girl", "The Girl with the Dragon Tattoo", "Big Little Lies"],
-        "Romance": ["Pride & Prejudice", "Outlander", "Me Before You"],
+        "Fiction": ["The Great Gatsby", "1984", "Moby Dick"],
+        "Non-Fiction": ["Sapiens", "Educated", "The Gene"],
+        "Mystery": ["Gone Girl", "Shutter Island", "Big Little Lies"],
+        "Romance": ["Devil in Winter, "Outlander", "Me Before You"],
         "Science Fiction": ["Dune", "Neuromancer", "Foundation"]
       },
       "amazonLinks": [
