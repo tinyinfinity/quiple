@@ -54,7 +54,7 @@
         "Johnny Cash": ["Folsom Prison Blues", "Ring of Fire", "Walk the Line"],
         "Dolly Parton": ["Jolene", "9 to 5", "Here You Come"],
         "Willie Nelson": ["Crazy", "Night Life", "Whiskey River"],
-        "Emmylou Harris": ["Luxary Liner", "Love Hurts", "Together"],
+        "Emmylou Harris": ["Luxury Liner", "Love Hurts", "Together"],
         "Ryan Adams": ["Lucky Now", "To Be Young", "Desire"]
       },
       "amazonLinks": [
@@ -135,7 +135,7 @@
         "NY": ["Central Park", "Statue of Liberty", "Niagara Falls"],
         "Texas": ["Space Center", "Alamo", "Big Bend"],
         "Arizona": ["Grand Canyon", "Antelope Canyon", "Monument Valley"],
-        "Washington": ["Space Needle", "Mt. Rainer", "Leavenworth"]
+        "Washington": ["Space Needle", "Mt. Rainier", "Leavenworth"]
       },
       "amazonLinks": [
         {
@@ -147,11 +147,11 @@
     {
       "title": "Group Landmarks by Country (Alt)",
       "groups": {
-        "Russia": ["Eiffel Tower", "Louvre Museum", "Notre-Dame"],
+        "Russia": ["Kremlin", "Saint Basil's Cathedral", "Bolshoi Theatre"],
         "Greece": ["Acropolis", "Parthenon", "Santorini"],
-        "UK": ["Big Ben", "Stonehedge", "Tower of London"],
+        "UK": ["Big Ben", "Stonehenge", "Tower of London"],
         "Australia": ["Opera House", "Great Barrier Reef", "Uluru"],
-        "Japan": ["Mount Fiji", "Kinkaku-ji", "Himeji Castle"]
+        "Japan": ["Mount Fuji", "Kinkaku-ji", "Himeji Castle"]
       },
       "amazonLinks": [
         {
@@ -183,7 +183,7 @@
         "Medieval": ["Notre Dame", "Alhambra", "Tower of London"],
         "Renaissance": ["St. Peter's Basilica", "Florence Cathedral", "Sistine Chapel"],
         "Modern": ["Burj Khalifa", "Sydney Opera House", "Shanghai Tower"],
-        "Contemporary": ["The Shard", "W Disney Concert Hall", "Guggenheim Bilbao"]
+        "Contemporary": ["The Shard", "Disney Concert Hall", "Guggenheim Bilbao"]
       },
       "amazonLinks": [
         {
@@ -372,7 +372,7 @@
       "title": "Group Cities by Asian Country",
       "groups": {
         "China": ["Shanghai", "Beijing", "Xiamen"],
-        "Japan": ["Toyko", "Osaka", "Sapporo"],
+        "Japan": ["Tokyo", "Osaka", "Sapporo"],
         "Thailand": ["Bangkok", "Chiang Mai", "Phuket"],
         "India": ["Jaipur", "Mumbai", "Bengaluru"],
         "Vietnam": ["Ho Chi Minh", "Hanoi", "Haiphong"]
@@ -420,7 +420,7 @@
       "title": "Group Characters by T.V. Series",
       "groups": {
         "Frasier": ["Roz Doyle", "Niles Crane", "Daphne Moon"],
-        "Breaking Bad": ["Wer White", "Jesse Pinkman", "Skyler White"],
+        "Breaking Bad": ["Walter White", "Jesse Pinkman", "Skyler White"],
         "Family Guy": ["Joe Swanson", "Cleveland Brown", "Stewie Griffin"],
         "Mad Men": ["Don Draper", "Peggy Olson", "Roger Sterling"],
         "Parks & Rec": ["Leslie Knope", "Ron Swanson", "Tom Haverford"]
