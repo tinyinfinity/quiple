@@ -534,7 +534,7 @@
         "Nouns": ["Cat", "House", "Car"],
         "Verbs": ["Run", "Jump", "Sing"],
         "Adjectives": ["Happy", "Tall", "Blue"],
-        "Adverbs": ["Quickly", "Loudly", "Well"],
+        "Adverbs": ["Quickly", "Loudly", "Always"],
         "Prepositions": ["On", "Under", "Between"]
       },
       "amazonLinks": [
@@ -545,7 +545,7 @@
       ]
     },
     {
-      "title": "Group Characters by Shakespeare Play ()",
+      "title": "Group Characters by Shakespeare Play (Alt)",
       "groups": {
         "King Lear": ["Lear", "Cordelia", "Goneril"],
         "Twelfth Night": ["Viola", "Orsino", "Olivia"],
