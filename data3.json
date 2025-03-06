@@ -181,7 +181,7 @@
         "Fiction": ["The Great Gatsby", "1984", "Moby Dick"],
         "Non-Fiction": ["Sapiens", "Educated", "The Gene"],
         "Mystery": ["Gone Girl", "Shutter Island", "Big Little Lies"],
-        "Romance": ["Devil in Winter, "Outlander", "Me Before You"],
+        "Romance": ["Devil in Winter", "Outlander", "Me Before You"],
         "Science Fiction": ["Dune", "Neuromancer", "Foundation"]
       },
       "amazonLinks": [
