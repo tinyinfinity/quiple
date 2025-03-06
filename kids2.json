@@ -259,11 +259,11 @@
     {
       "title": "Group Halloween Candy by Type",
       "groups": {
-        "Chocolate": ["Hershey's", "Reese's", "M&M's"],
-        "Gummy": ["Gummy Bears", "Sour Patch Kids", "Worms"],
+        "Chocolate": ["Hershey's", "Reese's", "Snickers"],
+        "Gummy": ["Gummy Bears", "Swedish Fish", "Haribo"],
         "Hard Candy": ["Lollipops", "Jolly Ranchers", "Life Savers"],
-        "Chewy": ["Starburst", "Skittles", "Twizzlers"],
-        "Novelty": ["Candy Corn", "Peeps", "Pixy Stix"]
+        "Mint": ["Tic Tacs", "Ice Breakers", "Altoids"],
+        "Novelty": ["Warheads", "Pop Rocks", "Pixy Stix"]
       },
       "amazonLinks": [
         {
