@@ -305,13 +305,13 @@
       ]
     },
     {
-      "title": "Group Cities by Canadian Province",
+      "title": "Group Cities by NA Region",
       "groups": {
         "Ontario": ["Toronto", "Ottawa", "Mississauga"],
-        "Quebec": ["Montreal", "Quebec City", "Laval"],
+        "Alaska": ["Fairbanks", "Anchorage", "Juneau"],
         "British Columbia": ["Vancouver", "Victoria", "Bella Coola"],
-        "Alberta": ["Calgary", "Edmonton", "Red Deer"],
-        "Manitoba": ["Winnipeg", "Brandon", "Steinbach"]
+        "Texas": ["Houston", "Austin", "Dallas"],
+        "Arizona": ["Phoenix", "Sedona", "Tucson"]
       },
       "amazonLinks": [
         {
