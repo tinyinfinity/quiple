@@ -19,9 +19,9 @@
     {
       "title": "Group Songs by Artist (Motown)",
       "groups": {
-        "The Temptations": ["My Girl", "Get Ready", "Cloud Nine"],
+        "The Temptations": ["My Girl", "Just My Imagination", "Cloud Nine"],
         "Marvin Gaye": ["What's Going On", "Sexual Healing", "Mercy Mercy Me"],
-        "Diana Ross": ["I'm Coming Out", "Upside Down", "Love Hangover"],
+        "Jackson 5": ["I'll Be There", "ABC", "I Want You Back"],
         "Stevie Wonder": ["Superstition", "Sir Duke", "I Wish"],
         "The Supremes": ["Baby Love", "Love Child", "Reflections"]
       },
@@ -33,13 +33,29 @@
       ]
     },
     {
+      "title": "Group Events by Decade (Alt)",
+      "groups": {
+        "1930s": ["Hindenburg", "WWII Begins", "Spanish Civil War"],
+        "1940s": ["Pearl Harbor", "Indian Independence", "NATO Formed],
+        "1950s": ["Korean War", "Sputnik", "Rosa Parks"],
+        "1960s": ["JFK Assassination", "Apollo 11", "Civil Rights Act"],
+        "1970": ["Watergate", "Fall of Saigon", "Iranian Revolution"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling History Books",
+          "url": "https://www.amazon.com/Best-Sellers-History/zgbs/books/9?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
       "title": "Group Songs by Artist (Americana)",
       "groups": {
         "Johnny Cash": ["Folsom Prison Blues", "Ring of Fire", "Walk the Line"],
         "Dolly Parton": ["Jolene", "9 to 5", "Here You Come"],
-        "Willie Nelson": ["Red Headed Stranger", "Night Life", "Whiskey River"],
-        "Emmylou Harris": ["Boulder to Birmingham", "Love Hurts", "Together"],
-        "The Eagles": ["Hotel California", "Desperado", "Take It Easy"]
+        "Willie Nelson": ["Crazy", "Night Life", "Whiskey River"],
+        "Emmylou Harris": ["Luxary Liner", "Love Hurts", "Together"],
+        "Ryan Adams": ["Lucky Now", "To Be Young", "Desire"]
       },
       "amazonLinks": [
         {
@@ -129,7 +145,7 @@
       ]
     },
     {
-      "title": "Group Landmarks by Country ()",
+      "title": "Group Landmarks by Country (Alt)",
       "groups": {
         "Russia": ["Eiffel Tower", "Louvre Museum", "Notre-Dame"],
         "Greece": ["Acropolis", "Parthenon", "Santorini"],
