@@ -4,9 +4,9 @@
       "title": "Group Movies by Director",
       "groups": {
         "Spielberg": ["Jurassic Park", "E.T.", "Jaws"],
-        "Nolan": ["Inception", "Dark Knight", "Memento"],
-        "Tarantino": ["Pulp Fiction", "Kill Bill", "Django"],
-        "Cameron": ["Titanic", "Avatar", "Terminator"],
+        "Nolan": ["Inception", "The Dark Knight", "Memento"],
+        "Tarantino": ["Pulp Fiction", "Kill Bill", "Django Unchained"],
+        "Cameron": ["Titanic", "Avatar", "The Terminator"],
         "Scorsese": ["Goodfellas", "Raging Bull", "Casino"]
       },
       "amazonLinks": [
@@ -20,7 +20,7 @@
       "title": "Group Songs by Artist",
       "groups": {
         "Mercury": ["Bohemian Rhapsody", "Killer Queen", "Radio Ga Ga"],
-        "Houston": ["I Wanna Dance", "Greatest Love", "So Emotional"],
+        "Houston": ["I Wanna Dance with Somebody", "Greatest Love of All", "So Emotional"],
         "Presley": ["Hound Dog", "Jailhouse Rock", "Heartbreak Hotel"],
         "Gaga": ["Poker Face", "Bad Romance", "Just Dance"],
         "Jackson": ["Thriller", "Beat It", "Bad"]
@@ -35,9 +35,9 @@
     {
       "title": "Group Albums by Artist",
       "groups": {
-        "Beatles": ["Abbey Road", "Revolver", "Help!"],
-        "Zeppelin": ["IV", "II", "Houses of the Holy"],
-        "Floyd": ["Dark Side", "The Wall", "Animals"],
+        "The Beatles": ["Abbey Road", "Revolver", "Help!"],
+        "Led Zeppelin": ["IV", "II", "Houses of the Holy"],
+        "Pink Floyd": ["The Dark Side of the Moon", "The Wall", "Animals"],
         "Nirvana": ["Nevermind", "In Utero", "Bleach"],
         "Radiohead": ["OK Computer", "Kid A", "The Bends"]
       },
@@ -51,9 +51,9 @@
     {
       "title": "Group Historical Events by Decade",
       "groups": {
-        "1960s": ["Moon Landing", "JFK Shot", "Woodstock"],
+        "1960s": ["Moon Landing", "JFK Assassination", "Woodstock"],
         "1970s": ["Watergate", "Disco Fever", "Oil Crisis"],
-        "1980s": ["Berlin Wall", "Chernobyl", "MTV Launch"],
+        "1980s": ["Berlin Wall Falls", "Chernobyl", "MTV Launch"],
         "1990s": ["Gulf War", "Y2K Scare", "OJ Trial"],
         "2000s": ["9/11", "iPhone Debut", "Hurricane Katrina"]
       },
@@ -67,11 +67,11 @@
     {
       "title": "Group Paintings by Artist",
       "groups": {
-        "Da Vinci": ["Mona Lisa", "Last Supper", "Lady with Ermine"],
-        "Van Gogh": ["Starry Night", "Sunflowers", "The Bedroom"],
-        "Picasso": ["Guernica", "The Weeping", "Blue Nude"],
+        "Da Vinci": ["Mona Lisa", "The Last Supper", "Lady with an Ermine"],
+        "Van Gogh": ["The Starry Night", "Sunflowers", "The Bedroom"],
+        "Picasso": ["Guernica", "The Weeping Woman", "Blue Nude"],
         "Monet": ["Water Lilies", "Haystacks", "Poppies"],
-        "Michelangelo": ["Sistine Chapel", "David", "Pietà"]
+        "Michelangelo": ["Sistine Chapel Ceiling", "David", "Pietà"]
       },
       "amazonLinks": [
         {
@@ -83,11 +83,11 @@
     {
       "title": "Group Books by Author",
       "groups": {
-        "Rowling": ["Philosopher’s Stone", "Chamber of Secrets", "Goblet of Fire"],
-        "Orwell": ["1984", "Animal Farm", "Down and Out"],
-        "Austen": ["Pride", "Sense", "Emma"],
-        "King": ["Shining", "It", "Carrie"],
-        "Tolkien": ["Hobbit", "Fellowship", "Two Towers"]
+        "Rowling": ["Harry Potter and the Philosopher’s Stone", "Harry Potter and the Chamber of Secrets", "Harry Potter and the Goblet of Fire"],
+        "Orwell": ["1984", "Animal Farm", "Down and Out in Paris and London"],
+        "Austen": ["Pride and Prejudice", "Sense and Sensibility", "Emma"],
+        "King": ["The Shining", "It", "Carrie"],
+        "Tolkien": ["The Hobbit", "The Fellowship of the Ring", "The Two Towers"]
       },
       "amazonLinks": [
         {
@@ -102,7 +102,7 @@
         "USA": ["New York", "Los Angeles", "Chicago"],
         "Japan": ["Tokyo", "Osaka", "Kyoto"],
         "France": ["Paris", "Lyon", "Nice"],
-        "Brazil": ["Rio", "São Paulo", "Salvador"],
+        "Brazil": ["Rio de Janeiro", "São Paulo", "Salvador"],
         "Australia": ["Sydney", "Melbourne", "Perth"]
       },
       "amazonLinks": [
@@ -151,7 +151,7 @@
         "Bell": ["Telephone", "Hydrofoil", "Metal Detector"],
         "Tesla": ["AC Motor", "Tesla Coil", "Radio"],
         "Wright": ["Airplane", "Glider", "Wind Tunnel"],
-        "Gutenberg": ["Printing Press", "Type", "Oil-Based Ink"]
+        "Gutenberg": ["Printing Press", "Movable Type", "Oil-Based Ink"]
       },
       "amazonLinks": [
         {
@@ -196,9 +196,9 @@
       "title": "Group Movies by Lead Actor",
       "groups": {
         "Hanks": ["Forrest Gump", "Cast Away", "Big"],
-        "DiCaprio": ["Titanic", "Inception", "Wolf of Wall Street"],
+        "DiCaprio": ["Titanic", "Inception", "The Wolf of Wall Street"],
         "Pitt": ["Fight Club", "Troy", "Mr. & Mrs. Smith"],
-        "Downey Jr.": ["Iron Man", "Sherlock", "Chaplin"],
+        "Downey Jr.": ["Iron Man", "Sherlock Holmes", "Chaplin"],
         "Washington": ["Training Day", "Glory", "Fences"]
       },
       "amazonLinks": [
@@ -211,11 +211,11 @@
     {
       "title": "Group Movies by Lead Actress",
       "groups": {
-        "Streep": ["Devil Wears Prada", "Mamma Mia", "Sophie’s Choice"],
-        "Bullock": ["Blind Side", "Speed", "Gravity"],
-        "Portman": ["Black Swan", "V for Vendetta", "Leon"],
+        "Streep": ["The Devil Wears Prada", "Mamma Mia!", "Sophie’s Choice"],
+        "Bullock": ["The Blind Side", "Speed", "Gravity"],
+        "Portman": ["Black Swan", "V for Vendetta", "Leon: The Professional"],
         "Roberts": ["Pretty Woman", "Erin Brockovich", "Runaway Bride"],
-        "Hathaway": ["Princess Diaries", "Les Mis", "Intern"]
+        "Hathaway": ["The Princess Diaries", "Les Misérables", "The Intern"]
       },
       "amazonLinks": [
         {
@@ -228,8 +228,8 @@
       "title": "Group Songs by Singer",
       "groups": {
         "Mercury": ["Bohemian Rhapsody", "Killer Queen", "Under Pressure"],
-        "Houston": ["I Wanna Dance", "Greatest Love", "I’m Every Woman"],
-        "Presley": ["Hound Dog", "Suspicious Minds", "Blue Suede"],
+        "Houston": ["I Wanna Dance with Somebody", "Greatest Love of All", "I’m Every Woman"],
+        "Presley": ["Hound Dog", "Suspicious Minds", "Blue Suede Shoes"],
         "Gaga": ["Poker Face", "Bad Romance", "Applause"],
         "Jackson": ["Thriller", "Beat It", "P.Y.T."]
       },
@@ -277,9 +277,9 @@
       "groups": {
         "Boxing": ["Rocky", "Raging Bull", "Creed"],
         "Basketball": ["Space Jam", "Hoosiers", "He Got Game"],
-        "Baseball": ["Sandlot", "Field of Dreams", "Moneyball"],
-        "Football": ["Rudy", "Blind Side", "Friday Night Lights"],
-        "Hockey": ["Miracle", "Mighty Ducks", "Slap Shot"]
+        "Baseball": ["The Sandlot", "Field of Dreams", "Moneyball"],
+        "Football": ["Rudy", "The Blind Side", "Friday Night Lights"],
+        "Hockey": ["Miracle", "The Mighty Ducks", "Slap Shot"]
       },
       "amazonLinks": [
         {
@@ -292,10 +292,10 @@
       "title": "Group Animated Movies by Studio",
       "groups": {
         "Pixar": ["Toy Story", "Finding Nemo", "Inside Out"],
-        "Disney": ["Lion King", "Frozen", "Aladdin"],
+        "Disney": ["The Lion King", "Frozen", "Aladdin"],
         "DreamWorks": ["Shrek", "Kung Fu Panda", "Madagascar"],
-        "Ghibli": ["Spirited Away", "Totoro", "Howl"],
-        "Illumination": ["Minions", "Pets", "Sing"]
+        "Ghibli": ["Spirited Away", "My Neighbor Totoro", "Howl’s Moving Castle"],
+        "Illumination": ["Minions", "The Secret Life of Pets", "Sing"]
       },
       "amazonLinks": [
         {
@@ -307,11 +307,11 @@
     {
       "title": "Fantasy Movies by Franchise",
       "groups": {
-        "Lord of the Rings": ["Fellowship", "Two Towers", "Return of the King"],
+        "Lord of the Rings": ["Fellowship of the Ring", "Two Towers", "Return of the King"],
         "Harry Potter": ["Sorcerer’s Stone", "Prisoner of Azkaban", "Goblet of Fire"],
         "Star Wars": ["Empire Strikes Back", "Revenge of the Sith", "The Last Jedi"],
         "Marvel": ["Doctor Strange", "Thor: Ragnarok", "Guardians of the Galaxy"],
-        "DC": ["Wonder Woman", "The Dark Knight", "Man of Steel"]
+        "DC": ["Wonder Woman", "Aquaman", "Man of Steel"]
       },
       "amazonLinks": [
         {
@@ -326,7 +326,7 @@
         "Fincher": ["Se7en", "Fight Club", "Zodiac"],
         "Scott": ["Alien", "Gladiator", "The Martian"],
         "Peele": ["Get Out", "Us", "Nope"],
-        "Hitchcock": ["Psycho", "Birds", "Vertigo"],
+        "Hitchcock": ["Psycho", "The Birds", "Vertigo"],
         "Kubrick": ["The Shining", "Dr. Strangelove", "Full Metal Jacket"]
       },
       "amazonLinks": [
@@ -337,13 +337,13 @@
       ]
     },
     {
-      "title": "Animated Movies by Studio",
+      "title": "Animated Movies by Studio (Alt)",
       "groups": {
         "Pixar": ["Toy Story", "Finding Nemo", "Inside Out"],
         "Disney": ["Aladdin", "The Lion King", "Frozen"],
         "DreamWorks": ["Shrek", "Kung Fu Panda", "How to Train Your Dragon"],
         "Studio Ghibli": ["Spirited Away", "My Neighbor Totoro", "Princess Mononoke"],
-        "Sony Animation": ["Spider-Verse", "Peter Rabbit", "Surf's Up"]
+        "Sony Animation": ["Spider-Man: Into the Spider-Verse", "Peter Rabbit", "Surf's Up"]
       },
       "amazonLinks": [
         {
@@ -356,10 +356,10 @@
       "title": "Group Comedies by Actor",
       "groups": {
         "Ferrell": ["Anchorman", "Step Brothers", "Elf"],
-        "McCarthy": ["Heat", "Bridesmaids", "Spy"],
+        "McCarthy": ["The Heat", "Bridesmaids", "Spy"],
         "Sandler": ["Happy Gilmore", "Big Daddy", "Grown Ups"],
         "Fey": ["Mean Girls", "Baby Mama", "Sisters"],
-        "Hart": ["Ride Along", "Jumanji", "Get Hard"]
+        "Hart": ["Ride Along", "Jumanji: Welcome to the Jungle", "Get Hard"]
       },
       "amazonLinks": [
         {
@@ -371,11 +371,11 @@
     {
       "title": "Group Sci-Fi Movies by Theme",
       "groups": {
-        "Space": ["Interstellar", "Martian", "Gravity"],
-        "Time": ["Back to Future", "Looper", "Primer"],
-        "Dystopia": ["Blade Runner", "Matrix", "Fury Road"],
-        "Aliens": ["Independence Day", "Arrival", "ET"],
-        "AI": ["Ex Machina", "Her", "Terminator"]
+        "Space": ["Interstellar", "The Martian", "Gravity"],
+        "Time": ["Back to the Future", "Looper", "Primer"],
+        "Dystopia": ["Blade Runner", "The Matrix", "Mad Max: Fury Road"],
+        "Aliens": ["Independence Day", "Arrival", "E.T."],
+        "AI": ["Ex Machina", "Her", "The Terminator"]
       },
       "amazonLinks": [
         {
@@ -388,10 +388,10 @@
       "title": "Group Reality Shows by Type",
       "groups": {
         "Cooking": ["MasterChef", "Top Chef", "Chopped"],
-        "Survival": ["Survivor", "Alone", "Naked"],
-        "Talent": ["Idol", "Voice", "AGT"],
-        "Dating": ["Bachelor", "Love Island", "90 Day"],
-        "Reno": ["Fixer Upper", "Property Bros", "Flip or Flop"]
+        "Survival": ["Survivor", "Alone", "Naked and Afraid"],
+        "Talent": ["American Idol", "The Voice", "America's Got Talent"],
+        "Dating": ["The Bachelor", "Love Island", "90 Day Fiancé"],
+        "Reno": ["Fixer Upper", "Property Brothers", "Flip or Flop"]
       },
       "amazonLinks": [
         {
@@ -404,10 +404,10 @@
       "title": "Group Board Games by Type",
       "groups": {
         "Strategy": ["Chess", "Catan", "Risk"],
-        "Party": ["Cards Against", "Codenames", "Taboo"],
+        "Party": ["Cards Against Humanity", "Codenames", "Taboo"],
         "Trivia": ["Trivial Pursuit", "Jeopardy", "Brainiac"],
         "Family": ["Monopoly", "Scrabble", "Clue"],
-        "Co-op": ["Pandemic", "Forbidden Island", "Betrayal"]
+        "Co-op": ["Pandemic", "Forbidden Island", "Betrayal at House on the Hill"]
       },
       "amazonLinks": [
         {
@@ -420,10 +420,10 @@
       "title": "Group Actors/Actresses by Movies",
       "groups": {
         "DiCaprio": ["Titanic", "Inception", "The Revenant"],
-        "Streep": ["The Devil Wears Prada", "Mamma Mia", "The Iron Lady"],
-        "Pitt": ["Fight Club", "Seven", "Ocean's Eleven"],
-        "Bullock": ["Miss Congeniality", "The Blind Side", "While You Were Sleeping"],
-        "Washington": ["Training Day", "Malcolm X", "Fences"]
+        "Streep": ["It's Complicated", "Mamma Mia!", "The Iron Lady"],
+        "Pitt": ["Fight Club", "Se7en", "Ocean's Eleven"],
+        "Bullock": ["Miss Congeniality", "The Blind Side", "Gravity"],
+        "Washington": ["Training Day", "Malcolm X", "Flight"]
       },
       "amazonLinks": [
         {
@@ -437,7 +437,7 @@
       "groups": {
         "Fleetwood Mac": ["Dreams", "Landslide", "Everywhere"],
         "The Beatles": ["Hey Jude", "Let It Be", "Come Together"],
-        "Rolling Stones": ["Satisfaction", "Paint It Black", "Gimme Shelter"],
+        "The Rolling Stones": ["(I Can't Get No) Satisfaction", "Paint It Black", "Gimme Shelter"],
         "Nirvana": ["In Bloom", "All Apologies", "Lithium"],
         "Coldplay": ["Yellow", "Fix You", "Viva la Vida"]
       },
@@ -453,7 +453,7 @@
       "groups": {
         "USA": ["Statue of Liberty", "Grand Canyon", "Yellowstone"],
         "France": ["Eiffel Tower", "Louvre", "Mont Saint-Michel"],
-        "Italy": ["Colosseum", "Venice Canals", "Leaning Tower"],
+        "Italy": ["Colosseum", "Venice Canals", "Leaning Tower of Pisa"],
         "UK": ["Big Ben", "London Eye", "Tower of London"],
         "Egypt": ["Pyramids of Giza", "Sphinx", "Karnak Temple"]
       },
@@ -467,11 +467,11 @@
     {
       "title": "Group Characters by T.V. Show",
       "groups": {
-        "Friends": ["Rachel", "Ross", "Monica", "Chandler", "Joey", "Phoebe"],
-        "The Simpsons": ["Homer", "Marge", "Bart", "Lisa", "Maggie"],
-        "Game of Thrones": ["Jon Snow", "Daenerys", "Tyrion", "Cersei", "Arya"],
+        "Friends": ["Rachel", "Ross", "Monica"],
+        "The Simpsons": ["Homer", "Marge", "Bart"],
+        "Game of Thrones": ["Jon Snow", "Daenerys", "Tyrion"],
         "Breaking Bad": ["Walter White", "Jesse Pinkman", "Saul Goodman"],
-        "Stranger Things": ["Eleven", "Mike", "Dustin", "Lucas", "Will"]
+        "Stranger Things": ["Eleven", "Mike", "Dustin"]
       },
       "amazonLinks": [
         {
@@ -500,7 +500,7 @@
       "title": "Group Attractions by Country (Alt)",
       "groups": {
         "UK": ["Buckingham Palace", "Stonehenge", "Edinburgh Castle"],
-        "Germany": ["Brandenburg Gate", "Neuschwanstein", "Cologne Cathedral"],
+        "Germany": ["Brandenburg Gate", "Neuschwanstein Castle", "Cologne Cathedral"],
         "India": ["Taj Mahal", "Red Fort", "Qutub Minar"],
         "China": ["Great Wall", "Forbidden City", "Terracotta Army"],
         "Australia": ["Sydney Opera House", "Uluru", "Great Barrier Reef"]
@@ -516,10 +516,10 @@
       "title": "Group Books by Author (Alt)",
       "groups": {
         "King": ["The Shining", "It", "Misery"],
-        "Agatha Christie": ["Murder on the Orient Express", "And Then There Were None", "Death on the Nile"],
-        "Tolkien": ["The Hobbit", "The Lord of the Rings", "The Silmarillion"],
-        "Rowling": ["Harry Potter and the Sorcerer's Stone", "Harry Potter and the Chamber of Secrets", "Harry Potter and the Prisoner of Azkaban"],
-        "Martin": ["A Game of Thrones", "A Clash of Kings", "A Storm of Swords"]
+        "Austen": ["Pride & Prejudice", "Emma", "Persuasion"],
+        "Tolkien": ["Hobbit", "Lord of the Rings", "Silmarillion"],
+        "Orwell": ["1984", "Animal Farm", "Burmese Days"],
+        "Martin": ["Game of Thrones", "Clash of Kings", "Storm of Swords"]
       },
       "amazonLinks": [
         {
@@ -531,11 +531,11 @@
     {
       "title": "Group Historical Events by Decade (Alt)",
       "groups": {
-        "1950s": ["Korean War", "Sputnik", "Rosa Parks"],
+        "1950s": ["Korean War", "Sputnik Launch", "Rosa Parks Arrest"],
         "1960s": ["Civil Rights Act", "Assassination of JFK", "Summer of Love"],
         "1970s": ["Vietnam War Ends", "Watergate Scandal", "Rise of Punk"],
         "1980s": ["Fall of Berlin Wall", "AIDS Crisis", "Chernobyl Disaster"],
-        "1990s": ["Dissolution of USSR", "Rise of Internet", "Euro Introduced"]
+        "1990s": ["Dissolution of USSR", "Rise of the Internet", "Euro Introduced"]
       },
       "amazonLinks": [
         {
