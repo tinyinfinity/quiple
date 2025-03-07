@@ -72,6 +72,38 @@
       }
     },
     {
+      "title": "Group Anatomical Parts by Type",
+      "groups": {
+        "Arteries": ["Aorta", "Carotid", "Subclavian"],
+        "Bones": ["Femur", "Ulna", "Scapula"],
+        "Muscles": ["Deltoid", "Biceps brachii", "Rectus femoris"],
+        "Nerves": ["Sciatic", "Vagus", "Optic"],
+        "Organs": ["Spleen", "Pancreas", "Stomach"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Medical Books",
+          "url": "https://www.amazon.com/Best-Sellers-Medical-Books/zgbs/books/173514?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Anatomical Parts by Type (Alt)",
+      "groups": {
+        "Bones": ["Femur", "Humerus", "Radius"],
+        "Glands": ["Adrenal", "Lacrimal", "Thyroid"],
+        "Muscles": ["Biceps brachii", "Gluteus maximus", "Pectoralis major"],
+        "Teeth": ["Canine", "Cuspid", "Incisor"],
+        "Veins": ["Basilic", "Jugular", "Popliteal"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Medical Books",
+          "url": "https://www.amazon.com/Best-Sellers-Medical-Books/zgbs/books/173514?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
       "title": "Group Physics Topics",
       "groups": {
         "Forces": ["Gravity", "Electromagnetic", "Strong Nuclear"],
