@@ -97,6 +97,38 @@
       ]
     },
     {
+      "title": "Group Teams by Sport",
+      "groups": {
+        "Basketball": ["Heat", "Warriors", "Mavericks"],
+        "Baseball": ["Cardinals", "Braves", "Astros"],
+        "Football": ["Chiefs", "Ravens", "Seahawks"],
+        "Hockey": ["Canucks", "Rangers", "Avalanche"],
+        "Soccer": ["Chelsea FC", "Juventus", "Liverpool FC"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Sports Collectibles",
+          "url": "https://www.amazon.com/Best-Sellers-Sports-Collectibles/zgbs/sports-collectibles?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Teams by Sport (Alt)",
+      "groups": {
+        "Basketball": ["Lakers", "Celtics", "Bulls"],
+        "Baseball": ["Yankees", "Cubs", "Red Sox"],
+        "Football": ["Cowboys", "Vikings", "Dolphins"],
+        "Hockey": ["Bruins", "Penguins", "Oilers"],
+        "Soccer": ["PSG", "Arsenal FC", "Real Madrid"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Sports Collectibles",
+          "url": "https://www.amazon.com/Best-Sellers-Sports-Collectibles/zgbs/sports-collectibles?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
       "title": "Group U.S. Cities by State",
       "groups": {
         "California": ["Fresno", "San Francisco", "San Diego"],
