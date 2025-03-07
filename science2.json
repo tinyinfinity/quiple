@@ -11,7 +11,7 @@
       }
     },
     {
-      "title": "Group Blood Pressure Medications",
+      "title": "Group Blood Pressure Medication by Classs",
       "groups": {
         "ACE Inhibitors": ["Lisinopril", "Enalapril", "Ramipril"],
         "Beta-Blockers": ["Metoprolol", "Propranolol", "Atenolol"],
@@ -21,7 +21,27 @@
       }
     },
     {
-      "title": "Group Cancer Types",
+      "title": "Group Blood Pressure Medications by Class (Alt)",
+      "groups": {
+        "ACE Inhibitors": ["Lisinopril", "Enalapril", "Ramipril"],
+        "Beta-Blockers": ["Metoprolol", "Propranolol", "Atenolol"],
+        "Calcium Channel Blockers": ["Amlodipine", "Diltiazem", "Verapamil"],
+        "Diuretics": ["Sorbitol", "Furosemide", "Spironolactone"],
+        "ARBs": ["Losartan", "Valsartan", "Irbesartan"]
+      }
+    },
+    {
+      "title": "Group Antineoplastics by Class",
+      "groups": {
+        "Alkylating": ["Ifosfamide", "Busulfan", "Carmustine"],
+        "mAbs": ["Rituximab", "Bevacizumab", "Trastuzumab"],
+        "Antimetabolites": ["Methotrexate", "5-FU", "Cytarabine"],
+        "Hormonal": ["Tamoxifen", "Anastrozole", "Letrozole"],
+        "Topoisomerase Inhibitors": ["Irinotecan", "Topotecan", "Etoposide"]
+      }
+    },
+    {
+      "title": "Group Cancers by Type",
       "groups": {
         "Carcinomas": ["Breast Cancer", "Lung Cancer", "Prostate Cancer"],
         "Sarcomas": ["Osteosarcoma", "Leiomyosarcoma", "Liposarcoma"],
@@ -31,7 +51,7 @@
       }
     },
     {
-      "title": "Group Antimicrobials",
+      "title": "Group Antimicrobials by Type",
       "groups": {
         "Penicillins": ["Amoxicillin", "Penicillin", "Piperacillin"],
         "Cephalosporins": ["Ceftriaxone", "Cefuroxime", "Cephalexin"],
@@ -59,7 +79,6 @@
         "Types of Muscle Tissue": ["Skeletal", "Cardiac", "Smooth"],
         "Human Body Systems": ["Circulatory", "Respiratory", "Nervous"]
       },
-      "amazonLinks": []
     },
     {
       "title": "Group Microbiology Categories",
@@ -79,13 +98,7 @@
         "Muscles": ["Deltoid", "Biceps brachii", "Rectus femoris"],
         "Nerves": ["Sciatic", "Vagus", "Optic"],
         "Organs": ["Spleen", "Pancreas", "Stomach"]
-      },
-      "amazonLinks": [
-        {
-          "name": "Best Selling Medical Books",
-          "url": "https://www.amazon.com/Best-Sellers-Medical-Books/zgbs/books/173514?tag=tinyinfinity-20"
-        }
-      ]
+      }
     },
     {
       "title": "Group Anatomical Parts by Type (Alt)",
@@ -95,13 +108,7 @@
         "Muscles": ["Biceps brachii", "Gluteus maximus", "Pectoralis major"],
         "Teeth": ["Canine", "Cuspid", "Incisor"],
         "Veins": ["Basilic", "Jugular", "Popliteal"]
-      },
-      "amazonLinks": [
-        {
-          "name": "Best Selling Medical Books",
-          "url": "https://www.amazon.com/Best-Sellers-Medical-Books/zgbs/books/173514?tag=tinyinfinity-20"
-        }
-      ]
+      }
     },
     {
       "title": "Group Physics Topics",
