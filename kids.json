@@ -193,6 +193,22 @@
       ]
     },
     {
+      "title": "Group Crayons by Colors",
+      "groups": {
+        "Reds": ["Scarlet", "Crimson", "Cherry"],
+        "Blues": ["Navy", "Cobalt", "Turquoise"],
+        "Greens": ["Forest", "Mint", "Emerald"],
+        "Yellows": ["Lemon", "Canary", "Sunflower"],
+        "Purples": ["Lavender", "Plum", "Orchid"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Kids' Toys",
+          "url": "https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
       "title": "Group Video Game Characters by Game",
       "groups": {
         "Mario": ["Mario", "Luigi", "Peach"],
