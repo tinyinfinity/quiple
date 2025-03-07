@@ -17,6 +17,38 @@
       ]
     },
     {
+      "title": "Group Celebrities by Decade of Birth",
+      "groups": {
+        "1960s": ["Brad Pitt", "Tom Cruise", "Jim Carrey"],
+        "1970s": ["Matt Damon", "Shaq", "Kobe"],
+        "1980s": ["Beyoncé", "Lady Gaga", "Gosling"],
+        "1990s": ["Chalamet", "Zendaya", "Halle Berry"],
+        "2000s": ["Eilish", "Olivia Rodrigo", "Sadie Sink"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Celebrities by Decade of Birth (Alt)",
+      "groups": {
+        "1930s": ["Eastwood", "Freeman", "Connery"],
+        "1940s": ["De Niro", "Al Pacino", "Jagger"],
+        "1950s": ["Madonna", "Tom Hanks", "Oprah"],
+        "1960s": ["Brad Pitt", "Keanu", "Depp"],
+        "1970s": ["The Rock", "Witherspoon", "DiCaprio"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Movies",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
       "title": "Group Songs by Hip Hop Legends",
       "groups": {
         "Drake": ["One Dance", "Hotline Bling", "In My Feelings"],
