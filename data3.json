@@ -33,7 +33,7 @@
       ]
     },
     {
-      "title": "Group Celebrities by Decade of Birth (Alt)",
+      "title": "Group Celebrities by Decade of Birth",
       "groups": {
         "1930s": ["Eastwood", "Freeman", "Connery"],
         "1940s": ["De Niro", "Al Pacino", "Jagger"],
@@ -51,16 +51,48 @@
     {
       "title": "Group Songs by Hip Hop Legends",
       "groups": {
+        "2Pac": ["Hit 'Em Up", "Changes", "Keep Ya Head Up"],
         "Drake": ["One Dance", "Hotline Bling", "In My Feelings"],
         "Kendrick Lamar": ["HUMBLE.", "Alright", "DNA"],
-        "2Pac": ["Hit 'Em Up", "Changes", "Keep Ya Head Up"],
-        "The Notorious B.I.G.": ["Juicy", "Big Poppa", "Hypnotize"],
-        "Jay-Z": ["99 Problems", "Takeover", "Song Cry"]
+        "Jay-Z": ["99 Problems", "Takeover", "Song Cry"],
+        "The Notorious B.I.G.": ["Juicy", "Big Poppa", "Hypnotize"]
       },
       "amazonLinks": [
         {
           "name": "Best Selling Hip-Hop Albums",
           "url": "https://www.amazon.com/Best-Sellers-Music-Hip-Hop/zgbs/music/172542?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Dogs by AKC Catagory",
+      "groups": {
+        "Hound": ["Beagle", "Bloodhound", "Dachshund"],
+        "Sporting": ["Golden Retriever", "Labrador Retriever", "Weimaraner"],
+        "Terrier": ["Bull Terrier", "Jack Russell", "Scottish Terrier"],
+        "Toy": ["Chihuahua", "Maltese", "Pomeranian"],
+        "Working": ["Newfoundland", "Rottweiler", "Samoyed"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Dog Supplies",
+          "url": "https://www.amazon.com/Best-Sellers-Dog-Supplies/zgbs/pet-supplies/2975312011?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Doctors by T.V. Show",
+      "groups": {
+        "ER": ["Carter", "Greene", "Ross"],
+        "The Good Doctor": ["Browne", "Glassman", "Murphy"],
+        "Grey’s Anatomy": ["Grey", "Webber", "Yang"],
+        "House M.D.": ["Cuddy", "House", "Wilson"],
+        "Scrubs": ["Dorian", "Kelso", "Turk"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Medical Books",
+          "url": "https://www.amazon.com/Best-Sellers-Medical-Books/zgbs/books/173514?tag=tinyinfinity-20"
         }
       ]
     },
@@ -113,7 +145,7 @@
       ]
     },
     {
-      "title": "Group Teams by Sport (Alt)",
+      "title": "Group Teams by Sport",
       "groups": {
         "Basketball": ["Lakers", "Celtics", "Bulls"],
         "Baseball": ["Yankees", "Cubs", "Red Sox"],
@@ -161,7 +193,7 @@
       ]
     },
     {
-      "title": "Group Anatomical Parts by Type (Alt)",
+      "title": "Group Anatomical Parts by Type",
       "groups": {
         "Bones": ["Femur", "Humerus", "Radius"],
         "Glands": ["Adrenal", "Lacrimal", "Thyroid"],
