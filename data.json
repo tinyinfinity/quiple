@@ -3,11 +3,11 @@
     {
       "title": "Group Movies by Director",
       "groups": {
-        "Spielberg": ["Jurassic Park", "E.T.", "Jaws"],
-        "Nolan": ["Inception", "The Dark Knight", "Memento"],
-        "Tarantino": ["Pulp Fiction", "Kill Bill", "Django Unchained"],
-        "Cameron": ["Titanic", "Avatar", "The Terminator"],
-        "Scorsese": ["Goodfellas", "Raging Bull", "Casino"]
+        "Cameron": ["Avatar", "The Terminator", "Titanic"],
+        "Nolan": ["The Dark Knight", "Inception", "Memento"],
+        "Scorsese": ["Casino", "Goodfellas", "Raging Bull"],
+        "Spielberg": ["E.T.", "Jaws", "Jurassic Park"],
+        "Tarantino": ["Django Unchained", "Kill Bill", "Pulp Fiction"]
       },
       "amazonLinks": [
         {
