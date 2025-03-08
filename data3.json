@@ -17,6 +17,86 @@
       ]
     },
     {
+    "title": "Group People by Musical Group",
+    "groups": {
+      "The Beatles": ["Lennon", "McCartney", "Starr"],
+      "Fleetwood Mac": ["Buckingham", "McVie", "Nicks"],
+      "Nirvana": ["Cobain", "Grohl", "Novoselic"],
+      "One Direction": ["Horan", "Payne", "Styles"],
+      "The Rolling Stones": ["Jagger", "Richards", "Watts"]
+    },
+    "amazonLinks": [
+      {
+        "name": "Best Selling Music Biographies",
+        "url": "https://www.amazon.com/Best-Sellers-Books-Music-Biographies/zgbs/books/4506?tag=tinyinfinity-20"
+      }
+    ]
+  },
+  {
+    "title": "Group Properties by Monopoly Color",
+    "groups": {
+      "Green": ["North Carolina", "Pacific", "Pennsylvania"],
+      "Orange": ["New York", "St. James", "Tennessee"],
+      "Purple": ["States", "St. Charles", "Virginia"],
+      "Red": ["Illinois", "Indiana", "Kentucky"],
+      "Yellow": ["Atlantic", "Marvin Gardens", "Ventnor"]
+    },
+    "amazonLinks": [
+      {
+        "name": "Check Out Monopoly Board Games",
+        "url": "https://www.amazon.com/s?k=monopoly+board+game&tag=tinyinfinity-20"
+      }
+    ]
+  },
+  {
+    "title": "Group People by Country of Birth",
+    "groups": {
+      "France": ["Debussy", "Monet", "Voltaire"],
+      "Germany": ["Bach", "Beethoven", "Einstein"],
+      "Mexico": ["del Toro", "Hayek", "Kahlo"],
+      "United Kingdom": ["Darwin", "Hawking", "Shakespeare"],
+      "United States": ["Lincoln", "Jordan", "Roosevelt"]
+    },
+    "amazonLinks": [
+      {
+        "name": "History and Biography Books",
+        "url": "https://www.amazon.com/Best-Sellers-Books-Historical-Biographies/zgbs/books/3025?tag=tinyinfinity-20"
+      }
+    ]
+  },
+  {
+    "title": "Group People by Country of Birth",
+    "groups": {
+      "Australia": ["Jackman", "Kidman", "Luhrmann"],
+      "China": ["Confucius", "Jack Ma", "Jet Li"],
+      "Italy": ["Da Vinci", "Fermi", "Galileo"],
+      "Japan": ["Miyazaki", "Murakami", "Yoko Ono"],
+      "Russia": ["Pavlov", "Tchaikovsky", "Tolstoy"]
+    },
+    "amazonLinks": [
+      {
+        "name": "Books on World History",
+        "url": "https://www.amazon.com/Best-Sellers-Books-World-History/zgbs/books/4873?tag=tinyinfinity-20"
+      }
+    ]
+  },
+  {
+    "title": "Group People by Musical Group",
+    "groups": {
+      "Backstreet Boys": ["Littrell", "McLean", "Richardson"],
+      "Coldplay": ["Berryman", "Buckland", "Martin"],
+      "Fleetwood Mac": ["Buckingham", "McVie", "Nicks"],
+      "Maroon 5": ["Carmichael", "Levine", "Valentine"],
+      "*NSYNC": ["Chasez", "Fatone", "Timberlake"]
+    },
+    "amazonLinks": [
+      {
+        "name": "Best Selling Music Biographies",
+        "url": "https://www.amazon.com/Best-Sellers-Books-Music-Biographies/zgbs/books/4506?tag=tinyinfinity-20"
+      }
+    ]
+  },
+  {
       "title": "Group Celebrities by Decade of Birth",
       "groups": {
         "1960s": ["Brad Pitt", "Tom Cruise", "Jim Carrey"],
