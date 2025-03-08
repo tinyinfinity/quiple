@@ -19,11 +19,11 @@
     {
       "title": "Group Songs by Artist",
       "groups": {
-        "Mercury": ["Bohemian Rhapsody", "Killer Queen", "Radio Ga Ga"],
-        "Houston": ["I Wanna Dance with Somebody", "Greatest Love of All", "So Emotional"],
-        "Presley": ["Hound Dog", "Jailhouse Rock", "Heartbreak Hotel"],
-        "Gaga": ["Poker Face", "Bad Romance", "Just Dance"],
-        "Jackson": ["Thriller", "Beat It", "Bad"]
+        "Jimi Hendrix": ["Hey Joe", "Little Wing", "Purple Haze"],
+        "Kings of Leon": ["Pyro", "Sex On Fire", "Use Somebody"],
+        "Lady Gaga": ["Bad Romance", "Just Dance", "Million Reasons"],
+        "Michael Jackson": ["Bad", "Human Nature", "Rock With You"],
+        "R.H.C.P.": ["Scar Tissue", "Snow (Hey Oh)", "Zephyr"]
       },
       "amazonLinks": [
         {
