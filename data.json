@@ -321,7 +321,7 @@
       ]
     },
     {
-      "title": "Group Movies by Director (Alt)",
+      "title": "Group Movies by Director",
       "groups": {
         "Fincher": ["Se7en", "Fight Club", "Zodiac"],
         "Scott": ["Alien", "Gladiator", "The Martian"],
@@ -337,7 +337,7 @@
       ]
     },
     {
-      "title": "Animated Movies by Studio (Alt)",
+      "title": "Animated Movies by Studio",
       "groups": {
         "Pixar": ["Toy Story", "Finding Nemo", "Inside Out"],
         "Disney": ["Aladdin", "The Lion King", "Frozen"],
@@ -481,7 +481,7 @@
       ]
     },
     {
-      "title": "Group Cities by Country (Alt)",
+      "title": "Group Cities by Country",
       "groups": {
         "UK": ["London", "Manchester", "Birmingham"],
         "Germany": ["Berlin", "Munich", "Frankfurt"],
@@ -497,7 +497,7 @@
       ]
     },
     {
-      "title": "Group Attractions by Country (Alt)",
+      "title": "Group Attractions by Country",
       "groups": {
         "UK": ["Buckingham Palace", "Stonehenge", "Edinburgh Castle"],
         "Germany": ["Brandenburg Gate", "Neuschwanstein Castle", "Cologne Cathedral"],
@@ -513,7 +513,7 @@
       ]
     },
     {
-      "title": "Group Books by Author (Alt)",
+      "title": "Group Books by Author",
       "groups": {
         "King": ["The Shining", "It", "Misery"],
         "Austen": ["Pride & Prejudice", "Emma", "Persuasion"],
@@ -529,7 +529,7 @@
       ]
     },
     {
-      "title": "Group Historical Events by Decade (Alt)",
+      "title": "Group Historical Events by Decade",
       "groups": {
         "1950s": ["Korean War", "Sputnik Launch", "Rosa Parks Arrest"],
         "1960s": ["Civil Rights Act", "Assassination of JFK", "Summer of Love"],
