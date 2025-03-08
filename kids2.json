@@ -209,7 +209,7 @@
       ]
     },
     {
-      "title": "Group Cartoon Characters by Show (Alternate)",
+      "title": "Group Cartoon Characters by Show",
       "groups": {
         "Phineas and Ferb": ["Phineas", "Ferb", "Candace"],
         "Gravity Falls": ["Dipper", "Mabel", "Grunkle Stan"],
@@ -289,7 +289,7 @@
       ]
     },
     {
-      "title": "Group Cartoon Characters by Show (Second Alternate)",
+      "title": "Group Cartoon Characters by Show",
       "groups": {
         "Scooby-Doo": ["Scooby", "Shaggy", "Velma"],
         "Tom and Jerry": ["Tom", "Jerry", "Spike"],
