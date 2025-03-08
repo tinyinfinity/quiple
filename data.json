@@ -369,13 +369,13 @@
       ]
     },
     {
-      "title": "Group Sci-Fi Movies by Theme",
+      "title": "Group Movies by Theme",
       "groups": {
-        "Space": ["Interstellar", "The Martian", "Gravity"],
-        "Time": ["Back to the Future", "Looper", "Primer"],
-        "Dystopia": ["Blade Runner", "The Matrix", "Mad Max: Fury Road"],
-        "Aliens": ["Independence Day", "Arrival", "E.T."],
-        "AI": ["Ex Machina", "Her", "The Terminator"]
+        "Comedy": ["Airplane!", "Coming To America", "Superbad"],
+        "Crime Drama": ["The Departed", "Goodfellas", "Zodiac"],
+        "Horror": ["The Exorcist", "Psycho", "Rosemary's Baby"],
+        "Romance": ["Casablanca", "The Notebook", "Titanic"],
+        "Sci-Fi": ["Blade Runner", "Dune", "Inception"]
       },
       "amazonLinks": [
         {
@@ -419,11 +419,11 @@
     {
       "title": "Group Actors/Actresses by Movies",
       "groups": {
-        "DiCaprio": ["Titanic", "Inception", "The Revenant"],
-        "Streep": ["It's Complicated", "Mamma Mia!", "The Iron Lady"],
-        "Pitt": ["Fight Club", "Se7en", "Ocean's Eleven"],
-        "Bullock": ["Miss Congeniality", "The Blind Side", "Gravity"],
-        "Washington": ["Training Day", "Malcolm X", "Flight"]
+        "Bullock": ["The Blind Side", "Gravity", "Miss Congeniality"],
+        "DiCaprio": ["Inception", "The Revenant ", "Titanic"],
+        "Pitt": ["Fight Club", "Ocean's Eleven", "Se7en"],
+        "Streep": ["The Iron Lady", "It's Complicated", "Mamma Mia!"],
+        "Washington": ["Flight", "Malcolm X", "Training Day"]
       },
       "amazonLinks": [
         {
@@ -435,11 +435,11 @@
     {
       "title": "Group Songs by Bands",
       "groups": {
-        "Fleetwood Mac": ["Dreams", "Landslide", "Everywhere"],
-        "The Beatles": ["Hey Jude", "Let It Be", "Come Together"],
-        "The Rolling Stones": ["(I Can't Get No) Satisfaction", "Paint It Black", "Gimme Shelter"],
-        "Nirvana": ["In Bloom", "All Apologies", "Lithium"],
-        "Coldplay": ["Yellow", "Fix You", "Viva la Vida"]
+        "The Beatles": ["Come Together", "Let It Be", "Yesterday"],
+        "Coldplay": ["Fix You", "The Scientist", "Yellow"],
+        "Fleetwood Mac": ["Dreams", "Everywhere", "Landslide"],
+        "Nirvana": ["All Apologies", "In Bloom", "Lithium"],
+        "The Rolling Stones": ["Gimme Shelter", "Paint It, Black", "Start Me Up"]
       },
       "amazonLinks": [
         {
