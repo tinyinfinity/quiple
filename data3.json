@@ -198,7 +198,7 @@
         "Bones": ["Femur", "Humerus", "Radius"],
         "Glands": ["Adrenal", "Lacrimal", "Thyroid"],
         "Muscles": ["Biceps brachii", "Gluteus maximus", "Pectoralis major"],
-        "Teeth": ["Canine", "Cuspid", "Incisor"],
+        "Teeth": ["Cuspid", "Incisor", "Molar"],
         "Veins": ["Basilic", "Jugular", "Popliteal"]
       },
       "amazonLinks": [
