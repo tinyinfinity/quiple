@@ -142,7 +142,7 @@
   <div class="game-container">
     <h2 id="game-title">Daily Match Game</h2>
     <p id="score-info">
-      Streak: <span id="streak">0</span> | Incorrect Tries: <span id="mistakes">0</span>/3
+      Streak: <span id="streak">0</span> | Incorrect Tries: <span id="mistakes">0</span>/4
     </p>
     <div id="grid" class="grid"></div>
   </div>
@@ -165,7 +165,7 @@
     <div id="info-container">
       <h2><center>How to Play Quiple</center></h2>
       <p><center>Quiple is a daily trivia game.</center></p>
-      <p><center>Each day, you'll see a grid of items. Click to select three items you think form a group. You have 3 incorrect tries before the game ends.</center></p>
+      <p><center>Each day, you'll see a grid of items. Click to select three items you think form a group. You have 4 incorrect tries before the game ends.</center></p>
       <p><center>Win by matching all groups correctly, and build your streak by playing daily!</center></p>
       <button id="info-close-btn">Close</button>
     </div>
@@ -505,7 +505,7 @@
       }
       const totalGroups = Object.keys(currentGame.groups).length;
       console.log("checkMatch: matchedGroups =", matchedGroups, "totalGroups =", totalGroups, "mistakes =", mistakes);
-      if (matchedGroups === totalGroups || mistakes >= 3) {
+      if (matchedGroups === totalGroups || mistakes >= 4) {
         console.log("Calling endGame with win =", matchedGroups === totalGroups);
         endGame(matchedGroups === totalGroups);
       }
