@@ -106,7 +106,7 @@
         "Bones": ["Femur", "Humerus", "Radius"],
         "Glands": ["Adrenal", "Lacrimal", "Thyroid"],
         "Muscles": ["Biceps brachii", "Gluteus maximus", "Pectoralis major"],
-        "Teeth": ["Canine", "Cuspid", "Incisor"],
+        "Teeth": ["Cuspid", "Incisor", "Premolar"],
         "Veins": ["Basilic", "Jugular", "Popliteal"]
       }
     },
