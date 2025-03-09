@@ -369,7 +369,7 @@
       ]
     },
     {
-      "title": "Group Movies by Theme",
+      "title": "Group Movies by Genre",
       "groups": {
         "Comedy": ["Airplane!", "Coming To America", "Superbad"],
         "Crime Drama": ["The Departed", "Goodfellas", "Zodiac"],
