@@ -3,111 +3,111 @@
     {
       "title": "Group Elements by Type",
       "groups": {
-        "Noble Gases": ["Helium", "Neon", "Argon"],
-        "Alkali Metals": ["Lithium", "Sodium", "Potassium"],
-        "Transition Metals": ["Iron", "Copper", "Zinc"],
-        "Halogens": ["Fluorine", "Chlorine", "Iodine"],
-        "Lanthanides": ["Lanthanum", "Cerium", "Neodymium"]
+        "Alkali Metals": ["Lithium", "Potassium", "Sodium"],
+        "Halogens": ["Chlorine", "Fluorine", "Iodine"],
+        "Lanthanides": ["Cerium", "Lanthanum", "Neodymium"],
+        "Noble Gases": ["Argon", "Helium", "Neon"],
+        "Transition Metals": ["Copper", "Iron", "Zinc"]
       }
     },
     {
       "title": "Group Blood Pressure Medications by Class",
       "groups": {
-        "ACE Inhibitors": ["Lisinopril", "Enalapril", "Ramipril"],
-        "Beta-Blockers": ["Metoprolol", "Propranolol", "Atenolol"],
+        "ACE Inhibitors": ["Enalapril", "Lisinopril", "Ramipril"],
+        "ARBs": ["Irbesartan", "Losartan", "Valsartan"],
+        "Beta-Blockers": ["Atenolol", "Metoprolol", "Propranolol"],
         "Calcium Channel Blockers": ["Amlodipine", "Diltiazem", "Verapamil"],
-        "Diuretics": ["Mannitol", "Furosemide", "Amiloride"],
-        "ARBs": ["Losartan", "Valsartan", "Irbesartan"]
+        "Diuretics": ["Amiloride", "Furosemide", "Mannitol"]
       }
     },
     {
       "title": "Group Cancer Types",
       "groups": {
         "Carcinomas": ["Breast Cancer", "Lung Cancer", "Prostate Cancer"],
-        "Sarcomas": ["Osteosarcoma", "Leiomyosarcoma", "Liposarcoma"],
-        "Leukemias": ["ALL", "CML", "AML"],
-        "Lymphomas": ["Hodgkin's", "Non-Hodgkin's", "Burkitt's"],
-        "Myelomas": ["Multiple Myeloma", "Plasmacytoma", "Light Chain"]
+        "Leukemias": ["ALL", "AML", "CML"],
+        "Lymphomas": ["Burkitt's", "Hodgkin's", "Non-Hodgkin's"],
+        "Myelomas": ["Light Chain", "Multiple Myeloma", "Plasmacytoma"],
+        "Sarcomas": ["Leiomyosarcoma", "Liposarcoma", "Osteosarcoma"]
       }
     },
     {
       "title": "Group Antimicrobials by Class",
       "groups": {
-        "Penicillins": ["Amoxicillin", "Penicillin G", "Piperacillin"],
-        "Cephalosporins": ["Rocephin", "Cefuroxime", "Ancef"],
-        "Macrolides": ["Azithromycin", "Clarithromycin", "Erythromycin"],
+        "Cephalosporins": ["Ancef", "Cefuroxime", "Rocephin"],
         "Fluoroquinolones": ["Cipro", "Levaquin", "Moxifloxacin"],
+        "Macrolides": ["Azithromycin", "Clarithromycin", "Erythromycin"],
+        "Penicillins": ["Amoxicillin", "Penicillin G", "Piperacillin"],
         "Tetracyclines": ["Doxycycline", "Minocycline", "Tetracycline"]
       }
     },
     {
       "title": "Group General Chemistry Topics",
       "groups": {
-        "Acids": ["Hydrochloric Acid", "Sulfuric Acid", "Nitric Acid"],
-        "Bases": ["Sodium Hydroxide", "Potassium Hydroxide", "Ammonia"],
+        "Acids": ["Hydrochloric Acid", "Nitric Acid", "Sulfuric Acid"],
+        "Bases": ["Ammonia", "Potassium Hydroxide", "Sodium Hydroxide"],
         "Organic Functional Groups": ["Alcohol", "Aldehyde", "Carboxylic Acid"],
-        "Types of Chemical Bonds": ["Ionic", "Covalent", "Metallic"],
-        "States of Matter": ["Solid", "Liquid", "Gas"]
+        "States of Matter": ["Gas", "Liquid", "Solid"],
+        "Types of Chemical Bonds": ["Covalent", "Ionic", "Metallic"]
       }
     },
     {
       "title": "Group Biology Concepts",
       "groups": {
-        "Cell Organelles": ["Mitochondria", "Ribosome", "Golgi Apparatus"],
-        "Genetic Material": ["DNA", "RNA", "Chromosome"],
-        "Photosynthesis Stages": ["Light Reaction", "Calvin Cycle", "E.T.C."],
-        "Types of Muscle Tissue": ["Skeletal", "Cardiac", "Smooth"],
-        "Human Body Systems": ["Circulatory", "Respiratory", "Nervous"]
+        "Cell Organelles": ["Golgi Apparatus", "Mitochondria", "Ribosome"],
+        "Genetic Material": ["Chromosome", "DNA", "RNA"],
+        "Human Body Systems": ["Circulatory", "Nervous", "Respiratory"],
+        "Photosynthesis Stages": ["Calvin Cycle", "E.T.C.", "Light Reaction"],
+        "Types of Muscle Tissue": ["Cardiac", "Skeletal", "Smooth"]
       }
     },
     {
       "title": "Group Microbiology Categories",
       "groups": {
-        "Bacterial Shapes": ["Coccus", "Bacillus", "Spirillum"],
-        "Gram Staining": ["Gram-Positive", "Gram-Negative", "Acid-Fast"],
-        "Types of Viruses": ["DNA Virus", "RNA Virus", "Retrovirus"],
-        "Fungal Infections": ["Candida", "Aspergillus", "Cryptococcus"],
-        "Types of Protozoa": ["Amoeba", "Flagellate", "Ciliate"]
+        "Bacterial Shapes": ["Bacillus", "Coccus", "Spirillum"],
+        "Fungal Infections": ["Aspergillus", "Candida", "Cryptococcus"],
+        "Gram Staining": ["Acid-Fast", "Gram-Negative", "Gram-Positive"],
+        "Types of Protozoa": ["Amoeba", "Ciliate", "Flagellate"],
+        "Types of Viruses": ["DNA Virus", "Retrovirus", "RNA Virus"]
       }
     },
     {
       "title": "Group Physics Topics",
       "groups": {
-        "Forces": ["Gravity", "Electromagnetic", "Strong Nuclear"],
-        "Types of Energy": ["Kinetic", "Potential", "Thermal"],
-        "Types of Waves": ["Mechanical", "Electromagnetic", "Matter"],
+        "Forces": ["Electromagnetic", "Gravity", "Strong Nuclear"],
+        "Subatomic Particles": ["Electron", "Neutron", "Proton"],
         "Thermodynamic Laws": ["First Law", "Second Law", "Third Law"],
-        "Subatomic Particles": ["Proton", "Neutron", "Electron"]
+        "Types of Energy": ["Kinetic", "Potential", "Thermal"],
+        "Types of Waves": ["Electromagnetic", "Matter", "Mechanical"]
       }
     },
     {
       "title": "Group Additional Element Categories",
       "groups": {
-        "Alkali Earth Metals": ["Beryllium", "Magnesium", "Calcium"],
-        "Actinides": ["Uranium", "Plutonium", "Thorium"],
-        "Metalloids": ["Silicon", "Boron", "Arsenic"],
-        "Nonmetals": ["Oxygen", "Carbon", "Nitrogen"],
-        "Noble Metals": ["Gold", "Silver", "Platinum"]
+        "Actinides": ["Plutonium", "Thorium", "Uranium"],
+        "Alkali Earth Metals": ["Beryllium", "Calcium", "Magnesium"],
+        "Metalloids": ["Arsenic", "Boron", "Silicon"],
+        "Noble Metals": ["Gold", "Platinum", "Silver"],
+        "Nonmetals": ["Carbon", "Nitrogen", "Oxygen"]
       }
     },
     {
       "title": "Group Pharmaceuticals",
       "groups": {
-        "Antidepressants": ["Fluoxetine", "Sertraline", "Citalopram"],
-        "Antipsychotics": ["Risperidone", "Olanzapine", "Quetiapine"],
-        "Anti-inflammatory Drugs": ["Ibuprofen", "Naproxen", "Diclofenac"],
-        "Antiepileptics": ["Phenytoin", "Carbamazepine", "Valproate"],
-        "Anticoagulants": ["Warfarin", "Heparin", "Dabigatran"]
+        "Anticoagulants": ["Dabigatran", "Heparin", "Warfarin"],
+        "Antidepressants": ["Citalopram", "Fluoxetine", "Sertraline"],
+        "Antiepileptics": ["Carbamazepine", "Phenytoin", "Valproate"],
+        "Anti-inflammatory Drugs": ["Diclofenac", "Ibuprofen", "Naproxen"],
+        "Antipsychotics": ["Olanzapine", "Quetiapine", "Risperidone"]
       }
     },
     {
       "title": "Group Disease States",
       "groups": {
-        "Cardiovascular Diseases": ["CAD", "CHF", "Arrhythmia"],
-        "Neurological Disorders": ["Alzheimer's", "Parkinson's", "M.S."],
-        "Infectious Diseases": ["Tuberculosis", "HIV/AIDS", "Malaria"],
-        "Autoimmune Diseases": ["RA", "Lupus", "Type 1 Diabetes"],
-        "Genetic Disorders": ["Cystic Fibrosis", "Sickle Cell Anemia", "Huntington's"]
+        "Autoimmune Diseases": ["Lupus", "RA", "Type 1 Diabetes"],
+        "Cardiovascular Diseases": ["Arrhythmia", "CAD", "CHF"],
+        "Genetic Disorders": ["Cystic Fibrosis", "Huntington's", "Sickle Cell Anemia"],
+        "Infectious Diseases": ["HIV/AIDS", "Malaria", "Tuberculosis"],
+        "Neurological Disorders": ["Alzheimer's", "M.S.", "Parkinson's"]
       }
     }
   ]
