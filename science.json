@@ -11,7 +11,7 @@
       }
     },
     {
-      "title": "Group Blood Pressure Medications",
+      "title": "Group Blood Pressure Medications by Class",
       "groups": {
         "ACE Inhibitors": ["Lisinopril", "Enalapril", "Ramipril"],
         "Beta-Blockers": ["Metoprolol", "Propranolol", "Atenolol"],
@@ -31,15 +31,14 @@
       }
     },
     {
-      "title": "Group Antimicrobials",
+      "title": "Group Antimicrobials by Class",
       "groups": {
         "Penicillins": ["Amoxicillin", "Penicillin G", "Piperacillin"],
-        "Cephalosporins": ["Ceftriaxone", "Cefuroxime", "Cephalexin"],
+        "Cephalosporins": ["Rocephin", "Cefuroxime", "Ancef"],
         "Macrolides": ["Azithromycin", "Clarithromycin", "Erythromycin"],
-        "Fluoroquinolones": ["Ciprofloxacin", "Levofloxacin", "Moxifloxacin"],
+        "Fluoroquinolones": ["Cipro", "Levaquin", "Moxifloxacin"],
         "Tetracyclines": ["Doxycycline", "Minocycline", "Tetracycline"]
       },
-      "amazonLinks": []
     },
     {
       "title": "Group General Chemistry Topics",
@@ -70,7 +69,6 @@
         "Fungal Infections": ["Candida", "Aspergillus", "Cryptococcus"],
         "Types of Protozoa": ["Amoeba", "Flagellate", "Ciliate"]
       },
-      "amazonLinks": []
     },
     {
       "title": "Group Physics Topics",
