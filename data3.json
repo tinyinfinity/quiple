@@ -209,12 +209,28 @@
       ]
     },
     {
+      "title": "Group Sports by City",
+      "groups": {
+        "Boston": ["Bruins", "Celtics", "Red Sox"],
+        "Chicago": ["Bears", "Bulls", "Cubs"],
+        "LA": ["Clippers", "Lakers", "Dodgers"],
+        "NYC": ["Jets", "Knicks", "Mets"],
+        "Miami": ["Dolphins", "Heat", "Marlins"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Sports Collectibles",
+          "url": "https://www.amazon.com/Best-Sellers-Sports-Collectibles/zgbs/sports-collectibles?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
       "title": "Group Teams by Sport",
       "groups": {
-        "Basketball": ["Heat", "Warriors", "Mavericks"],
-        "Baseball": ["Cardinals", "Braves", "Astros"],
+        "Baseball": ["Astros", "Cardinals", "Braves"],
+        "Basketball": ["Heat", "Mavericks", "Warriors"],
         "Football": ["Chiefs", "Ravens", "Seahawks"],
-        "Hockey": ["Canucks", "Rangers", "Avalanche"],
+        "Hockey": ["Avalanche", "Canucks", "Rangers"],
         "Soccer": ["Chelsea FC", "Juventus", "Liverpool FC"]
       },
       "amazonLinks": [
@@ -227,11 +243,11 @@
     {
       "title": "Group Teams by Sport",
       "groups": {
-        "Basketball": ["Lakers", "Celtics", "Bulls"],
-        "Baseball": ["Yankees", "Cubs", "Red Sox"],
-        "Football": ["Cowboys", "Vikings", "Dolphins"],
-        "Hockey": ["Bruins", "Penguins", "Oilers"],
-        "Soccer": ["PSG", "Arsenal FC", "Real Madrid"]
+        "Baseball": ["Cubs", "Red Sox", "Yankees"],
+        "Basketball": ["Bulls", "Celtics", "Lakers"],
+        "Football": ["Cowboys", "Dolphins", "Vikings"],
+        "Hockey": ["Bruins", "Oilers", "Penguins"],
+        "Soccer": ["Arsenal FC", "PSG", "Real Madrid"]
       },
       "amazonLinks": [
         {
