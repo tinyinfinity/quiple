@@ -38,7 +38,7 @@
         "Macrolides": ["Azithromycin", "Clarithromycin", "Erythromycin"],
         "Fluoroquinolones": ["Cipro", "Levaquin", "Moxifloxacin"],
         "Tetracyclines": ["Doxycycline", "Minocycline", "Tetracycline"]
-      },
+      }
     },
     {
       "title": "Group General Chemistry Topics",
@@ -68,7 +68,7 @@
         "Types of Viruses": ["DNA Virus", "RNA Virus", "Retrovirus"],
         "Fungal Infections": ["Candida", "Aspergillus", "Cryptococcus"],
         "Types of Protozoa": ["Amoeba", "Flagellate", "Ciliate"]
-      },
+      }
     },
     {
       "title": "Group Physics Topics",
