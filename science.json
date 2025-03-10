@@ -27,7 +27,7 @@
         "Leukemias": ["ALL", "AML", "CML"],
         "Lymphomas": ["Burkitt's", "Hodgkin's", "Non-Hodgkin's"],
         "Myelomas": ["Light Chain", "Multiple Myeloma", "Plasmacytoma"],
-        "Sarcomas": ["Leiomyosarcoma", "Liposarcoma", "Osteosarcoma"]
+        "Sarcomas": ["Ewing", "Chordoma", "Kaposi"]
       }
     },
     {
@@ -95,7 +95,7 @@
       "groups": {
         "Anticoagulants": ["Dabigatran", "Heparin", "Warfarin"],
         "Antidepressants": ["Citalopram", "Fluoxetine", "Sertraline"],
-        "Antiepileptics": ["Carbamazepine", "Phenytoin", "Valproate"],
+        "Antiepileptics": ["Keppra", "Phenytoin", "Valproate"],
         "Anti-inflammatory Drugs": ["Diclofenac", "Ibuprofen", "Naproxen"],
         "Antipsychotics": ["Olanzapine", "Quetiapine", "Risperidone"]
       }
@@ -105,7 +105,7 @@
       "groups": {
         "Autoimmune Diseases": ["Lupus", "RA", "Type 1 Diabetes"],
         "Cardiovascular Diseases": ["Arrhythmia", "CAD", "CHF"],
-        "Genetic Disorders": ["Cystic Fibrosis", "Huntington's", "Sickle Cell Anemia"],
+        "Genetic Disorders": ["Cystic Fibrosis", "Huntington's", "Sickle Cell"],
         "Infectious Diseases": ["HIV/AIDS", "Malaria", "Tuberculosis"],
         "Neurological Disorders": ["Alzheimer's", "M.S.", "Parkinson's"]
       }
