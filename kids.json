@@ -20,10 +20,10 @@
       "title": "Group Pop Songs by Artist",
       "groups": {
         "Imagine Dragons": ["Believer", "Thunder", "Radioactive"],
-        "Taylor Swift": ["Shake It Off", "You Belong With Me", "Love Story"],
-        "BTS": ["Dynamite", "Butter", "Boy With Luv"],
+        "Taylor Swift": ["Shake It Off", "Lover", "Love Story"],
+        "BTS": ["Dynamite", "Butter", "My Universe"],
         "Ariana Grande": ["Thank U, Next", "7 Rings", "Positions"],
-        "Shawn Mendes": ["Stitches", "Treat You Better", "There's Nothing Holdin' Me Back"]
+        "Shawn Mendes": ["Senorita", "Stitches", "Treat You Better"]
       },
       "amazonLinks": [
         {
