@@ -99,11 +99,11 @@
     {
       "title": "Group Songs by Artist",
       "groups": {
-        "Taylor Swift": ["Shake It Off", "You Belong With Me", "Love Story"],
+        "Taylor Swift": ["Shake It Off", "Cruel Summer", "Love Story"],
         "Justin Bieber": ["Baby", "Sorry", "Yummy"],
-        "BTS": ["Dynamite", "Butter", "Boy With Luv"],
+        "Mars": ["APT.", "Grenade", "Uptown Funk"],
         "Ariana Grande": ["Thank U, Next", "7 Rings", "Positions"],
-        "Shawn Mendes": ["Stitches", "Treat You Better", "There's Nothing Holdin' Me Back"]
+        "Carpenter": ["Bed Chem", "Espresso", "Taste"]
       },
       "amazonLinks": [
         {
