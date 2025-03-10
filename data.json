@@ -81,14 +81,14 @@
       ]
     },
     {
-      "title": "Group Books by Author",
-      "groups": {
-        "Rowling": ["Harry Potter and the Philosopher’s Stone", "Harry Potter and the Chamber of Secrets", "Harry Potter and the Goblet of Fire"],
-        "Orwell": ["1984", "Animal Farm", "Down and Out in Paris and London"],
-        "Austen": ["Pride and Prejudice", "Sense and Sensibility", "Emma"],
-        "King": ["The Shining", "It", "Carrie"],
-        "Tolkien": ["The Hobbit", "The Fellowship of the Ring", "The Two Towers"]
-      },
+    "title": "Group Works by Author",
+    "groups": {
+      "Austen": ["Emma", "Mansfield Park", "Persuasion"],
+      "Dahl": ["The BFG", "Fantastic Mr. Fox", "Matilda"],
+      "King": ["Carrie", "It", "The Shining"],
+      "Orwell": ["1984", "Animal Farm", "Burmese Days"],
+      "Shakespeare": ["King Lear", "Othello", "Richard III"]
+    },
       "amazonLinks": [
         {
           "name": "Best Selling Literature",
@@ -451,11 +451,27 @@
     {
       "title": "Group Attractions by Country",
       "groups": {
-        "USA": ["Statue of Liberty", "Grand Canyon", "Yellowstone"],
+        "Egypt": ["Karnak Temple", "Pyramids of Giza", "Sphinx"],
         "France": ["Eiffel Tower", "Louvre", "Mont Saint-Michel"],
-        "Italy": ["Colosseum", "Venice Canals", "Leaning Tower of Pisa"],
+        "Italy": ["Colosseum", "Leaning Tower", "Venice Canals"],
         "UK": ["Big Ben", "London Eye", "Tower of London"],
-        "Egypt": ["Pyramids of Giza", "Sphinx", "Karnak Temple"]
+        "USA": ["Grand Canyon", "Statue of Liberty", "Yellowstone"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Tourist Attractions",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Landmarks by Continent",
+      "groups": {
+        "Antarctica": ["Mt. Erebus", "South Pole", "Vinson Massif"],
+        "Asia": ["Angkor Wat", "Petronas Towers", "Statue of Unity"],
+        "Europe": ["Big Ben", "Colosseum", "Eiffel Tower"],
+        "North America": ["Grand Canyon", "Mt. Evans", "Niagara Falls"],
+        "South America": ["Acropolis", "Iguazu Falls", "Machu Picchu"]
       },
       "amazonLinks": [
         {
@@ -467,11 +483,11 @@
     {
       "title": "Group Characters by T.V. Show",
       "groups": {
-        "Friends": ["Rachel", "Ross", "Monica"],
-        "The Simpsons": ["Homer", "Marge", "Bart"],
-        "Game of Thrones": ["Jon Snow", "Daenerys", "Tyrion"],
-        "Breaking Bad": ["Walter White", "Jesse Pinkman", "Saul Goodman"],
-        "Stranger Things": ["Eleven", "Mike", "Dustin"]
+        "Breaking Bad": ["Jesse Pinkman", "Saul Goodman", "Walter White"],
+        "Friends": ["Monica", "Rachel", "Ross"],
+        "Game of Thrones": ["Daenerys", "Jon Snow", "Tyrion"],
+        "Stranger Things": ["Dustin", "Eleven", "Mike"],
+        "The Simpsons": ["Bart", "Homer", "Marge"]
       },
       "amazonLinks": [
         {
@@ -483,11 +499,11 @@
     {
       "title": "Group Cities by Country",
       "groups": {
-        "UK": ["London", "Manchester", "Birmingham"],
-        "Germany": ["Berlin", "Munich", "Frankfurt"],
-        "Canada": ["Toronto", "Vancouver", "Montreal"],
-        "India": ["Mumbai", "Delhi", "Bangalore"],
-        "China": ["Beijing", "Shanghai", "Shenzhen"]
+        "Canada": ["Montreal", "Toronto", "Vancouver"],
+        "China": ["Beijing", "Shanghai", "Shenzhen"],
+        "Germany": ["Berlin", "Frankfurt", "Munich"],
+        "India": ["Bangalore", "Delhi", "Mumbai"],
+        "UK": ["Birmingham", "London", "Manchester"]
       },
       "amazonLinks": [
         {
@@ -499,11 +515,11 @@
     {
       "title": "Group Attractions by Country",
       "groups": {
-        "UK": ["Buckingham Palace", "Stonehenge", "Edinburgh Castle"],
-        "Germany": ["Brandenburg Gate", "Neuschwanstein Castle", "Cologne Cathedral"],
-        "India": ["Taj Mahal", "Red Fort", "Statue of Unity"],
-        "China": ["Great Wall", "Forbidden City", "Terracotta Army"],
-        "Australia": ["Sydney Opera House", "Uluru", "Great Barrier Reef"]
+        "Australia": ["Great Barrier Reef", "Opera House", "Uluru"],
+        "China": ["Forbidden City", "Great Wall", "Terracotta Army"],
+        "Germany": ["Black Forest", "Cologne Cathedral", "Europa Park"],
+        "India": ["Red Fort", "Statue of Unity", "Taj Mahal"],
+        "UK": ["Big Ben", "Edinburgh Castle", "Stonehenge"]
       },
       "amazonLinks": [
         {
@@ -515,16 +531,128 @@
     {
       "title": "Group Books by Author",
       "groups": {
-        "King": ["The Shining", "It", "Misery"],
-        "Austen": ["Pride & Prejudice", "Emma", "Persuasion"],
-        "Tolkien": ["Hobbit", "Lord of the Rings", "Silmarillion"],
+        "Austen": ["Emma", "Persuasion", "Pride & Prejudice"],
+        "King": ["It", "Misery", "The Shining"],
+        "Martin": ["Clash of Kings", "Game of Thrones", "Storm of Swords"],
         "Orwell": ["1984", "Animal Farm", "Burmese Days"],
-        "Martin": ["Game of Thrones", "Clash of Kings", "Storm of Swords"]
+        "Tolkien": ["Hobbit", "Lord of the Rings", "Silmarillion"]
       },
       "amazonLinks": [
         {
           "name": "Best Selling Literature",
           "url": "https://www.amazon.com/Best-Sellers-Literature-Fiction-Books/zgbs/books/17?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Attractions by Country",
+      "groups": {
+        "Egypt": ["Karnak Temple", "Pyramids of Giza", "Sphinx"],
+        "France": ["Eiffel Tower", "Louvre", "Mont Saint-Michel"],
+        "Italy": ["Colosseum", "Leaning Tower", "Venice Canals"],
+        "UK": ["Big Ben", "London Eye", "Tower of London"],
+        "USA": ["Grand Canyon", "Statue of Liberty", "Yellowstone"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Tourist Attractions",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Landmarks by Continent",
+      "groups": {
+        "Antarctica": ["Mt. Erebus", "South Pole", "Vinson Massif"],
+        "Asia": ["Angkor Wat", "Petronas Towers", "Statue of Unity"],
+        "Europe": ["Big Ben", "Colosseum", "Eiffel Tower"],
+        "North America": ["Grand Canyon", "Mt. Evans", "Niagara Falls"],
+        "South America": ["Acropolis", "Iguazu Falls", "Machu Picchu"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Tourist Attractions",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Characters by T.V. Show",
+      "groups": {
+        "Breaking Bad": ["Jesse Pinkman", "Saul Goodman", "Walter White"],
+        "Friends": ["Monica", "Rachel", "Ross"],
+        "Game of Thrones": ["Daenerys", "Jon Snow", "Tyrion"],
+        "Stranger Things": ["Dustin", "Eleven", "Mike"],
+        "The Simpsons": ["Bart", "Homer", "Marge"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling TV Shows",
+          "url": "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Cities by Country",
+      "groups": {
+        "Canada": ["Montreal", "Toronto", "Vancouver"],
+        "China": ["Beijing", "Shanghai", "Shenzhen"],
+        "Germany": ["Berlin", "Frankfurt", "Munich"],
+        "India": ["Bangalore", "Delhi", "Mumbai"],
+        "UK": ["Birmingham", "London", "Manchester"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Attractions by Country",
+      "groups": {
+        "Australia": ["Great Barrier Reef", "Opera House", "Uluru"],
+        "China": ["Forbidden City", "Great Wall", "Terracotta Army"],
+        "Germany": ["Black Forest", "Cologne Cathedral", "Europa Park"],
+        "India": ["Red Fort", "Statue of Unity", "Taj Mahal"],
+        "UK": ["Big Ben", "Edinburgh Castle", "Stonehenge"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Tourist Attractions",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Books by Author",
+      "groups": {
+        "Austen": ["Emma", "Persuasion", "Pride & Prejudice"],
+        "King": ["It", "Misery", "The Shining"],
+        "Martin": ["Clash of Kings", "Game of Thrones", "Storm of Swords"],
+        "Orwell": ["1984", "Animal Farm", "Burmese Days"],
+        "Tolkien": ["Hobbit", "Lord of the Rings", "Silmarillion"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Literature",
+          "url": "https://www.amazon.com/Best-Sellers-Literature-Fiction-Books/zgbs/books/17?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
+      "title": "Group Singers from Country of Birth",
+      "groups": {
+        "Australia": ["Azalea", "Imbruglia", "Sia"],
+        "Canada": ["Bieber", "Caeser", "Mitchell"],
+        "Ireland": ["Bono", "Hozier", "O'Connor"],
+        "United Kingdom": ["Adele", "Sheeran", "Winehouse"],
+        "United States": ["Jackson", "Presley", "Swift"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Music Artists",
+          "url": "https://www.amazon.com/Best-Sellers-Music-Artists/zgbs/music?tag=tinyinfinity-20"
         }
       ]
     },
