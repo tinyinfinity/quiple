@@ -81,13 +81,13 @@
       ]
     },
     {
-      "title": "Group Children's Books by Author",
+      "title": "Group Characters by Author",
       "groups": {
-        "Dr. Seuss": ["The Cat in the Hat", "Green Eggs and Ham", "Horton Hears a Who"],
-        "Roald Dahl": ["Charlie Chocolate Factory", "Matilda", "The BFG"],
-        "J.K. Rowling": ["Sorcerer's Stone", "Chamber of Secrets", "Prisoner of Azkaban"],
-        "Eric Carle": ["Very Hungry Caterpillar", "Brown Bear, What Do You See?", "The Grouchy Ladybug"],
-        "Maurice Sendak": ["Where the Wild Things Are", "In the Night Kitchen", "Outside Over There"]
+        "Roald Dahl": ["Charlie Bucket", "Matilda", "The BFG"],
+        "Jeff Kinney": ["Fregley", "Greg Heffley", "Rowley Jefferson"],
+        "C.S. Lewis": ["Aslan", "Prince Caspian", "Digory Kirke"],
+        "Rick Riordan": ["Luke Castellan", "Annabeth Chase", "Percy Jackson"],
+        "E.B. White": ["Charlotte", "Stuart Little", "Wilbur"]
       },
       "amazonLinks": [
         {
