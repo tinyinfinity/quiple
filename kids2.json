@@ -17,6 +17,22 @@
       ]
     },
     {
+      "title": "Group States",
+      "groups": {
+        "Alaska": ["Anchorage", "Juneau", "Moose"],
+        "California": ["California Poppy", "Grizzly Bear", "Sacramento"],
+        "Florida": ["Disney World", "Miami", "Tampa"],
+        "New York": ["Albany", "The Empire State", "Times Square"],
+        "Texas": ["Austin", "Houston", "Lone Star State"]
+      },
+      "amazonLinks": [
+         {
+           "name": "Best Selling Maps",
+           "url": "https://www.amazon.com/Best-Sellers-World-Atlases-Maps/zgbs/books/11457?tag=tinyinfinity-20"
+         }
+      ]
+    },
+    {
       "title": "Group Animals by Class",
       "groups": {
         "Amphibians": ["Bullfrog", "Newt", "Salamander"],
