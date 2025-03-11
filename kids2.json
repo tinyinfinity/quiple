@@ -17,6 +17,22 @@
       ]
     },
     {
+      "title": "Group Animals by Class",
+      "groups": {
+        "Amphibians": ["Bullfrog", "Newt", "Salamander"],
+        "Birds": ["Eagle", "Owl", "Parrot"],
+        "Fish": ["Clownfish", "Piranha", "Seahorse"],
+        "Mammals": ["Bat", "Kangaroo", "Whale"],
+        "Reptiles": ["Chameleon", "Iguana", "Tortoise"]
+      },
+      "amazonLinks": [
+         {
+           "name": "Best Selling Stuff Animals",
+           "url": "https://www.amazon.com/Best-Sellers-Stuffed-Animals-Teddy-Bears/zgbs/toys-and-games/11350120011?tag=tinyinfinity-20"
+         }
+      ]
+    },
+    {
       "title": "Group Pop Songs by Artist",
       "groups": {
         "Bruno Mars ": ["Uptown Funk", "24K Magic", "Treasure"],
