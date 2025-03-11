@@ -17,6 +17,86 @@
       ]
     },
     {
+      "title": "Group by State",
+      "groups": {
+        "Alaska": ["Fairbanks", "The Last Frontier", "Moose"],
+        "California": ["California Poppy", "Grizzly Bear", "San Diego"],
+        "Maine": ["Augusta", "The Pine Tree State", "Portland"],
+        "New York": ["Albany", "The Empire State", "Times Square"],
+        "Washington": ["The Evergreen State", "Olympia", "Orca Whale"]
+      },
+      "amazonLinks": [
+         {
+           "name": "Best Selling Maps",
+           "url": "https://www.amazon.com/Best-Sellers-World-Atlases-Maps/zgbs/books/11457?tag=tinyinfinity-20"
+         }
+      ]
+    },
+    {
+      "title": "Group by State",
+      "groups": {
+        "Arizona": ["Grand Canyon State", "Phoenix", "Tucson"],
+        "Delaware": ["Dover", "The First State", "Wilmington"],
+        "Hawaii": ["Aloha State", "Hibiscus", "Honolulu"],
+        "Nebraska": ["Cornhusker State", "Lincoln", "Omaha"],
+        "Tennessee": ["Memphis", "Nashville", "Volunteer State"]
+      },
+      "amazonLinks": [
+         {
+           "name": "Best Selling Maps",
+           "url": "https://www.amazon.com/Best-Sellers-World-Atlases-Maps/zgbs/books/11457?tag=tinyinfinity-20"
+         }
+      ]
+    },
+    {
+      "title": "Group by State",
+      "groups": {
+        "Alaska": ["Anchorage", "Denali NP", "Juneau"],
+        "Kansas": ["Sunflower State", "Topeka", "Wichita"],
+        "Montana": ["Big Sky Country", "Billings", "Glacier NP"],
+        "Nevada": ["Carson City", "Las Vegas", "Reno"],
+        "Texas": ["Austin", "Houston", "Lone Star State"]
+      },
+      "amazonLinks": [
+         {
+           "name": "Best Selling Maps",
+           "url": "https://www.amazon.com/Best-Sellers-World-Atlases-Maps/zgbs/books/11457?tag=tinyinfinity-20"
+         }
+      ]
+    },
+    {
+      "title": "Group by Country",
+      "groups": {
+        "Brazil": ["Brasília", "São Paulo", "Sugar Loaf"],
+        "China": ["Beijing", "Forbidden City", "Tencent"],
+        "France": ["Louvre", "LVMH", "Versailles"],
+        "India": ["Chennai", "Ellora Caves", "Jaipur City"],
+        "Spain": ["Kyoto", "Nara Park", "Toyota"]
+      },
+      "amazonLinks": [
+         {
+           "name": "Best Selling Maps",
+           "url": "https://www.amazon.com/Best-Sellers-World-Atlases-Maps/zgbs/books/11457?tag=tinyinfinity-20"
+         }
+      ]
+    },
+    {
+      "title": "Group UNESCO Sites by Country",
+      "groups": {
+        "China": ["Forbidden City", "Mogao Caves", "Summer Palace"],
+        "Germany": ["Aachen Cathedral", "Cologne Cathedral", "Wurzburg Residence"],
+        "Italy": ["Colosseum", "Pompeii", "Vatican City"],
+        "Mexico": ["Chichen Itza", "Copper Canyon", "Palenque"],
+        "South Africa": ["Cradle of Humankind", "Robben Island", "Vredefort Dome"]
+      },
+      "amazonLinks": [
+         {
+          "name": "Best Selling Travel Guides",
+          "url": "https://www.amazon.com/Best-Sellers-Travel-Books/zgbs/books/27?tag=tinyinfinity-20"
+         }
+      ]
+    },
+    {
       "title": "Group Songs by Artist (Motown)",
       "groups": {
         "The Temptations": ["My Girl", "Just My Imagination", "Cloud Nine"],
