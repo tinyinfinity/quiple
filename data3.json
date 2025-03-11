@@ -400,6 +400,22 @@
       ]
     },
     {
+      "title": "Group Characters by Author",
+      "groups": {
+        "Austen": ["Elizabeth Bennet", "Mr. Darcy", "Mr. Knightley"],
+        "Dickens": ["Pip", "Ebenezer Scrooge", "Oliver Twist"],
+        "Melville": ["Captain Ahab", "Ishmael", "Queequeg"],
+        "Orwell": ["Boxer", "Napoleon", "Winston Smith"],
+        "Shakespeare": ["Hamlet", "Macbeth", "Othello"]
+      },
+      "amazonLinks": [
+        {
+          "name": "Best Selling Literature",
+          "url": "https://www.amazon.com/Best-Sellers-Literature-Fiction-Books/zgbs/books/17?tag=tinyinfinity-20"
+        }
+      ]
+    },
+    {
       "title": "Group Books by Genre",
       "groups": {
         "Fiction": ["The Great Gatsby", "1984", "Moby Dick"],
