@@ -321,18 +321,18 @@
       ]
     },
     {
-      "title": "Group Outdoor Games by Type",
+      "title": "Group Features by Planets",
       "groups": {
-        "Running": ["Tag", "Capture the Flag", "Red Rover"],
-        "Ball": ["Kickball", "Dodgeball", "Four Square"],
-        "Water": ["Water Balloon Toss", "Sprinkler Run", "Marco Polo"],
-        "Hiding": ["Hide and Seek", "Sardines", "I Spy"],
-        "Jumping": ["Hopscotch", "Jump Rope", "Sack Race"]
+        "Earth": ["Mariana Trench", "Mount Everest", "Oceans"],
+        "Jupiter": ["Galilean Moons", "Great Red Spot", "Shortest Day"],
+        "Mars": ["Olympus Mons", "Valles Marineris", "Red Planet"],
+        "Saturn": ["Cassini Crash", "Rings", "Titan"],
+        "Venus": ["Hottest Planet", "No Moons", "Sister Planet"]
       },
       "amazonLinks": [
         {
-          "name": "Best Selling Outdoor Toys",
-          "url": "https://www.amazon.com/Best-Sellers-Toys-Games-Outdoor-Play-Equipment/zgbs/toys-and-games/165793011?tag=tinyinfinity-20"
+          "name": "Best Selling Astronomy Books",
+          "url": "https://www.amazon.com/Best-Sellers-Astronomy-Space-Science/zgbs/books/13439?tag=tinyinfinity-20"
         }
       ]
     },
