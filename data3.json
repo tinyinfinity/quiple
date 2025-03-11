@@ -33,6 +33,22 @@
     ]
   },
   {
+    "title": "Group Animals by Genus",
+    "groups": {
+      "Canis": ["Domestic Dog", "Golden Jackal", "Gray Wolf"],
+      "Cnidaria": ["Moon Jellyfish", "Staghorn Coral", "Stony Coral"],
+      "Equus": ["Domestic Horse", "Donkey", "Mountain Zebra"],
+      "Panthera": ["Jaguar", "Lion", "Tiger"],
+      "Ursus": ["American Black Bear", "Brown Bear", "Polar Bear"]
+    },
+    "amazonLinks": [
+       {
+         "name": "Best Selling Stuff Animals",
+         "url": "https://www.amazon.com/Best-Sellers-Stuffed-Animals-Teddy-Bears/zgbs/toys-and-games/11350120011?tag=tinyinfinity-20"
+       }
+    ]
+  },
+  {
     "title": "Group Properties by Monopoly Color",
     "groups": {
       "Green": ["North Carolina", "Pacific", "Pennsylvania"],
