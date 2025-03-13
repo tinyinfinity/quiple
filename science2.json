@@ -73,11 +73,21 @@
     {
       "title": "Group Biology Concepts",
       "groups": {
-        "Cell Organelles": ["Mitochondria", "Ribosome", "Golgi Apparatus"],
-        "Genetic Material": ["DNA", "RNA", "Chromosome"],
-        "Photosynthesis Stages": ["Light Reaction", "Calvin Cycle", "E.T.C."],
-        "Types of Muscle Tissue": ["Skeletal", "Cardiac", "Smooth"],
-        "Human Body Systems": ["Circulatory", "Respiratory", "Nervous"]
+        "Body Systems": ["Lymphatic", "Nervous", "Respiratory"],
+        "Cell Organelles": ["Golgi Apparatus", "Mitochondria", "Ribosome"],
+        "Genetics": ["Chromosome", "DNA", "RNA"],
+        "Muscle Tissue": ["Cardiac", "Skeletal", "Smooth"],
+        "Photosynthesis": ["Calvin Cycle", "E.T.C.", "Light Reaction"] 
+      },
+    },
+    {
+      "title": "Group Assays by Function",
+      "groups": {
+        "Cell Viability": ["alamarBlue", "MTT", "PrestoBlue"],
+        "Apoptosis": ["annexin V", "Caspases", "TUNEL"],
+        "Nucleic Acid Quant": ["OliGreen", "PicoGreen", "RiboGreen"],
+        "Protein Quant": ["BCA", "Bradford", "Lowry"],
+        "ROS": ["CellROX", "MitoSOX", "MPO Activity"] 
       },
     },
     {
