@@ -163,7 +163,7 @@
     {
       "title": "Group Sports by Equipment",
       "groups": {
-        "Basketball": ["Basketball", "Hoop", "Net"],
+        "Basketball": ["Basketball", "Backboard", "Rim"],
         "Soccer": ["Soccer Ball", "Goal", "Cleats"],
         "Baseball": ["Baseball", "Bat", "Glove"],
         "Tennis": ["Tennis Ball", "Racket", "Net"],
