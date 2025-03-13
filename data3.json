@@ -357,8 +357,9 @@
       "groups": {
         "Baroque": ["Bach", "Handel", "Vivaldi"],
         "Classical": ["Mozart", "Haydn", "Beethoven"],
+        "Modern": ["Stravinsky", "Shostakovich", "Prokofiev"],
         "Romantic": ["Chopin", "Tchaikovsky", "Liszt"],
-        "Modern": ["Stravinsky", "Shostakovich", "Prokofiev"]
+        "Postmodern": ["Cage", "Glass", "Reich"]
       },
       "amazonLinks": [
         {
