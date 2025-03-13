@@ -211,8 +211,8 @@
     {
       "title": "Group Movies by Lead Actress",
       "groups": {
-        "Streep": ["Devil Wears Prada", "Mamma Mia!", "Sophie’s Choice"],
-        "Bullock": ["Blind Side", "Speed", "Gravity"],
+        "Streep": ["The Devil Wears Prada", "Mamma Mia!", "Sophie’s Choice"],
+        "Bullock": ["The Blind Side", "Speed", "Gravity"],
         "Portman": ["Black Swan", "V for Vendetta", "Leon: The Professional"],
         "Roberts": ["Pretty Woman", "Erin Brockovich", "Runaway Bride"],
         "Hathaway": ["The Princess Diaries", "Les Misérables", "The Intern"]
@@ -227,11 +227,11 @@
     {
       "title": "Group Songs by Singer",
       "groups": {
-        "Carey": ["Emotions", "Fantasy", "Touch My Body"],
-        "Gaga": ["Applause", "Bad Romance", "Poker Face"],
-        "Jackson": ["Beat It", "P.Y.T.", "Thriller"],
         "Mercury": ["Bohemian Rhapsody", "Killer Queen", "Under Pressure"],
-        "Presley": ["Blue Suede Shoes", "Hound Dog", "Suspicious Minds"]
+        "Houston": ["I Wanna Dance with Somebody", "Greatest Love of All", "I’m Every Woman"],
+        "Presley": ["Hound Dog", "Suspicious Minds", "Blue Suede Shoes"],
+        "Gaga": ["Poker Face", "Bad Romance", "Applause"],
+        "Jackson": ["Thriller", "Beat It", "P.Y.T."]
       },
       "amazonLinks": [
         {
@@ -341,7 +341,7 @@
       "groups": {
         "Pixar": ["Toy Story", "Finding Nemo", "Inside Out"],
         "Disney": ["Aladdin", "The Lion King", "Frozen"],
-        "DreamWorks": ["Shrek", "Kung Fu Panda", "Bee Movie"],
+        "DreamWorks": ["Shrek", "Kung Fu Panda", "How to Train Your Dragon"],
         "Studio Ghibli": ["Spirited Away", "My Neighbor Totoro", "Princess Mononoke"],
         "Sony Animation": ["Spider-Man: Into the Spider-Verse", "Peter Rabbit", "Surf's Up"]
       },
@@ -657,45 +657,13 @@
       ]
     },
     {
-      "title": "Group Cultural Events by Decade",
-      "groups": {
-        "1930s": ["King Kong", "Marx Brothers", "Wizard of Oz"],
-        "1940s": ["Bambi", "Casablanca", "Superman Comics"],
-        "1950s": ["Disneyland Opens", "Elvis Debut", "I Love Lucy"],
-        "1960s": ["Batman TV Series", "Star Trek", "Woodstock"],
-        "1970s": ["Godfather", "Saturday Night Fever", "Star Wars"]
-      },
-      "amazonLinks": [
-        {
-          "name": "Best Selling History Books",
-          "url": "https://www.amazon.com/Best-Sellers-History-Books/zgbs/books/9?tag=tinyinfinity-20"
-        }
-      ]
-    },
-    {
-      "title": "Group Cultural Events by Decade",
-      "groups": {
-        "1970s": ["Jaws", "Pong", "Rocky"],
-        "1980s": ["E.T.", "M.J. Moonwalk", "MTV Launch"],
-        "1990s": ["Frasier", "Friends", "South Park"],
-        "2000s": ["iPod Launch", "Netflix Launch", "YouTube Launch"],
-        "2010s": ["Boyhood", "Instagram", "Parasite"]
-      },
-      "amazonLinks": [
-        {
-          "name": "Best Selling History Books",
-          "url": "https://www.amazon.com/Best-Sellers-History-Books/zgbs/books/9?tag=tinyinfinity-20"
-        }
-      ]
-    },
-    {
       "title": "Group Historical Events by Decade",
       "groups": {
         "1950s": ["Korean War", "Sputnik Launch", "Rosa Parks Arrest"],
-        "1960s": ["Civil Rights Act", "JFK Assassination", "Summer of Love"],
+        "1960s": ["Civil Rights Act", "Assassination of JFK", "Summer of Love"],
         "1970s": ["Vietnam War Ends", "Watergate Scandal", "Rise of Punk"],
-        "1980s": ["Berlin Wall Falls", "AIDS Crisis", "Chernobyl"],
-        "1990s": ["USSR Dissolution", "Internet Mainstreams", "Euro Introduced"]
+        "1980s": ["Fall of Berlin Wall", "AIDS Crisis", "Chernobyl Disaster"],
+        "1990s": ["Dissolution of USSR", "Rise of the Internet", "Euro Introduced"]
       },
       "amazonLinks": [
         {
