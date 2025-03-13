@@ -193,180 +193,181 @@
     <footer id="site-footer">
     <p>© 2025 Quiple. All rights reserved. | <a href="#" id="more-games-link">More Games</a> | <a href="#" id="contact-link">Contact</a></p>
   </footer>
+ <script>
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
 
-  <script>
-    document.addEventListener('contextmenu', function(e) {
-      e.preventDefault();
+  const isSciencePage = window.location.pathname.includes("science.html");
+  const isJuniorPage = window.location.pathname.includes("junior.html");
+  const streakKey = isSciencePage ? "scienceStreak" : isJuniorPage ? "juniorStreak" : "mainStreak";
+  const lastResetKey = isSciencePage ? "scienceLastReset" : isJuniorPage ? "juniorLastReset" : "mainLastReset";
+  const lastStreakDayKey = isSciencePage ? "scienceLastStreakDay" : isJuniorPage ? "juniorLastStreakDay" : "mainLastStreakDay";
+  const gameStateKey = isSciencePage ? "scienceGameState" : isJuniorPage ? "juniorGameState" : "mainGameState";
+
+  let streak = parseInt(localStorage.getItem(streakKey)) || 0;
+  let selectedCells = [];
+  let matchedGroups = 0;
+  let mistakes = 0;
+  let currentGame = {};
+  let gameOver = false;
+
+  const fallbackGame = {
+    title: "Sample Daily Match Game",
+    groups: {
+      "Fruits": ["Apple", "Banana", "Orange"],
+      "Colors": ["Red", "Blue", "Green"],
+      "Animals": ["Dog", "Cat", "Bird"],
+      "Cities": ["Paris", "Tokyo", "New York"],
+      "Planets": ["Earth", "Mars", "Venus"]
+    },
+    amazonLinks: [{ name: "Sample Product", url: "https://amazon.com" }]
+  };
+
+  document.addEventListener("DOMContentLoaded", async () => {
+    console.log("DOM loaded, starting game initialization");
+    document.getElementById("streak").textContent = streak;
+    await initializeGame();
+
+    const quipleTitle = document.getElementById("quiple-title");
+    const infoOverlay = document.getElementById("info-overlay");
+    const infoCloseBtn = document.getElementById("info-close-btn");
+    
+    quipleTitle.addEventListener("click", () => {
+      infoOverlay.style.display = "flex";
     });
 
-    const isSciencePage = window.location.pathname.includes("science.html");
-    const isJuniorPage = window.location.pathname.includes("junior.html");
-    const streakKey = isSciencePage ? "scienceStreak" : isJuniorPage ? "juniorStreak" : "mainStreak";
-    const lastResetKey = isSciencePage ? "scienceLastReset" : isJuniorPage ? "juniorLastReset" : "mainLastReset";
-    const lastStreakDayKey = isSciencePage ? "scienceLastStreakDay" : isJuniorPage ? "juniorLastStreakDay" : "mainLastStreakDay";
-    const gameStateKey = isSciencePage ? "scienceGameState" : isJuniorPage ? "juniorGameState" : "mainGameState";
+    infoCloseBtn.addEventListener("click", () => {
+      infoOverlay.style.display = "none";
+    });
 
-    let streak = parseInt(localStorage.getItem(streakKey)) || 0;
-    let selectedCells = [];
-    let matchedGroups = 0;
-    let mistakes = 0;
-    let currentGame = {};
-    let gameOver = false;
-
-    const fallbackGame = {
-      title: "Sample Daily Match Game",
-      groups: {
-        "Fruits": ["Apple", "Banana", "Orange"],
-        "Colors": ["Red", "Blue", "Green"],
-        "Animals": ["Dog", "Cat", "Bird"],
-        "Cities": ["Paris", "Tokyo", "New York"],
-        "Planets": ["Earth", "Mars", "Venus"]
-      },
-      amazonLinks: [{ name: "Sample Product", url: "https://amazon.com" }]
-    };
-
-    document.addEventListener("DOMContentLoaded", async () => {
-      console.log("DOM loaded, starting game initialization");
-      document.getElementById("streak").textContent = streak;
-      await initializeGame();
-
-      const quipleTitle = document.getElementById("quiple-title");
-      const infoOverlay = document.getElementById("info-overlay");
-      const infoCloseBtn = document.getElementById("info-close-btn");
-      
-      quipleTitle.addEventListener("click", () => {
-        infoOverlay.style.display = "flex";
-      });
-
-      infoCloseBtn.addEventListener("click", () => {
+    infoOverlay.addEventListener("click", (e) => {
+      if (e.target === infoOverlay) {
         infoOverlay.style.display = "none";
-      });
-
-      infoOverlay.addEventListener("click", (e) => {
-        if (e.target === infoOverlay) {
-          infoOverlay.style.display = "none";
-        }
-      });
-
-      const contactLink = document.getElementById("contact-link");
-      const contactOverlay = document.getElementById("contact-overlay");
-      const contactCloseBtn = document.getElementById("contact-close-btn");
-
-      contactLink.addEventListener("click", (e) => {
-        e.preventDefault();
-        contactOverlay.style.display = "flex";
-      });
-
-      contactCloseBtn.addEventListener("click", () => {
-        contactOverlay.style.display = "none";
-      });
-
-      contactOverlay.addEventListener("click", (e) => {
-        if (e.target === contactOverlay) {
-          contactOverlay.style.display = "none";
-        }
-      });
+      }
     });
 
-      const moreGamesLink = document.getElementById("more-games-link");
-      const moreGamesOverlay = document.getElementById("more-games-overlay");
-      const moreGamesCloseBtn = document.getElementById("more-games-close-btn");
-      
-      moreGamesLink.addEventListener("click", (e) => {
-        e.preventDefault();
-        moreGamesOverlay.style.display = "flex";
-      });
-      
-      moreGamesCloseBtn.addEventListener("click", () => {
-        moreGamesOverlay.style.display = "none";
-      });
-      
-      moreGamesOverlay.addEventListener("click", (e) => {
-        if (e.target === moreGamesOverlay) {
-          moreGamesOverlay.style.display = "none";
-        }
-      });
+    const contactLink = document.getElementById("contact-link");
+    const contactOverlay = document.getElementById("contact-overlay");
+    const contactCloseBtn = document.getElementById("contact-close-btn");
 
-    function getESTDate() {
-      const now = new Date();
-      const estOffset = -5 * 60;
-      const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
-      const estDate = new Date(utc + (estOffset * 60000));
-      if (estDate.getHours() < 5) {
-        estDate.setDate(estDate.getDate() - 1);
+    contactLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      contactOverlay.style.display = "flex";
+    });
+
+    contactCloseBtn.addEventListener("click", () => {
+      contactOverlay.style.display = "none";
+    });
+
+    contactOverlay.addEventListener("click", (e) => {
+      if (e.target === contactOverlay) {
+        contactOverlay.style.display = "none";
       }
-      estDate.setHours(5, 0, 0, 0);
-      return estDate;
+    });
+  });
+
+  const moreGamesLink = document.getElementById("more-games-link");
+  const moreGamesOverlay = document.getElementById("more-games-overlay");
+  const moreGamesCloseBtn = document.getElementById("more-games-close-btn");
+  
+  moreGamesLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    moreGamesOverlay.style.display = "flex";
+  });
+  
+  moreGamesCloseBtn.addEventListener("click", () => {
+    moreGamesOverlay.style.display = "none";
+  });
+  
+  moreGamesOverlay.addEventListener("click", (e) => {
+    if (e.target === moreGamesOverlay) {
+      moreGamesOverlay.style.display = "none";
     }
+  });
 
-    function getDailySeed() {
-      const estDate = getESTDate();
-      const epoch = new Date(Date.UTC(2020, 0, 1, 10, 0, 0));
-      return Math.floor((estDate - epoch) / 86400000);
+  function getESTDate() {
+    const now = new Date();
+    const estOffset = -5 * 60;
+    const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+    const estDate = new Date(utc + (estOffset * 60000));
+    if (estDate.getHours() < 5) {
+      estDate.setDate(estDate.getDate() - 1);
     }
+    estDate.setHours(5, 0, 0, 0);
+    return estDate;
+  }
 
-    function getDailyFile(files) {
-      const seed = getDailySeed();
-      const index = seed % files.length;
-      console.log("Daily file index:", index, "File:", files[index]);
-      return files[index];
-    }
+  function getDailySeed() {
+    const estDate = getESTDate();
+    const epoch = new Date(Date.UTC(2020, 0, 1, 10, 0, 0));
+    return Math.floor((estDate - epoch) / 86400000);
+  }
 
-    function getDailyIndex(totalGames) {
-      const seed = getDailySeed();
-      const index = seed % totalGames;
-      console.log("Daily game index:", index);
-      return index;
-    }
+  function getDailyFile(files) {
+    const seed = getDailySeed();
+    const index = seed % files.length;
+    console.log("Daily file index:", index, "File:", files[index]);
+    return files[index];
+  }
 
-    function getDailyDateString() {
-      const estDate = getESTDate();
-      return estDate.toISOString().split('T')[0];
-    }
+  function getDailyIndex(totalGames) {
+    const seed = getDailySeed();
+    const index = seed % totalGames;
+    console.log("Daily game index:", index);
+    return index;
+  }
 
-    async function initializeGame() {
-      const lastReset = localStorage.getItem(lastResetKey);
-      const todaySeed = getDailySeed();
-      streak = parseInt(localStorage.getItem(streakKey)) || 0;
-      document.getElementById("streak").textContent = streak;
+  function getDailyDateString() {
+    const estDate = getESTDate();
+    return estDate.toISOString().split('T')[0];
+  }
 
-      if (!lastReset || parseInt(lastReset) !== todaySeed) {
-        localStorage.setItem(lastResetKey, todaySeed);
-        localStorage.removeItem(gameStateKey);
-        await loadDailyGame();
+  async function initializeGame() {
+    const lastReset = localStorage.getItem(lastResetKey);
+    const todaySeed = getDailySeed();
+    streak = parseInt(localStorage.getItem(streakKey)) || 0;
+    document.getElementById("streak").textContent = streak;
+
+    if (!lastReset || parseInt(lastReset) !== todaySeed) {
+      localStorage.setItem(lastResetKey, todaySeed);
+      localStorage.removeItem(gameStateKey);
+      await loadDailyGame();
+    } else {
+      const savedState = JSON.parse(localStorage.getItem(gameStateKey));
+      if (savedState) {
+        currentGame = savedState.currentGame;
+        matchedGroups = savedState.matchedGroups;
+        mistakes = savedState.mistakes;
+        gameOver = savedState.gameOver;
+        document.getElementById("game-title").textContent = currentGame.title;
+        restoreGameState(savedState.win);
       } else {
-        const savedState = JSON.parse(localStorage.getItem(gameStateKey));
-        if (savedState) {
-          currentGame = savedState.currentGame;
-          matchedGroups = savedState.matchedGroups;
-          mistakes = savedState.mistakes;
-          gameOver = savedState.gameOver;
-          document.getElementById("game-title").textContent = currentGame.title;
-          restoreGameState(savedState.win);
-        } else {
-          await loadDailyGame();
-        }
+        await loadDailyGame();
       }
     }
+  }
 
-    async function loadDailyGame() {
-      console.log("Entering loadDailyGame");
+  async function loadDailyGame() {
+    console.log("Entering loadDailyGame");
+    try {
+      const dailyDateString = getDailyDateString();
+      const isSciencePage = window.location.pathname.includes("science.html");
+      const isJuniorPage = window.location.pathname.includes("junior.html");
+      const files = isSciencePage ? ["science.json", "science2.json"] : isJuniorPage ? ["kids.json", "kids2.json"] : ["data.json", "data2.json", "data3.json"];
+      const dailyFile = getDailyFile(files);
+      const url = `${dailyFile}?date=${dailyDateString}&page=main&t=${Date.now()}`;
+      console.log("Fetching URL:", url);
+      const response = await fetch(url, { cache: "no-store" });
+      console.log("Response status:", response.status);
+      if (!response.ok) {
+        throw new Error(`Failed to fetch ${dailyFile} (Status: ${response.status})`);
+      }
+      const text = await response.text();
+      console.log("Raw response:", text);
       try {
-        const dailyDateString = getDailyDateString();
-        const isSciencePage = window.location.pathname.includes("science.html");
-        const isJuniorPage = window.location.pathname.includes("junior.html");
-        const files = isSciencePage ? ["science.json", "science2.json"] : isJuniorPage ? ["kids.json", "kids2.json"] : ["data.json", "data2.json", "data3.json"];
-        const dailyFile = getDailyFile(files);
-        const url = `${dailyFile}?date=${dailyDateString}&page=main`;
-        const response = await fetch(url, {
-          cache: "no-store"
-        });
-        console.log("Fetch response status:", response.status, "URL:", url);
-        if (!response.ok) {
-          throw new Error(`Failed to fetch ${dailyFile} (Status: ${response.status})`);
-        }
-        const data = await response.json();
-        console.log("Fetched data:", data);
+        const data = JSON.parse(text);
+        console.log("Parsed data:", data);
         if (!data.games || !Array.isArray(data.games)) {
           throw new Error("Invalid game data format: 'games' array not found.");
         }
@@ -379,210 +380,214 @@
         document.getElementById("game-title").textContent = currentGame.title || "Daily Match Game";
         console.log("Setup game with fetched data");
         setupGame();
-      } catch (error) {
-        console.error("Error loading game data:", error);
-        console.log("Switching to fallback game data");
-        currentGame = fallbackGame;
-        document.getElementById("game-title").textContent = currentGame.title;
-        document.getElementById("grid").innerHTML = "";
-        setupGame();
+      } catch (parseError) {
+        console.error("JSON parsing error:", parseError);
+        throw parseError;
       }
+    } catch (error) {
+      console.error("Error loading game data:", error);
+      console.log("Switching to fallback game data");
+      currentGame = fallbackGame;
+      document.getElementById("game-title").textContent = currentGame.title;
+      document.getElementById("grid").innerHTML = "";
+      setupGame();
     }
+  }
 
-    function setupGame() {
-      console.log("Entering setupGame with currentGame:", currentGame);
-      const grid = document.getElementById("grid");
-      grid.innerHTML = "";
-      matchedGroups = 0;
-      mistakes = 0;
-      gameOver = false;
-      updateMistakes();
-      selectedCells = [];
-      let groups = currentGame.groups;
-      let items = [];
-      for (let group in groups) {
-        groups[group].forEach(item => {
-          items.push({ text: item, group: group });
-        });
-      }
-      items = shuffle(items);
-      items.forEach(obj => {
-        const cell = document.createElement("div");
-        cell.classList.add("cell");
-        cell.textContent = obj.text;
-        cell.dataset.group = obj.group;
-        cell.addEventListener("click", () => handleSelection(cell));
-        grid.appendChild(cell);
+  function setupGame() {
+    console.log("Entering setupGame with currentGame:", currentGame);
+    const grid = document.getElementById("grid");
+    grid.innerHTML = "";
+    matchedGroups = 0;
+    mistakes = 0;
+    gameOver = false;
+    updateMistakes();
+    selectedCells = [];
+    let groups = currentGame.groups;
+    let items = [];
+    for (let group in groups) {
+      groups[group].forEach(item => {
+        items.push({ text: item, group: group });
       });
-      console.log("Grid setup complete with", items.length, "items");
-      saveGameState();
     }
+    items = shuffle(items);
+    items.forEach(obj => {
+      const cell = document.createElement("div");
+      cell.classList.add("cell");
+      cell.textContent = obj.text;
+      cell.dataset.group = obj.group;
+      cell.addEventListener("click", () => handleSelection(cell));
+      grid.appendChild(cell);
+    });
+    console.log("Grid setup complete with", items.length, "items");
+    saveGameState();
+  }
 
-    function restoreGameState(win) {
-      console.log("Restoring game state, win:", win);
-      const grid = document.getElementById("grid");
-      grid.innerHTML = "";
-      updateMistakes();
-      let groups = currentGame.groups;
-      let items = [];
-      for (let group in groups) {
-        groups[group].forEach(item => {
-          items.push({ text: item, group: group });
-        });
-      }
-      items = shuffle(items);
-      const savedState = JSON.parse(localStorage.getItem(gameStateKey));
-      items.forEach(obj => {
-        const cell = document.createElement("div");
-        cell.classList.add("cell");
-        cell.textContent = obj.text;
-        cell.dataset.group = obj.group;
-        if (savedState.correctCells.includes(obj.text)) {
-          cell.classList.add("correct");
-        } else if (!gameOver && savedState.selectedCells.includes(obj.text)) {
-          cell.classList.add("selected");
-          selectedCells.push(cell);
-        }
-        if (gameOver) {
-          cell.classList.add("disabled");
-        } else {
-          cell.addEventListener("click", () => handleSelection(cell));
-        }
-        grid.appendChild(cell);
+  function restoreGameState(win) {
+    console.log("Restoring game state, win:", win);
+    const grid = document.getElementById("grid");
+    grid.innerHTML = "";
+    updateMistakes();
+    let groups = currentGame.groups;
+    let items = [];
+    for (let group in groups) {
+      groups[group].forEach(item => {
+        items.push({ text: item, group: group });
       });
+    }
+    items = shuffle(items);
+    const savedState = JSON.parse(localStorage.getItem(gameStateKey));
+    items.forEach(obj => {
+      const cell = document.createElement("div");
+      cell.classList.add("cell");
+      cell.textContent = obj.text;
+      cell.dataset.group = obj.group;
+      if (savedState.correctCells.includes(obj.text)) {
+        cell.classList.add("correct");
+      } else if (!gameOver && savedState.selectedCells.includes(obj.text)) {
+        cell.classList.add("selected");
+        selectedCells.push(cell);
+      }
       if (gameOver) {
-        console.log("Game over detected in restore, calling endGame with win:", win);
-        endGame(win);
-      }
-      console.log("Game state restored, gameOver:", gameOver);
-    }
-
-    function saveGameState() {
-      const state = {
-        currentGame,
-        matchedGroups,
-        mistakes,
-        gameOver,
-        selectedCells: selectedCells.map(cell => cell.textContent),
-        correctCells: Array.from(document.querySelectorAll(".cell.correct")).map(cell => cell.textContent),
-        win: matchedGroups === Object.keys(currentGame.groups).length
-      };
-      localStorage.setItem(gameStateKey, JSON.stringify(state));
-    }
-
-    function handleSelection(cell) {
-      if (gameOver || cell.classList.contains("correct") || selectedCells.length >= 3) return;
-      if (cell.classList.contains("selected")) {
-        cell.classList.remove("selected");
-        selectedCells = selectedCells.filter(c => c !== cell);
-        saveGameState();
-        return;
-      }
-      cell.classList.add("selected");
-      selectedCells.push(cell);
-      if (selectedCells.length === 3) {
-        checkMatch();
-      }
-      saveGameState();
-    }
-
-    function checkMatch() {
-      const groups = selectedCells.map(cell => cell.dataset.group);
-      const allSame = groups.every(g => g === groups[0]);
-      const cellsToReset = [...selectedCells];
-      selectedCells = [];
-      if (allSame) {
-        cellsToReset.forEach(cell => cell.classList.add("correct"));
-        matchedGroups++;
-      } else {
-        cellsToReset.forEach(cell => cell.classList.add("incorrect"));
-        mistakes++;
-        updateMistakes();
-        setTimeout(() => {
-          cellsToReset.forEach(cell => cell.classList.remove("incorrect", "selected"));
-          saveGameState();
-        }, 1000);
-      }
-      const totalGroups = Object.keys(currentGame.groups).length;
-      console.log("checkMatch: matchedGroups =", matchedGroups, "totalGroups =", totalGroups, "mistakes =", mistakes);
-      if (matchedGroups === totalGroups || mistakes >= 3) {
-        console.log("Calling endGame with win =", matchedGroups === totalGroups);
-        endGame(matchedGroups === totalGroups);
-      }
-      saveGameState();
-    }
-
-    function updateMistakes() {
-      document.getElementById("mistakes").textContent = mistakes;
-    }
-
-    function endGame(win) {
-      console.log("Entering endGame, win =", win);
-      gameOver = true;
-      const gridCells = document.querySelectorAll(".cell");
-      gridCells.forEach(cell => {
         cell.classList.add("disabled");
-        if (cell.click) cell.removeEventListener("click", handleSelection);
-      });
-      const finalOverlay = document.getElementById("final-overlay");
-      const resultTitle = document.getElementById("result-title");
-      const finalMessage = document.getElementById("final-message");
-      const correctAnswers = document.getElementById("correct-answers");
-      const amazonLink = document.getElementById("amazon-link");
-      const exitBtn = document.getElementById("exit-btn");
-      const todaySeed = getDailySeed();
-      const lastStreakDay = localStorage.getItem(lastStreakDayKey);
-
-      if (win) {
-        if (!lastStreakDay || parseInt(lastStreakDay) !== todaySeed) {
-          streak++;
-          localStorage.setItem(streakKey, streak);
-          localStorage.setItem(lastStreakDayKey, todaySeed);
-          resultTitle.textContent = "🎉 You Won!";
-          finalMessage.textContent = `Your current streak is ${streak}.`;
-        } else {
-          resultTitle.textContent = "🎉 You Won!";
-          finalMessage.textContent = `Your current streak is ${streak} (already counted today).`;
-        }
       } else {
-        streak = 0;
+        cell.addEventListener("click", () => handleSelection(cell));
+      }
+      grid.appendChild(cell);
+    });
+    if (gameOver) {
+      console.log("Game over detected in restore, calling endGame with win:", win);
+      endGame(win);
+    }
+    console.log("Game state restored, gameOver:", gameOver);
+  }
+
+  function saveGameState() {
+    const state = {
+      currentGame,
+      matchedGroups,
+      mistakes,
+      gameOver,
+      selectedCells: selectedCells.map(cell => cell.textContent),
+      correctCells: Array.from(document.querySelectorAll(".cell.correct")).map(cell => cell.textContent),
+      win: matchedGroups === Object.keys(currentGame.groups).length
+    };
+    localStorage.setItem(gameStateKey, JSON.stringify(state));
+  }
+
+  function handleSelection(cell) {
+    if (gameOver || cell.classList.contains("correct") || selectedCells.length >= 3) return;
+    if (cell.classList.contains("selected")) {
+      cell.classList.remove("selected");
+      selectedCells = selectedCells.filter(c => c !== cell);
+      saveGameState();
+      return;
+    }
+    cell.classList.add("selected");
+    selectedCells.push(cell);
+    if (selectedCells.length === 3) {
+      checkMatch();
+    }
+    saveGameState();
+  }
+
+  function checkMatch() {
+    const groups = selectedCells.map(cell => cell.dataset.group);
+    const allSame = groups.every(g => g === groups[0]);
+    const cellsToReset = [...selectedCells];
+    selectedCells = [];
+    if (allSame) {
+      cellsToReset.forEach(cell => cell.classList.add("correct"));
+      matchedGroups++;
+    } else {
+      cellsToReset.forEach(cell => cell.classList.add("incorrect"));
+      mistakes++;
+      updateMistakes();
+      setTimeout(() => {
+        cellsToReset.forEach(cell => cell.classList.remove("incorrect", "selected"));
+        saveGameState();
+      }, 1000);
+    }
+    const totalGroups = Object.keys(currentGame.groups).length;
+    console.log("checkMatch: matchedGroups =", matchedGroups, "totalGroups =", totalGroups, "mistakes =", mistakes);
+    if (matchedGroups === totalGroups || mistakes >= 3) {
+      console.log("Calling endGame with win =", matchedGroups === totalGroups);
+      endGame(matchedGroups === totalGroups);
+    }
+    saveGameState();
+  }
+
+  function updateMistakes() {
+    document.getElementById("mistakes").textContent = mistakes;
+  }
+
+  function endGame(win) {
+    console.log("Entering endGame, win =", win);
+    gameOver = true;
+    const gridCells = document.querySelectorAll(".cell");
+    gridCells.forEach(cell => {
+      cell.classList.add("disabled");
+      if (cell.click) cell.removeEventListener("click", handleSelection);
+    });
+    const finalOverlay = document.getElementById("final-overlay");
+    const resultTitle = document.getElementById("result-title");
+    const finalMessage = document.getElementById("final-message");
+    const correctAnswers = document.getElementById("correct-answers");
+    const amazonLink = document.getElementById("amazon-link");
+    const exitBtn = document.getElementById("exit-btn");
+    const todaySeed = getDailySeed();
+    const lastStreakDay = localStorage.getItem(lastStreakDayKey);
+
+    if (win) {
+      if (!lastStreakDay || parseInt(lastStreakDay) !== todaySeed) {
+        streak++;
         localStorage.setItem(streakKey, streak);
         localStorage.setItem(lastStreakDayKey, todaySeed);
-        resultTitle.textContent = "😢 Game Over";
-        finalMessage.textContent = "Better luck tomorrow. Streak reset.";
+        resultTitle.textContent = "🎉 You Won!";
+        finalMessage.textContent = `Your current streak is ${streak}.`;
+      } else {
+        resultTitle.textContent = "🎉 You Won!";
+        finalMessage.textContent = `Your current streak is ${streak} (already counted today).`;
       }
-      document.getElementById("streak").textContent = streak;
+    } else {
+      streak = 0;
+      localStorage.setItem(streakKey, streak);
+      localStorage.setItem(lastStreakDayKey, todaySeed);
+      resultTitle.textContent = "😢 Game Over";
+      finalMessage.textContent = "Better luck tomorrow. Streak reset.";
+    }
+    document.getElementById("streak").textContent = streak;
 
-      correctAnswers.innerHTML = "<h3>Answers:</h3>";
-      for (let group in currentGame.groups) {
-        const groupItems = currentGame.groups[group].join(", ");
-        correctAnswers.innerHTML += `
-          <div class="answer-group">
-            <span class="answer-group-name">${group}</span>
-            <span class="answer-group-items">${groupItems}</span>
-          </div>
-        `;
-      }
-
-      const amazonLinks = currentGame.amazonLinks || [];
-      let randomItem = amazonLinks.length > 0 ? amazonLinks[Math.floor(Math.random() * amazonLinks.length)] : { name: "Explore More", url: "https://amazon.com" };
-      amazonLink.href = randomItem.url;
-      amazonLink.textContent = `Find ${randomItem.name}`;
-
-      console.log("Setting final-overlay display to flex");
-      finalOverlay.style.display = "flex";
-      exitBtn.onclick = () => {
-        console.log("Exit button clicked, hiding overlay");
-        finalOverlay.style.display = "none";
-      };
-
-      saveGameState();
-      console.log("endGame complete, overlay should be visible");
+    correctAnswers.innerHTML = "<h3>Answers:</h3>";
+    for (let group in currentGame.groups) {
+      const groupItems = currentGame.groups[group].join(", ");
+      correctAnswers.innerHTML += `
+        <div class="answer-group">
+          <span class="answer-group-name">${group}</span>
+          <span class="answer-group-items">${groupItems}</span>
+        </div>
+      `;
     }
 
-    function shuffle(array) {
-      return array.sort(() => Math.random() - 0.5);
-    }
-  </script>
+    const amazonLinks = currentGame.amazonLinks || [];
+    let randomItem = amazonLinks.length > 0 ? amazonLinks[Math.floor(Math.random() * amazonLinks.length)] : { name: "Explore More", url: "https://amazon.com" };
+    amazonLink.href = randomItem.url;
+    amazonLink.textContent = `Find ${randomItem.name}`;
+
+    console.log("Setting final-overlay display to flex");
+    finalOverlay.style.display = "flex";
+    exitBtn.onclick = () => {
+      console.log("Exit button clicked, hiding overlay");
+      finalOverlay.style.display = "none";
+    };
+
+    saveGameState();
+    console.log("endGame complete, overlay should be visible");
+  }
+
+  function shuffle(array) {
+    return array.sort(() => Math.random() - 0.5);
+  }
+</script>
 </body>
 </html>
