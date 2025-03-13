@@ -356,9 +356,9 @@
       "title": "Group Classical Composers by Era",
       "groups": {
         "Baroque": ["Bach", "Handel", "Vivaldi"],
-        "Classical": ["Mozart", "Haydn", "Beethoven"],
-        "Modern": ["Stravinsky", "Shostakovich", "Prokofiev"],
-        "Romantic": ["Chopin", "Tchaikovsky", "Liszt"],
+        "Classical": ["Beethoven", "Haydn", "Mozart"],
+        "Romantic": ["Chopin", "Liszt", "Tchaikovsky"],
+        "Modern": ["Debussy", "Satie", "Stravinsky"],
         "Postmodern": ["Cage", "Glass", "Reich"]
       },
       "amazonLinks": [
