@@ -37,7 +37,7 @@
         "Earth": ["Aqua", "Earth Observing 1", "Terra"],
         "Mars": ["Curiosity", "InSight", "Perseverance"],
         "Moon": ["Apollo 11", "Artemis", "LRO"],
-        "Outer Planet": ["Pioneer 10", "Voyager 1", "Voyager 2"]
+        "Outer Planets": ["Pioneer 10", "Voyager 1", "Voyager 2"]
       }
     },
     {
