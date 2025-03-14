@@ -21,6 +21,16 @@
       }
     },
     {
+      "title": "Group Astronomy Concepts",
+      "groups": {
+        "Galaxies": ["Elliptical", "Irregular", "Spiral"],
+        "Messier Objects": ["Andromeda Galaxy", "Crab Nebula", "Ring Nebula"],
+        "Lunar Phases": ["Full Moon", "New Moon", "Waxing Crescent"],
+        "Solar System": ["Jupiter", "Mars", "Saturn"],
+        "Space Phenomena": ["Black Hole", "Nebula", "Supernova"]
+      }
+    },
+    {
       "title": "Group Cancer Types",
       "groups": {
         "Carcinomas": ["Breast Cancer", "Lung Cancer", "Prostate Cancer"],
@@ -28,6 +38,26 @@
         "Lymphomas": ["Burkitt's", "Hodgkin's", "Non-Hodgkin's"],
         "Myelomas": ["Light Chain", "Multiple Myeloma", "Plasmacytoma"],
         "Sarcomas": ["Ewing", "Chordoma", "Kaposi"]
+      }
+    },
+    {
+      "title": "Group Microbiology Concepts",
+      "groups": {
+        "Antibiotic Resistance": ["Altered Target", "Decreased Uptake", "Efflux Pump"],
+        "Bacterial Genetic Exchange": ["Conjugation", "Transduction", "Transformation"],
+        "Gram Positives": ["C. difficile", "Listeria", "S. aureus"],
+        "Gram Negatives": ["E. coli", "Klebsiella spp.", "Serratia spp."],
+        "Virulence Factors": ["Adhesins", "Endotoxins", "Exotoxins"]
+      }
+    },
+    {
+      "title": "Group Pathophysiology Concepts",
+      "groups": {
+        "Cellular Responses": ["Apoptosis", "Necrosis", "Oncosis"],
+        "Inflammatory Mediators": ["Cytokines", "Histamine", "Leukotrienes"],
+        "Metabolic Disorders": ["Diabetes", "Dyslipidemia", "Gout"],
+        "Organ-Specific Pathologies": ["Cirrhosis", "Emphysema", "Nephritis"],
+        "Vascular Diseases": ["Phlebitis", "Raynaud's", "Stenosis"]
       }
     },
     {
@@ -71,13 +101,13 @@
       }
     },
     {
-      "title": "Group Physics Topics",
+      "title": "Group Physics Concepts",
       "groups": {
-        "Forces": ["Electromagnetic", "Gravity", "Strong Nuclear"],
-        "Subatomic Particles": ["Electron", "Neutron", "Proton"],
-        "Thermodynamic Laws": ["First Law", "Second Law", "Third Law"],
-        "Types of Energy": ["Kinetic", "Potential", "Thermal"],
-        "Types of Waves": ["Electromagnetic", "Matter", "Mechanical"]
+        "Forms of Energy": ["Kinetic", "Potential", "Thermal"],
+        "Fundamental Forces": ["Gravitational", "Strong Nuclear", "Weak Nuclear"],
+        "Heat Transfer": ["Conduction", "Convection", "Radiation"],
+        "Subatomic Particles": ["Neutron", "Proton", "Quark"],
+        "Types of Waves": ["Matter", "Mechanical", "Sound"]
       }
     },
     {
