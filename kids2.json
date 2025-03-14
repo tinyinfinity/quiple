@@ -403,11 +403,11 @@
     {
       "title": "Group Holidays by Month",
       "groups": {
-        "October": ["Halloween", "Columbus Day", "Oktoberfest"],
-        "November": ["Thanksgiving", "Veterans Day", "Diwali"],
         "December": ["Christmas", "Hanukkah", "Kwanzaa"],
-        "February": ["Valentine's Day", "Presidents' Day", "Groundhog Day"],
-        "July": ["Independence Day", "Canada Day", "Bastille Day"]
+        "February": ["Groundhog Day", "Presidents' Day", "Valentine's Day"],
+        "July": ["Bastille Day", "Canada Day", "Independence Day"],
+        "October": ["Columbus Day", "Halloween", "Oktoberfest"],
+        "November": ["Diwali", "Thanksgiving", "Veterans Day"]
       },
       "amazonLinks": [
         {
