@@ -31,6 +31,16 @@
       }
     },
     {
+      "title": "Group NASA Space Missions",
+      "groups": {
+        "Asteroid": ["Dawn", "NEAR Shoemaker", "OSIRIS-REx"],
+        "Earth": ["Aqua", "Earth Observing 1", "Terra"],
+        "Mars": ["Curiosity", "InSight", "Perseverance"],
+        "Moon": ["Apollo 11", "Artemis", "LRO"],
+        "Outer Planet": ["Pioneer 10", "Voyager 1", "Voyager 2"]
+      }
+    },
+    {
       "title": "Group Cancer Types",
       "groups": {
         "Carcinomas": ["Breast Cancer", "Lung Cancer", "Prostate Cancer"],
