@@ -147,11 +147,11 @@
     {
       "title": "Group Animals by Habitat",
       "groups": {
-        "Forest": ["Bear", "Deer", "Owl"],
-        "Ocean": ["Dolphin", "Shark", "Octopus"],
-        "Desert": ["Camel", "Lizard", "Scorpion"],
-        "Jungle": ["Tiger", "Monkey", "Parrot"],
-        "Arctic": ["Polar Bear", "Penguin", "Seal"]
+        "Arctic": ["Polar Bear", "Reindeer", "Seal"],
+        "Desert": ["Camel", "Meerkat", "Scorpion"],
+        "Forest": ["Bear", "Deer", "Wolf"],
+        "Ocean": ["Dolphin", "Octopus", "Shark"],
+        "Grasslands": ["Cheetah", "Lion", "Zebra"]
       },
       "amazonLinks": [
         {
